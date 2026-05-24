@@ -1,0 +1,216 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class cad_usuario
+    Inherits System.Windows.Forms.Form
+
+    'Descartar substituições de formulário para limpar a lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Exigido pelo Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
+    'Pode ser modificado usando o Windows Form Designer.  
+    'Não o modifique usando o editor de códigos.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cad_usuario))
+        PictureBox1 = New PictureBox()
+        Panel1 = New Panel()
+        Label5 = New Label()
+        txt_perguntaseg = New TextBox()
+        txt_csenha = New TextBox()
+        Label4 = New Label()
+        btn_cadastrar = New Button()
+        txt_senha = New TextBox()
+        txt_matricula = New TextBox()
+        Panel2 = New Panel()
+        Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImageLayout = ImageLayout.None
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(713, 369)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(94, 83)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 5
+        PictureBox1.TabStop = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.DarkSlateBlue
+        Panel1.Controls.Add(Label5)
+        Panel1.Controls.Add(txt_perguntaseg)
+        Panel1.Controls.Add(txt_csenha)
+        Panel1.Controls.Add(Label4)
+        Panel1.Controls.Add(btn_cadastrar)
+        Panel1.Controls.Add(txt_senha)
+        Panel1.Controls.Add(txt_matricula)
+        Panel1.Controls.Add(Panel2)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Label1)
+        Panel1.Location = New Point(224, 27)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(352, 487)
+        Panel1.TabIndex = 6
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.DarkGoldenrod
+        Label5.Location = New Point(55, 282)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(233, 31)
+        Label5.TabIndex = 10
+        Label5.Text = "Nome do seu gatinho?"
+        ' 
+        ' txt_perguntaseg
+        ' 
+        txt_perguntaseg.BackColor = Color.Gainsboro
+        txt_perguntaseg.Location = New Point(38, 316)
+        txt_perguntaseg.Name = "txt_perguntaseg"
+        txt_perguntaseg.Size = New Size(277, 23)
+        txt_perguntaseg.TabIndex = 9
+        ' 
+        ' txt_csenha
+        ' 
+        txt_csenha.BackColor = Color.Gainsboro
+        txt_csenha.Location = New Point(40, 240)
+        txt_csenha.Name = "txt_csenha"
+        txt_csenha.Size = New Size(277, 23)
+        txt_csenha.TabIndex = 8
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.DarkGoldenrod
+        Label4.Location = New Point(84, 206)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(184, 31)
+        Label4.TabIndex = 7
+        Label4.Text = "Confirmar Senha"
+        ' 
+        ' btn_cadastrar
+        ' 
+        btn_cadastrar.BackColor = Color.SlateBlue
+        btn_cadastrar.FlatStyle = FlatStyle.Flat
+        btn_cadastrar.Font = New Font("Sylfaen", 18F)
+        btn_cadastrar.ForeColor = Color.AntiqueWhite
+        btn_cadastrar.Location = New Point(83, 386)
+        btn_cadastrar.Name = "btn_cadastrar"
+        btn_cadastrar.Size = New Size(185, 39)
+        btn_cadastrar.TabIndex = 6
+        btn_cadastrar.Text = "Cadastrar"
+        btn_cadastrar.UseVisualStyleBackColor = False
+        ' 
+        ' txt_senha
+        ' 
+        txt_senha.BackColor = Color.Gainsboro
+        txt_senha.Location = New Point(40, 169)
+        txt_senha.Name = "txt_senha"
+        txt_senha.Size = New Size(277, 23)
+        txt_senha.TabIndex = 4
+        ' 
+        ' txt_matricula
+        ' 
+        txt_matricula.BackColor = Color.Gainsboro
+        txt_matricula.Location = New Point(40, 109)
+        txt_matricula.Name = "txt_matricula"
+        txt_matricula.Size = New Size(280, 23)
+        txt_matricula.TabIndex = 3
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.MediumSlateBlue
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Label3)
+        Panel2.Location = New Point(25, 16)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(312, 43)
+        Panel2.TabIndex = 2
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Sylfaen", 21.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(15, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(279, 39)
+        Label3.TabIndex = 0
+        Label3.Text = "Cadastro de Usuário"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.DarkGoldenrod
+        Label2.Location = New Point(139, 135)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(74, 31)
+        Label2.TabIndex = 1
+        Label2.Text = "Senha"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.DarkGoldenrod
+        Label1.Location = New Point(120, 75)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(111, 31)
+        Label1.TabIndex = 0
+        Label1.Text = "Matrícula"
+        ' 
+        ' cad_usuario
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(793, 542)
+        Controls.Add(Panel1)
+        Controls.Add(PictureBox1)
+        Name = "cad_usuario"
+        Text = "Cadastro de Usuário"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        ResumeLayout(False)
+    End Sub
+
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btn_cadastrar As Button
+    Friend WithEvents txt_senha As TextBox
+    Friend WithEvents txt_matricula As TextBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txt_csenha As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txt_perguntaseg As TextBox
+End Class

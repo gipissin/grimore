@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Alterar_Senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cad_acervo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cad_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Creditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cad_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="login_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\fatec - ads\\si\\grimore_library\\login_principal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:login_principal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Grimore_Library",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj",
+              "RelativeDocumentMoniker": "Grimore_Library.vbproj",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj",
+              "RelativeToolTip": "Grimore_Library.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
+              "WhenOpened": "2026-05-23T01:55:43.91Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "modulo_grimore.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\modulo_grimore.vb",
+              "RelativeDocumentMoniker": "modulo_grimore.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\modulo_grimore.vb",
+              "RelativeToolTip": "modulo_grimore.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-22T17:31:01.187Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cad_usuario.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Cad_usuario.vb",
+              "RelativeDocumentMoniker": "Cad_usuario.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Cad_usuario.vb [Projeto]",
+              "RelativeToolTip": "Cad_usuario.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-24T01:02:17.577Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login_principal.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\login_principal.vb",
+              "RelativeDocumentMoniker": "login_principal.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\login_principal.vb",
+              "RelativeToolTip": "login_principal.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-24T00:30:34.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login_principal.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\login_principal.vb",
+              "RelativeDocumentMoniker": "login_principal.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\login_principal.vb [Projeto]",
+              "RelativeToolTip": "login_principal.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-24T00:27:25.401Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login_Principal.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Login_Principal.Designer.vb",
+              "RelativeDocumentMoniker": "Login_Principal.Designer.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Login_Principal.Designer.vb",
+              "RelativeToolTip": "Login_Principal.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-24T00:26:11.038Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
