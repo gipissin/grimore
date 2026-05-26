@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\grimore1\\Grimore_Library\\",
+  "WorkspaceRootPath": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|d:\\grimore1\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\source\\repos\\grimoree\\grimore_library\\modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,34 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Grimore_Library",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Grimore_Library.vbproj",
               "RelativeDocumentMoniker": "Grimore_Library.vbproj",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Grimore_Library.vbproj",
               "RelativeToolTip": "Grimore_Library.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
               "WhenOpened": "2026-05-23T01:55:43.91Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "modulo_grimore.vb",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\modulo_grimore.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\modulo_grimore.vb",
               "RelativeDocumentMoniker": "modulo_grimore.vb",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\modulo_grimore.vb",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\modulo_grimore.vb",
               "RelativeToolTip": "modulo_grimore.vb",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-22T17:31:01.187Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -77,37 +75,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frm_admin.vb",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\frm_admin.vb",
               "RelativeDocumentMoniker": "frm_admin.vb",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\frm_admin.vb",
               "RelativeToolTip": "frm_admin.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-26T01:18:16.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Cad_usuario.vb",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\Cad_usuario.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Cad_usuario.vb",
               "RelativeDocumentMoniker": "Cad_usuario.vb",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\Cad_usuario.vb",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Cad_usuario.vb",
               "RelativeToolTip": "Cad_usuario.vb",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwBsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-26T00:48:01.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Cad_usuario.vb [Projeto]",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\Cad_usuario.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Cad_usuario.vb",
               "RelativeDocumentMoniker": "Cad_usuario.vb",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\Cad_usuario.vb [Projeto]",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Cad_usuario.vb [Projeto]",
               "RelativeToolTip": "Cad_usuario.vb [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-26T00:37:38.745Z",
@@ -115,11 +113,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "frm_admin.vb [Projeto]",
-              "DocumentMoniker": "D:\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\frm_admin.vb",
               "RelativeDocumentMoniker": "frm_admin.vb",
-              "ToolTip": "D:\\grimore1\\Grimore_Library\\frm_admin.vb [Projeto]",
+              "ToolTip": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\frm_admin.vb [Projeto]",
               "RelativeToolTip": "frm_admin.vb [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-25T12:22:40.676Z",
