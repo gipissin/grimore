@@ -5,16 +5,16 @@
 
     Private Sub btn_entrar_Click(sender As Object, e As EventArgs) Handles btn_entrar.Click
         Try
-            txt_usuario.Text = txt_usuario.Text.ToUpper()
-            txt_senha.Text = txt_senha.Text.ToUpper()
+            txt_usuario.Text = txt_usuario.Text.ToUpper
+            txt_senha.Text = txt_senha.Text.ToUpper
             SQL = $"select * from tb_usuarios where usuario='{txt_usuario.Text}'"
             rs = database.Execute(SQL)
             If rs.EOF = False Then
                 If txt_senha.Text = rs.Fields(1).Value Then
                     MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
-                    Funcionalidade_admin()
-                    Me.Hide()
-                    Menu.Show()
+                    Funcionalidade_admin
+                    Hide
+                    Menu.Show
                 Else
                     MsgBox("Login invalido! Tente novamente", MsgBoxStyle.Critical, "Erro")
                 End If
@@ -34,4 +34,6 @@
             btn_verificar.Text = "👁 Visualizar"
         End If
     End Sub
+
+
 End Class

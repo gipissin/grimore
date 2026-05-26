@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -23,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:cad_usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\alterar_senha.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:alterar_senha.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:login_principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\user\\source\\repos\\grimore1\\grimore_library\\alterar_senha.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:alterar_senha.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Grimore_Library",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
               "RelativeDocumentMoniker": "Grimore_Library.vbproj",
@@ -50,11 +50,12 @@
               "RelativeToolTip": "Grimore_Library.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
               "WhenOpened": "2026-05-23T01:55:43.91Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "modulo_grimore.vb",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\modulo_grimore.vb",
               "RelativeDocumentMoniker": "modulo_grimore.vb",
@@ -80,45 +81,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cad_usuario.vb",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Cad_usuario.vb",
-              "RelativeDocumentMoniker": "Cad_usuario.vb",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Cad_usuario.vb",
-              "RelativeToolTip": "Cad_usuario.vb",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswEAAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "login_principal.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\login_principal.vb",
+              "RelativeDocumentMoniker": "login_principal.vb",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\login_principal.vb [Projeto]",
+              "RelativeToolTip": "login_principal.vb [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-26T13:48:44.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_admin.vb",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
-              "RelativeDocumentMoniker": "frm_admin.vb",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
-              "RelativeToolTip": "frm_admin.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-26T01:18:16.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_admin.vb [Projeto]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
-              "RelativeDocumentMoniker": "frm_admin.vb",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb [Projeto]",
-              "RelativeToolTip": "frm_admin.vb [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-25T12:22:40.676Z",
+              "WhenOpened": "2026-05-26T17:52:18.361Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Cad_usuario.vb [Projeto]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Cad_usuario.vb",
               "RelativeDocumentMoniker": "Cad_usuario.vb",
@@ -130,7 +105,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_admin.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "RelativeDocumentMoniker": "frm_admin.vb",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb [Projeto]",
+              "RelativeToolTip": "frm_admin.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-25T12:22:40.676Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "frm_admin.vb",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "RelativeDocumentMoniker": "frm_admin.vb",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\frm_admin.vb",
+              "RelativeToolTip": "frm_admin.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-26T01:18:16.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Alterar_Senha.vb",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Alterar_Senha.vb",
               "RelativeDocumentMoniker": "Alterar_Senha.vb",

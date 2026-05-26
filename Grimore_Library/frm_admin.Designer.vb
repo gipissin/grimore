@@ -30,29 +30,31 @@ Partial Class frm_admin
         Column4 = New DataGridViewTextBoxColumn()
         Column5 = New DataGridViewTextBoxColumn()
         Column6 = New DataGridViewComboBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
+        Column7 = New DataGridViewImageColumn()
+        Column8 = New DataGridViewImageColumn()
         CType(dgv_admin, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' dgv_admin
         ' 
+        dgv_admin.BackgroundColor = Color.DarkViolet
         dgv_admin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_admin.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
-        dgv_admin.Location = New Point(45, 50)
+        dgv_admin.GridColor = Color.Black
+        dgv_admin.Location = New Point(1, 105)
         dgv_admin.Margin = New Padding(2)
         dgv_admin.Name = "dgv_admin"
         dgv_admin.RowHeadersWidth = 62
-        dgv_admin.Size = New Size(1268, 305)
+        dgv_admin.Size = New Size(1267, 262)
         dgv_admin.TabIndex = 0
         ' 
         ' ToolStrip1
         ' 
-        ToolStrip1.BackColor = SystemColors.ActiveCaption
+        ToolStrip1.BackColor = Color.DarkViolet
         ToolStrip1.ImageScalingSize = New Size(24, 24)
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1370, 25)
+        ToolStrip1.Size = New Size(1268, 25)
         ToolStrip1.TabIndex = 1
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -106,6 +108,8 @@ Partial Class frm_admin
         Column7.HeaderText = "EDITAR"
         Column7.MinimumWidth = 8
         Column7.Name = "Column7"
+        Column7.Resizable = DataGridViewTriState.True
+        Column7.SortMode = DataGridViewColumnSortMode.Automatic
         Column7.Width = 150
         ' 
         ' Column8
@@ -113,13 +117,16 @@ Partial Class frm_admin
         Column8.HeaderText = "EXCLUIR"
         Column8.MinimumWidth = 8
         Column8.Name = "Column8"
+        Column8.Resizable = DataGridViewTriState.True
+        Column8.SortMode = DataGridViewColumnSortMode.Automatic
         Column8.Width = 150
         ' 
         ' frm_admin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1370, 366)
+        BackColor = Color.White
+        ClientSize = New Size(1268, 366)
         Controls.Add(ToolStrip1)
         Controls.Add(dgv_admin)
         Margin = New Padding(2)
@@ -138,6 +145,6 @@ Partial Class frm_admin
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewComboBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewImageColumn
+    Friend WithEvents Column8 As DataGridViewImageColumn
 End Class
