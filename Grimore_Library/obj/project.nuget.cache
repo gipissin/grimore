@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Q502/+5b8Q=",
+  "dgSpecHash": "lqKH8c8sOSc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj",
+  "projectFilePath": "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\gigip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\gigip\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",

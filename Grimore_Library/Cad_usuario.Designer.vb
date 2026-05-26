@@ -25,6 +25,10 @@ Partial Class cad_usuario
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cad_usuario))
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
+        Label7 = New Label()
+        cmb_tipo = New ComboBox()
+        txt_nome = New TextBox()
+        Label6 = New Label()
         Label5 = New Label()
         txt_perguntaseg = New TextBox()
         txt_csenha = New TextBox()
@@ -36,6 +40,8 @@ Partial Class cad_usuario
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
+        Label8 = New Label()
+        cmb_status = New ComboBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -56,6 +62,12 @@ Partial Class cad_usuario
         ' Panel1
         ' 
         Panel1.BackColor = Color.DarkSlateBlue
+        Panel1.Controls.Add(Label8)
+        Panel1.Controls.Add(cmb_status)
+        Panel1.Controls.Add(Label7)
+        Panel1.Controls.Add(cmb_tipo)
+        Panel1.Controls.Add(txt_nome)
+        Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(txt_perguntaseg)
         Panel1.Controls.Add(txt_csenha)
@@ -68,15 +80,54 @@ Partial Class cad_usuario
         Panel1.Controls.Add(Label1)
         Panel1.Location = New Point(224, 27)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(352, 487)
+        Panel1.Size = New Size(352, 572)
         Panel1.TabIndex = 6
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.DarkGoldenrod
+        Label7.Location = New Point(37, 428)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(59, 31)
+        Label7.TabIndex = 14
+        Label7.Text = "Tipo"
+        ' 
+        ' cmb_tipo
+        ' 
+        cmb_tipo.FormattingEnabled = True
+        cmb_tipo.Location = New Point(36, 464)
+        cmb_tipo.Margin = New Padding(2, 2, 2, 2)
+        cmb_tipo.Name = "cmb_tipo"
+        cmb_tipo.Size = New Size(129, 23)
+        cmb_tipo.TabIndex = 13
+        ' 
+        ' txt_nome
+        ' 
+        txt_nome.BackColor = Color.Gainsboro
+        txt_nome.Location = New Point(41, 142)
+        txt_nome.Name = "txt_nome"
+        txt_nome.Size = New Size(280, 23)
+        txt_nome.TabIndex = 12
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.DarkGoldenrod
+        Label6.Location = New Point(120, 107)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(74, 31)
+        Label6.TabIndex = 11
+        Label6.Text = "Nome"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.DarkGoldenrod
-        Label5.Location = New Point(55, 282)
+        Label5.Location = New Point(55, 372)
         Label5.Name = "Label5"
         Label5.Size = New Size(233, 31)
         Label5.TabIndex = 10
@@ -85,7 +136,7 @@ Partial Class cad_usuario
         ' txt_perguntaseg
         ' 
         txt_perguntaseg.BackColor = Color.Gainsboro
-        txt_perguntaseg.Location = New Point(38, 316)
+        txt_perguntaseg.Location = New Point(37, 406)
         txt_perguntaseg.Name = "txt_perguntaseg"
         txt_perguntaseg.Size = New Size(277, 23)
         txt_perguntaseg.TabIndex = 9
@@ -93,7 +144,7 @@ Partial Class cad_usuario
         ' txt_csenha
         ' 
         txt_csenha.BackColor = Color.Gainsboro
-        txt_csenha.Location = New Point(40, 240)
+        txt_csenha.Location = New Point(41, 347)
         txt_csenha.Name = "txt_csenha"
         txt_csenha.Size = New Size(277, 23)
         txt_csenha.TabIndex = 8
@@ -103,7 +154,7 @@ Partial Class cad_usuario
         Label4.AutoSize = True
         Label4.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.DarkGoldenrod
-        Label4.Location = New Point(84, 206)
+        Label4.Location = New Point(85, 313)
         Label4.Name = "Label4"
         Label4.Size = New Size(184, 31)
         Label4.TabIndex = 7
@@ -115,7 +166,7 @@ Partial Class cad_usuario
         btn_cadastrar.FlatStyle = FlatStyle.Flat
         btn_cadastrar.Font = New Font("Sylfaen", 18F)
         btn_cadastrar.ForeColor = Color.AntiqueWhite
-        btn_cadastrar.Location = New Point(83, 386)
+        btn_cadastrar.Location = New Point(83, 516)
         btn_cadastrar.Name = "btn_cadastrar"
         btn_cadastrar.Size = New Size(185, 39)
         btn_cadastrar.TabIndex = 6
@@ -125,7 +176,7 @@ Partial Class cad_usuario
         ' txt_senha
         ' 
         txt_senha.BackColor = Color.Gainsboro
-        txt_senha.Location = New Point(40, 169)
+        txt_senha.Location = New Point(41, 277)
         txt_senha.Name = "txt_senha"
         txt_senha.Size = New Size(277, 23)
         txt_senha.TabIndex = 4
@@ -133,7 +184,7 @@ Partial Class cad_usuario
         ' txt_matricula
         ' 
         txt_matricula.BackColor = Color.Gainsboro
-        txt_matricula.Location = New Point(40, 109)
+        txt_matricula.Location = New Point(41, 217)
         txt_matricula.Name = "txt_matricula"
         txt_matricula.Size = New Size(280, 23)
         txt_matricula.TabIndex = 3
@@ -164,7 +215,7 @@ Partial Class cad_usuario
         Label2.AutoSize = True
         Label2.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DarkGoldenrod
-        Label2.Location = New Point(139, 135)
+        Label2.Location = New Point(140, 242)
         Label2.Name = "Label2"
         Label2.Size = New Size(74, 31)
         Label2.TabIndex = 1
@@ -175,11 +226,31 @@ Partial Class cad_usuario
         Label1.AutoSize = True
         Label1.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.DarkGoldenrod
-        Label1.Location = New Point(120, 75)
+        Label1.Location = New Point(120, 182)
         Label1.Name = "Label1"
         Label1.Size = New Size(111, 31)
         Label1.TabIndex = 0
         Label1.Text = "Matrícula"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.ForeColor = Color.DarkGoldenrod
+        Label8.Location = New Point(186, 428)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(75, 31)
+        Label8.TabIndex = 16
+        Label8.Text = "Status"
+        ' 
+        ' cmb_status
+        ' 
+        cmb_status.FormattingEnabled = True
+        cmb_status.Location = New Point(185, 464)
+        cmb_status.Margin = New Padding(2)
+        cmb_status.Name = "cmb_status"
+        cmb_status.Size = New Size(129, 23)
+        cmb_status.TabIndex = 15
         ' 
         ' cad_usuario
         ' 
@@ -187,7 +258,7 @@ Partial Class cad_usuario
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(793, 542)
+        ClientSize = New Size(793, 618)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
         Name = "cad_usuario"
@@ -213,4 +284,10 @@ Partial Class cad_usuario
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txt_perguntaseg As TextBox
+    Friend WithEvents txt_nome As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents cmb_tipo As ComboBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents cmb_status As ComboBox
 End Class

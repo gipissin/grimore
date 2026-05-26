@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj": {}
+    "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj": {
+    "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj",
+        "projectUniqueName": "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
         "projectName": "Grimore_Library",
-        "projectPath": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\Grimore_Library.vbproj",
+        "projectPath": "D:\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
         "packagesPath": "C:\\Users\\gigip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gigip\\OneDrive\\Documents\\FATEC - ADS\\SI\\Grimore_Library\\obj\\",
+        "outputPath": "D:\\grimore1\\Grimore_Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gigip\\AppData\\Roaming\\NuGet\\NuGet.Config",

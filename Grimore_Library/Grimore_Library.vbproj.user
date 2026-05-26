@@ -10,13 +10,16 @@
     <Compile Update="Cad_clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Cad_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Creditos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Entrada.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Cad_usuario.vb">
+    <Compile Update="frm_admin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="login_principal.vb">
