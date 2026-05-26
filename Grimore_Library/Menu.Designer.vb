@@ -29,6 +29,7 @@ Partial Class Menu
         devolucao = New Button()
         emprestimos = New Button()
         PictureBox1 = New PictureBox()
+        btn_admcontas = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -37,7 +38,7 @@ Partial Class Menu
         cad_clientes.BackColor = Color.FromArgb(CByte(118), CByte(27), CByte(201))
         cad_clientes.Font = New Font("Sylfaen", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cad_clientes.ForeColor = Color.White
-        cad_clientes.Location = New Point(200, 193)
+        cad_clientes.Location = New Point(200, 195)
         cad_clientes.Name = "cad_clientes"
         cad_clientes.Size = New Size(406, 66)
         cad_clientes.TabIndex = 5
@@ -104,13 +105,26 @@ Partial Class Menu
         PictureBox1.TabIndex = 8
         PictureBox1.TabStop = False
         ' 
+        ' btn_admcontas
+        ' 
+        btn_admcontas.BackColor = Color.FromArgb(CByte(118), CByte(27), CByte(201))
+        btn_admcontas.Font = New Font("Sylfaen", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_admcontas.ForeColor = Color.White
+        btn_admcontas.Location = New Point(197, 411)
+        btn_admcontas.Name = "btn_admcontas"
+        btn_admcontas.Size = New Size(406, 70)
+        btn_admcontas.TabIndex = 9
+        btn_admcontas.Text = "Adm Contas"
+        btn_admcontas.UseVisualStyleBackColor = False
+        ' 
         ' Menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(800, 519)
+        Controls.Add(btn_admcontas)
         Controls.Add(PictureBox1)
         Controls.Add(devolucao)
         Controls.Add(emprestimos)
@@ -133,4 +147,5 @@ Partial Class Menu
     Private cad_clientes As Button
     Private consulta_dispon As Button
     Private cad_acervo As Button
+    Private WithEvents btn_admcontas As Button
 End Class

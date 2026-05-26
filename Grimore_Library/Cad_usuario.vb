@@ -57,4 +57,14 @@
         End Try
     End Sub
 
+    Private Sub btn_verificar_Click(sender As Object, e As EventArgs) Handles btn_verificar.Click
+        If txt_senha.PasswordChar = "•"c Then
+            txt_senha.PasswordChar = Nothing
+            txt_csenha.PasswordChar = Nothing
+        Else
+            txt_senha.PasswordChar = "•"c
+            txt_csenha.PasswordChar = "•"c
+            btn_verificar.Text = "👁 Visualizar"
+        End If
+    End Sub
 End Class

@@ -22,35 +22,39 @@ Partial Class frm_admin
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_admin))
         dgv_admin = New DataGridView()
+        ToolStrip1 = New ToolStrip()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
         Column4 = New DataGridViewTextBoxColumn()
         Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
+        Column6 = New DataGridViewComboBoxColumn()
         Column7 = New DataGridViewTextBoxColumn()
         Column8 = New DataGridViewTextBoxColumn()
-        ToolStrip1 = New ToolStrip()
-        ToolStripButton1 = New ToolStripButton()
         CType(dgv_admin, ComponentModel.ISupportInitialize).BeginInit()
-        ToolStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' dgv_admin
         ' 
-        dgv_admin.BackgroundColor = Color.MediumPurple
-        dgv_admin.CellBorderStyle = DataGridViewCellBorderStyle.Raised
         dgv_admin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_admin.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
-        dgv_admin.GridColor = SystemColors.HighlightText
-        dgv_admin.Location = New Point(51, 67)
-        dgv_admin.Margin = New Padding(2, 3, 2, 3)
+        dgv_admin.Location = New Point(45, 50)
+        dgv_admin.Margin = New Padding(2)
         dgv_admin.Name = "dgv_admin"
         dgv_admin.RowHeadersWidth = 62
-        dgv_admin.Size = New Size(1268, 533)
+        dgv_admin.Size = New Size(1268, 305)
         dgv_admin.TabIndex = 0
+        ' 
+        ' ToolStrip1
+        ' 
+        ToolStrip1.BackColor = SystemColors.ActiveCaption
+        ToolStrip1.ImageScalingSize = New Size(24, 24)
+        ToolStrip1.Location = New Point(0, 0)
+        ToolStrip1.Name = "ToolStrip1"
+        ToolStrip1.Size = New Size(1370, 25)
+        ToolStrip1.TabIndex = 1
+        ToolStrip1.Text = "ToolStrip1"
         ' 
         ' Column1
         ' 
@@ -94,6 +98,7 @@ Partial Class frm_admin
         Column6.MinimumWidth = 8
         Column6.Name = "Column6"
         Column6.Resizable = DataGridViewTriState.True
+        Column6.SortMode = DataGridViewColumnSortMode.Automatic
         Column6.Width = 150
         ' 
         ' Column7
@@ -110,43 +115,17 @@ Partial Class frm_admin
         Column8.Name = "Column8"
         Column8.Width = 150
         ' 
-        ' ToolStrip1
-        ' 
-        ToolStrip1.BackColor = Color.MediumPurple
-        ToolStrip1.ImageScalingSize = New Size(24, 24)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripButton1})
-        ToolStrip1.Location = New Point(0, 0)
-        ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1489, 31)
-        ToolStrip1.TabIndex = 1
-        ToolStrip1.Text = "ToolStrip1"
-        ' 
-        ' ToolStripButton1
-        ' 
-        ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Font = New Font("Sylfaen", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), Image)
-        ToolStripButton1.ImageAlign = ContentAlignment.MiddleRight
-        ToolStripButton1.ImageTransparentColor = Color.Transparent
-        ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(29, 28)
-        ToolStripButton1.Text = "ToolStripButton1"
-        ' 
         ' frm_admin
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1489, 683)
+        ClientSize = New Size(1370, 366)
         Controls.Add(ToolStrip1)
         Controls.Add(dgv_admin)
-        Margin = New Padding(2, 3, 2, 3)
+        Margin = New Padding(2)
         Name = "frm_admin"
         Text = "administrador"
         CType(dgv_admin, ComponentModel.ISupportInitialize).EndInit()
-        ToolStrip1.ResumeLayout(False)
-        ToolStrip1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -158,8 +137,7 @@ Partial Class frm_admin
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewComboBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\gigip\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gigip\\.nuget\\packages"
+      "C:\\Users\\User\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\User\\.nuget\\packages"
     ],
     "configProperties": {
       "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,

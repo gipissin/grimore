@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gigip\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Grimore_Library.vbproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
       "projectName": "Grimore_Library",
-      "projectPath": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\Grimore_Library.vbproj",
-      "packagesPath": "C:\\Users\\gigip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gigip\\source\\repos\\grimoree\\Grimore_Library\\obj\\",
+      "projectPath": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\Grimore_Library.vbproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\grimore1\\Grimore_Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gigip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

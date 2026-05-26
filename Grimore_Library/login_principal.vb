@@ -5,11 +5,14 @@
 
     Private Sub btn_entrar_Click(sender As Object, e As EventArgs) Handles btn_entrar.Click
         Try
-            SQL = $"select * from tb_usuarios where matricula='{txt_matricula.Text}'"
+            txt_usuario.Text = txt_usuario.Text.ToUpper()
+            txt_senha.Text = txt_senha.Text.ToUpper()
+            SQL = $"select * from tb_usuarios where usuario='{txt_usuario.Text}'"
             rs = database.Execute(SQL)
             If rs.EOF = False Then
                 If txt_senha.Text = rs.Fields(1).Value Then
-                    MessageBox.Show("Bem Vindo " + rs.Fields(0).Value)
+                    MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
+                    Funcionalidade_admin()
                     Me.Hide()
                     Menu.Show()
                 Else
@@ -21,5 +24,14 @@
         Catch ex As Exception
             MsgBox("Ocorreu um erro ao tentar realizar o login: " & ex.Message, MsgBoxStyle.Critical, "Erro")
         End Try
+    End Sub
+
+    Private Sub btn_verificar_Click(sender As Object, e As EventArgs) Handles btn_verificar.Click
+        If txt_senha.PasswordChar = "•"c Then
+            txt_senha.PasswordChar = Nothing
+        Else
+            txt_senha.PasswordChar = "•"c
+            btn_verificar.Text = "👁 Visualizar"
+        End If
     End Sub
 End Class
