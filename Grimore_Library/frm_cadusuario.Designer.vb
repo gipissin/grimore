@@ -82,7 +82,7 @@ Partial Class frm_cadusuario
         Panel1.Controls.Add(btn_cadastrar)
         Panel1.Controls.Add(txt_senha)
         Panel1.Controls.Add(txt_matricula)
-        Panel1.Location = New Point(385, 14)
+        Panel1.Location = New Point(384, 21)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(501, 562)
         Panel1.TabIndex = 6
@@ -276,7 +276,7 @@ Partial Class frm_cadusuario
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(29, 121)
+        Label2.Location = New Point(28, 121)
         Label2.Name = "Label2"
         Label2.Size = New Size(331, 72)
         Label2.TabIndex = 27
@@ -294,7 +294,7 @@ Partial Class frm_cadusuario
         btn_menu.Text = vbCrLf
         btn_menu.UseVisualStyleBackColor = False
         ' 
-        ' cad_usuario
+        ' frm_cadusuario
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -305,7 +305,7 @@ Partial Class frm_cadusuario
         Controls.Add(Label2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
-        Name = "cad_usuario"
+        Name = "frm_cadusuario"
         Text = "Cadastro de Usuário"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)

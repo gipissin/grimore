@@ -4,6 +4,9 @@
         Carregar_formadmin()
         dgv_admin.ReadOnly = False
         dgv_admin.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2
+        Panel1.Visible = False
+        Panel2.Visible = False
+
     End Sub
 
     Private Sub btn_buscar_Click(sender As Object, e As EventArgs) Handles btn_buscar.Click
@@ -45,7 +48,7 @@
                             If resposta_user = MsgBoxResult.Yes Then
                                 SQL = $"DELETE FROM tb_usuarios WHERE matricula = '{aux_matricula}'"
                                 rs = database.Execute(SQL)
-                                MessageBox.Show("Usuário excluído com sucesso!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                Panel2.Visible = False
                                 Carregar_formadmin()
                             End If
                         End If
@@ -84,7 +87,7 @@
             Try
                 SQL = $"UPDATE tb_usuarios SET {coluna_banco} = '{novo_valor}' WHERE matricula = '{aux_matricula}'"
                 rs = database.Execute(SQL)
-                MsgBox("Alteração salva com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                Panel1.Visible = True
             Catch ex As Exception
                 MsgBox("Erro ao salvar alteração: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ERRO")
             End Try
