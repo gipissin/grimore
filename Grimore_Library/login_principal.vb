@@ -10,16 +10,19 @@
             SQL = $"select * from tb_usuarios where usuario='{txt_usuario.Text}'"
             rs = database.Execute(SQL)
             If rs.EOF = False Then
+                status_user = rs.Fields(3).Value
                 If txt_senha.Text = rs.Fields(1).Value Then
-                    MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
-                    Funcionalidade_admin
-                    Hide
-                    Menu.Show
+                    If Permissoes_acesso(status_user) = True Then
+                        MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
+                        Funcionalidade_admin()
+                        Hide()
+                        frm_menu.Show()
+                    End If
                 Else
-                    MsgBox("Login invalido! Tente novamente", MsgBoxStyle.Critical, "Erro")
+                    MsgBox("Senha incorreta, tente novamente!", MsgBoxStyle.Critical, "Erro")
                 End If
             Else
-                MsgBox("Login invalido! Tente novamente", MsgBoxStyle.Critical, "Erro")
+                MsgBox("Usuario não localizado, contate seu administrador!", MsgBoxStyle.Critical, "Erro")
             End If
         Catch ex As Exception
             MsgBox("Ocorreu um erro ao tentar realizar o login: " & ex.Message, MsgBoxStyle.Critical, "Erro")
@@ -31,9 +34,11 @@
             txt_senha.PasswordChar = Nothing
         Else
             txt_senha.PasswordChar = "•"c
-            btn_verificar.Text = "👁 Visualizar"
         End If
     End Sub
 
-
+    Private Sub btn_resetsenha_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btn_resetsenha.LinkClicked
+        Me.Hide()
+        frm_alterarsenha.Show()
+    End Sub
 End Class

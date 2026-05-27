@@ -35,19 +35,17 @@
                     MessageBox.Show("Usuário cadastrado com sucesso!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Dim resposta_user As DialogResult = MessageBox.Show("Deseja cadastrar outro usuário?", "AVISO", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                     If resposta_user = DialogResult.Yes Then
-                        txt_matricula.Clear()
-                        txt_senha.Clear()
-                        txt_csenha.Clear()
-                        txt_perguntaseg.Clear()
+                        Limpar_campos()
                         txt_matricula.Focus()
                     Else
                         Me.Close()
-                        Menu.Show()
+                        frm_menu.Show()
                     End If
                 Else
                     SQL = $"update tb_usuarios set senha='{txt_senha.Text}', pergunta_seg='{txt_perguntaseg.Text}', status_conta='{cmb_status.Text}', usuario='{txt_nome.Text}', tipo_usuario='{cmb_tipo.Text}' where matricula='{txt_matricula.Text}'"
                     rs = database.Execute(UCase(SQL))
                     MsgBox("Usuário atualizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                    Limpar_campos()
                 End If
             End If
         Catch ex As Exception

@@ -1,5 +1,5 @@
 ﻿Module moduloGrimore
-    Public diretorio, SQL, resposta_user, status, tipo_conta, aux_matricula As String
+    Public diretorio, SQL, resposta_user, status, tipo_conta, aux_matricula, status_user As String
     Public database As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Sub Conectar_banco()
@@ -83,6 +83,37 @@
                 If rs.EOF = False Then
                     tipo_conta = rs.Fields(5).Value.ToString()
                 End If
+            End With
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+    Function Permissoes_acesso(status As String) As Boolean
+        Try
+            If status = "INATIVO" Then
+                MsgBox("Sua conta está inativa, entre em contato com o administrador para mais informações.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                Return False
+            ElseIf status = "SUSPENSO" Then
+                MsgBox("Sua conta está suspensa, entre em contato com o administrador para mais informações.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                Return False
+            Else
+                Return True
+            End If
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Function
+
+    Sub Limpar_campos()
+        Try
+            With cad_usuario
+                .txt_nome.Clear()
+                .txt_csenha.Clear()
+                .txt_matricula.Clear()
+                .txt_senha.Clear()
+                .txt_perguntaseg.Clear()
+                .cmb_tipo.SelectedIndex = 0
+                .cmb_status.SelectedIndex = 0
             End With
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")

@@ -45,6 +45,7 @@
                             .txt_nome.Text = rs.Fields(4).Value
                             .cmb_tipo.Text = rs.Fields(5).Value
                             cad_usuario.ShowDialog()
+                            Limpar_campos()
                         End If
                     End With
                 ElseIf .CurrentRow.Cells(7).Selected = True Then

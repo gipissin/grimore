@@ -118,15 +118,11 @@ C:\Users\gigip\source\repos\grimore4\Grimore_Library\bin\Debug\net8.0-windows7.0
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\bin\Debug\net8.0-windows7.0\Grimore_Library.pdb
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Interop.ADODB.dll
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.vbproj.ResolveComReference.cache
-C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Alterar_Senha.resources
-C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Cad_acervo.resources
-C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Cad_clientes.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.cad_usuario.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Creditos.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.entrada.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_admin.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.login_principal.resources
-C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Menu.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Resources.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Sobre.resources
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.vbproj.GenerateResource.cache
@@ -140,3 +136,7 @@ C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.pdb
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.genruntimeconfig.cache
 C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\ref\Grimore_Library.dll
+C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_alterarsenha.resources
+C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_cadacervo.resources
+C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_cadclientes.resources
+C:\Users\gigip\source\repos\grimore4\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_menu.resources
