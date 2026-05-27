@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Grimore_Library"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13c295ba1bc0f46583a5f0c3d997fe732dda2b38"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97d22db74da74ca091fbe50cfde46c72b939fc5f"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Grimore_Library"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Grimore_Library"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

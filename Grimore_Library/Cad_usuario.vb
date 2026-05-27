@@ -45,11 +45,9 @@
                         Menu.Show()
                     End If
                 Else
-                    MessageBox.Show("Matrícula já cadastrada, por favor revisar.", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                    txt_matricula.Clear()
-                    txt_senha.Clear()
-                    txt_csenha.Clear()
-                    txt_matricula.Focus()
+                    SQL = $"update tb_usuarios set senha='{txt_senha.Text}', pergunta_seg='{txt_perguntaseg.Text}', status_conta='{cmb_status.Text}', usuario='{txt_nome.Text}', tipo_usuario='{cmb_tipo.Text}' where matricula='{txt_matricula.Text}'"
+                    rs = database.Execute(UCase(SQL))
+                    MsgBox("Usuário atualizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                 End If
             End If
         Catch ex As Exception

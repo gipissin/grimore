@@ -1,5 +1,5 @@
 ﻿Module moduloGrimore
-    Public diretorio, SQL, resposta_user, status, tipo_conta As String
+    Public diretorio, SQL, resposta_user, status, tipo_conta, aux_matricula As String
     Public database As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Sub Conectar_banco()
