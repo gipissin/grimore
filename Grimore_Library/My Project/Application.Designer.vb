@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Grimore_Library.frm_alterarsenha
+            Me.MainForm = Global.Grimore_Library.login_principal
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

@@ -15,11 +15,11 @@
 
     Sub Carregar_tipo()
         Try
-            With cad_usuario.cmb_tipo.Items
+            With frm_cadusuario.cmb_tipo.Items
                 .Add("User")
                 .Add("Admin")
             End With
-            cad_usuario.cmb_tipo.SelectedIndex = 0
+            frm_cadusuario.cmb_tipo.SelectedIndex = 0
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
@@ -27,17 +27,17 @@
 
     Sub Carregar_status()
         Try
-            With cad_usuario.cmb_status.Items
+            With frm_cadusuario.cmb_status.Items
                 .Add("Ativo")
                 .Add("Inativo")
                 .Add("Suspenso")
             End With
-            cad_usuario.cmb_status.SelectedIndex = 0
-            If cad_usuario.cmb_status.SelectedIndex = 0 Then
+            frm_cadusuario.cmb_status.SelectedIndex = 0
+            If frm_cadusuario.cmb_status.SelectedIndex = 0 Then
                 status = "ATIVO"
-            ElseIf cad_usuario.cmb_status.SelectedIndex = 1 Then
+            ElseIf frm_cadusuario.cmb_status.SelectedIndex = 1 Then
                 status = "INATIVO"
-            ElseIf cad_usuario.cmb_status.SelectedIndex = 2 Then
+            ElseIf frm_cadusuario.cmb_status.SelectedIndex = 2 Then
                 status = "SUSPENSO"
             End If
         Catch ex As Exception
@@ -106,7 +106,7 @@
 
     Sub Limpar_campos()
         Try
-            With cad_usuario
+            With frm_cadusuario
                 .txt_nome.Clear()
                 .txt_csenha.Clear()
                 .txt_matricula.Clear()

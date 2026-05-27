@@ -43,8 +43,8 @@
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
-
     Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
         frm_menu.Show()
+        Me.Hide()
     End Sub
 End Class

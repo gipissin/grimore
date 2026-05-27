@@ -24,11 +24,6 @@ Partial Class frm_admin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_admin))
         dgv_admin = New DataGridView()
-        ToolStrip1 = New ToolStrip()
-        ToolStripLabel1 = New ToolStripLabel()
-        ToolStripSeparator1 = New ToolStripSeparator()
-        txt_matriculabusc = New ToolStripTextBox()
-        btn_buscar = New ToolStripButton()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
@@ -37,6 +32,11 @@ Partial Class frm_admin
         Column6 = New DataGridViewComboBoxColumn()
         Column7 = New DataGridViewImageColumn()
         Column8 = New DataGridViewImageColumn()
+        ToolStrip1 = New ToolStrip()
+        ToolStripLabel1 = New ToolStripLabel()
+        ToolStripSeparator1 = New ToolStripSeparator()
+        txt_matriculabusc = New ToolStripTextBox()
+        btn_buscar = New ToolStripButton()
         CType(dgv_admin, ComponentModel.ISupportInitialize).BeginInit()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
@@ -47,48 +47,12 @@ Partial Class frm_admin
         dgv_admin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_admin.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
         dgv_admin.GridColor = Color.Black
-        dgv_admin.Location = New Point(1, 105)
+        dgv_admin.Location = New Point(0, 72)
         dgv_admin.Margin = New Padding(2)
         dgv_admin.Name = "dgv_admin"
         dgv_admin.RowHeadersWidth = 62
         dgv_admin.Size = New Size(1267, 262)
         dgv_admin.TabIndex = 0
-        ' 
-        ' ToolStrip1
-        ' 
-        ToolStrip1.BackColor = Color.SlateBlue
-        ToolStrip1.ImageScalingSize = New Size(24, 24)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_matriculabusc, btn_buscar})
-        ToolStrip1.Location = New Point(0, 0)
-        ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1268, 31)
-        ToolStrip1.TabIndex = 1
-        ToolStrip1.Text = "ToolStrip1"
-        ' 
-        ' ToolStripLabel1
-        ' 
-        ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(135, 28)
-        ToolStripLabel1.Text = "PESQUISAR MATRICULA"
-        ' 
-        ' ToolStripSeparator1
-        ' 
-        ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(6, 31)
-        ' 
-        ' txt_matriculabusc
-        ' 
-        txt_matriculabusc.Name = "txt_matriculabusc"
-        txt_matriculabusc.Size = New Size(100, 31)
-        ' 
-        ' btn_buscar
-        ' 
-        btn_buscar.DisplayStyle = ToolStripItemDisplayStyle.Image
-        btn_buscar.Image = CType(resources.GetObject("btn_buscar.Image"), Image)
-        btn_buscar.ImageTransparentColor = Color.Magenta
-        btn_buscar.Name = "btn_buscar"
-        btn_buscar.Size = New Size(28, 28)
-        btn_buscar.Text = "ToolStripButton1"
         ' 
         ' Column1
         ' 
@@ -154,6 +118,42 @@ Partial Class frm_admin
         Column8.Resizable = DataGridViewTriState.True
         Column8.SortMode = DataGridViewColumnSortMode.Automatic
         Column8.Width = 150
+        ' 
+        ' ToolStrip1
+        ' 
+        ToolStrip1.BackColor = Color.SlateBlue
+        ToolStrip1.ImageScalingSize = New Size(24, 24)
+        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_matriculabusc, btn_buscar})
+        ToolStrip1.Location = New Point(0, 0)
+        ToolStrip1.Name = "ToolStrip1"
+        ToolStrip1.Size = New Size(1268, 31)
+        ToolStrip1.TabIndex = 1
+        ToolStrip1.Text = "ToolStrip1"
+        ' 
+        ' ToolStripLabel1
+        ' 
+        ToolStripLabel1.Name = "ToolStripLabel1"
+        ToolStripLabel1.Size = New Size(135, 28)
+        ToolStripLabel1.Text = "PESQUISAR MATRICULA"
+        ' 
+        ' ToolStripSeparator1
+        ' 
+        ToolStripSeparator1.Name = "ToolStripSeparator1"
+        ToolStripSeparator1.Size = New Size(6, 31)
+        ' 
+        ' txt_matriculabusc
+        ' 
+        txt_matriculabusc.Name = "txt_matriculabusc"
+        txt_matriculabusc.Size = New Size(100, 31)
+        ' 
+        ' btn_buscar
+        ' 
+        btn_buscar.DisplayStyle = ToolStripItemDisplayStyle.Image
+        btn_buscar.Image = CType(resources.GetObject("btn_buscar.Image"), Image)
+        btn_buscar.ImageTransparentColor = Color.Magenta
+        btn_buscar.Name = "btn_buscar"
+        btn_buscar.Size = New Size(28, 28)
+        btn_buscar.Text = "ToolStripButton1"
         ' 
         ' frm_admin
         ' 

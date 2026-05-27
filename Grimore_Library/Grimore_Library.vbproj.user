@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Cad_acervo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cad_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frm_alterarsenha.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -10,7 +16,7 @@
     <Compile Update="frm_cadclientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Cad_usuario.vb">
+    <Compile Update="frm_cadusuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Creditos.vb">
@@ -20,6 +26,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_menuadmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="login_principal.vb">
