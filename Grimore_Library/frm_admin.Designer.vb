@@ -54,11 +54,11 @@ Partial Class frm_admin
         dgv_admin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_admin.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
         dgv_admin.GridColor = Color.Black
-        dgv_admin.Location = New Point(0, 107)
-        dgv_admin.Margin = New Padding(2)
+        dgv_admin.Location = New Point(0, 143)
+        dgv_admin.Margin = New Padding(2, 3, 2, 3)
         dgv_admin.Name = "dgv_admin"
         dgv_admin.RowHeadersWidth = 62
-        dgv_admin.Size = New Size(1268, 264)
+        dgv_admin.Size = New Size(1352, 352)
         dgv_admin.TabIndex = 0
         ' 
         ' Column1
@@ -133,14 +133,14 @@ Partial Class frm_admin
         ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_matriculabusc, btn_buscar})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1268, 31)
+        ToolStrip1.Size = New Size(1267, 31)
         ToolStrip1.TabIndex = 1
         ToolStrip1.Text = "ToolStrip1"
         ' 
         ' ToolStripLabel1
         ' 
         ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(135, 28)
+        ToolStripLabel1.Size = New Size(168, 28)
         ToolStripLabel1.Text = "PESQUISAR MATRICULA"
         ' 
         ' ToolStripSeparator1
@@ -151,7 +151,7 @@ Partial Class frm_admin
         ' txt_matriculabusc
         ' 
         txt_matriculabusc.Name = "txt_matriculabusc"
-        txt_matriculabusc.Size = New Size(100, 31)
+        txt_matriculabusc.Size = New Size(114, 31)
         ' 
         ' btn_buscar
         ' 
@@ -159,7 +159,7 @@ Partial Class frm_admin
         btn_buscar.Image = CType(resources.GetObject("btn_buscar.Image"), Image)
         btn_buscar.ImageTransparentColor = Color.Magenta
         btn_buscar.Name = "btn_buscar"
-        btn_buscar.Size = New Size(28, 28)
+        btn_buscar.Size = New Size(29, 28)
         btn_buscar.Text = "ToolStripButton1"
         ' 
         ' Label1
@@ -167,9 +167,9 @@ Partial Class frm_admin
         Label1.AutoSize = True
         Label1.Font = New Font("Cooper Black", 21.75F)
         Label1.ForeColor = SystemColors.ButtonHighlight
-        Label1.Location = New Point(341, 62)
+        Label1.Location = New Point(307, 83)
         Label1.Name = "Label1"
-        Label1.Size = New Size(518, 34)
+        Label1.Size = New Size(663, 42)
         Label1.TabIndex = 2
         Label1.Text = "GERENCIAMENTO DE USUARIOS"
         ' 
@@ -177,9 +177,10 @@ Partial Class frm_admin
         ' 
         Panel1.BackColor = Color.Thistle
         Panel1.Controls.Add(TextBox1)
-        Panel1.Location = New Point(406, 387)
+        Panel1.Location = New Point(464, 516)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(402, 56)
+        Panel1.Size = New Size(459, 75)
         Panel1.TabIndex = 3
         ' 
         ' TextBox1
@@ -187,10 +188,11 @@ Partial Class frm_admin
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox1.BackColor = Color.Thistle
         TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0)
-        TextBox1.Location = New Point(0, 17)
+        TextBox1.Font = New Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(0, 23)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(402, 25)
+        TextBox1.Size = New Size(459, 31)
         TextBox1.TabIndex = 0
         TextBox1.Text = "Usuario alterado com sucesso!"
         TextBox1.TextAlign = HorizontalAlignment.Center
@@ -199,9 +201,10 @@ Partial Class frm_admin
         ' 
         Panel2.BackColor = Color.Thistle
         Panel2.Controls.Add(TextBox2)
-        Panel2.Location = New Point(433, 200)
+        Panel2.Location = New Point(418, 274)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(402, 56)
+        Panel2.Size = New Size(459, 75)
         Panel2.TabIndex = 4
         ' 
         ' TextBox2
@@ -209,26 +212,27 @@ Partial Class frm_admin
         TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox2.BackColor = Color.Thistle
         TextBox2.BorderStyle = BorderStyle.None
-        TextBox2.Font = New Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0)
-        TextBox2.Location = New Point(0, 17)
+        TextBox2.Font = New Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Location = New Point(0, 23)
+        TextBox2.Margin = New Padding(3, 4, 3, 4)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(402, 25)
+        TextBox2.Size = New Size(459, 31)
         TextBox2.TabIndex = 0
         TextBox2.Text = "Usuario alterado com sucesso!"
         TextBox2.TextAlign = HorizontalAlignment.Center
         ' 
         ' frm_admin
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSlateBlue
-        ClientSize = New Size(1268, 456)
+        ClientSize = New Size(1267, 608)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(Label1)
         Controls.Add(ToolStrip1)
         Controls.Add(dgv_admin)
-        Margin = New Padding(2)
+        Margin = New Padding(2, 3, 2, 3)
         Name = "frm_admin"
         Text = "administrador"
         CType(dgv_admin, ComponentModel.ISupportInitialize).EndInit()

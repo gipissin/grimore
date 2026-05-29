@@ -35,9 +35,9 @@ Partial Class frm_menuadmin
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Cooper Black", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(11, 14)
+        Label1.Location = New Point(3, 20)
         Label1.Name = "Label1"
-        Label1.Size = New Size(290, 24)
+        Label1.Size = New Size(375, 31)
         Label1.TabIndex = 0
         Label1.Text = "MENU ADMINISTRATIVO"
         ' 
@@ -46,9 +46,10 @@ Partial Class frm_menuadmin
         Panel1.Controls.Add(btn_gerusuario)
         Panel1.Controls.Add(btn_cadusuario)
         Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(91, 58)
+        Panel1.Location = New Point(104, 77)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(309, 358)
+        Panel1.Size = New Size(353, 477)
         Panel1.TabIndex = 1
         ' 
         ' btn_gerusuario
@@ -57,9 +58,10 @@ Partial Class frm_menuadmin
         btn_gerusuario.FlatStyle = FlatStyle.Flat
         btn_gerusuario.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_gerusuario.ForeColor = Color.White
-        btn_gerusuario.Location = New Point(30, 212)
+        btn_gerusuario.Location = New Point(34, 283)
+        btn_gerusuario.Margin = New Padding(3, 4, 3, 4)
         btn_gerusuario.Name = "btn_gerusuario"
-        btn_gerusuario.Size = New Size(243, 66)
+        btn_gerusuario.Size = New Size(278, 88)
         btn_gerusuario.TabIndex = 8
         btn_gerusuario.Text = "GERENCIAR USUARIOS"
         btn_gerusuario.UseVisualStyleBackColor = False
@@ -70,9 +72,10 @@ Partial Class frm_menuadmin
         btn_cadusuario.FlatStyle = FlatStyle.Flat
         btn_cadusuario.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_cadusuario.ForeColor = Color.White
-        btn_cadusuario.Location = New Point(30, 78)
+        btn_cadusuario.Location = New Point(34, 104)
+        btn_cadusuario.Margin = New Padding(3, 4, 3, 4)
         btn_cadusuario.Name = "btn_cadusuario"
-        btn_cadusuario.Size = New Size(243, 75)
+        btn_cadusuario.Size = New Size(278, 100)
         btn_cadusuario.TabIndex = 7
         btn_cadusuario.Text = "CADASTRO DE USUARIOS" & vbCrLf
         btn_cadusuario.UseVisualStyleBackColor = False
@@ -81,21 +84,23 @@ Partial Class frm_menuadmin
         ' 
         btn_menu.BackColor = Color.Transparent
         btn_menu.Image = CType(resources.GetObject("btn_menu.Image"), Image)
-        btn_menu.Location = New Point(421, 21)
+        btn_menu.Location = New Point(481, 28)
+        btn_menu.Margin = New Padding(3, 4, 3, 4)
         btn_menu.Name = "btn_menu"
-        btn_menu.Size = New Size(80, 75)
+        btn_menu.Size = New Size(91, 100)
         btn_menu.TabIndex = 8
         btn_menu.Text = vbCrLf
         btn_menu.UseVisualStyleBackColor = False
         ' 
         ' frm_menuadmin
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(513, 471)
+        ClientSize = New Size(586, 628)
         Controls.Add(btn_menu)
         Controls.Add(Panel1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "frm_menuadmin"
         Text = "frm_menuadmin"
         Panel1.ResumeLayout(False)

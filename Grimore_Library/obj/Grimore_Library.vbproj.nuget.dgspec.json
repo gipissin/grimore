@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aline\\grimorie\\Grimore_Library\\Grimore_Library.vbproj": {}
+    "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\Grimore_Library.vbproj": {}
   },
   "projects": {
-    "D:\\Aline\\grimorie\\Grimore_Library\\Grimore_Library.vbproj": {
+    "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\Grimore_Library.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aline\\grimorie\\Grimore_Library\\Grimore_Library.vbproj",
+        "projectUniqueName": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\Grimore_Library.vbproj",
         "projectName": "Grimore_Library",
-        "projectPath": "D:\\Aline\\grimorie\\Grimore_Library\\Grimore_Library.vbproj",
+        "projectPath": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\Grimore_Library.vbproj",
         "packagesPath": "C:\\Users\\gigip\\.nuget\\packages\\",
-        "outputPath": "D:\\Aline\\grimorie\\Grimore_Library\\obj\\",
+        "outputPath": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gigip\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -36,7 +36,6 @@
     Private Sub dgv_admin_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_admin.CellContentClick
         Try
             With dgv_admin
-
                 If .CurrentRow.Cells(7).Selected = True Then
                     aux_matricula = .CurrentRow.Cells(1).Value
                     SQL = $"SELECT * FROM tb_usuarios WHERE matricula = '{aux_matricula}'"
