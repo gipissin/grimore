@@ -81,13 +81,13 @@
                 .Rows.Clear()
                 Do While rs.EOF = False
                     .Rows.Add(
-                        rs.Fields(0).Value.ToString(), 'titulo
-                        rs.Fields(1).Value.ToString(), 'autor
-                        rs.Fields(2).Value.ToString(), 'editora
-                        rs.Fields(4).Value.ToString(), 'isbn
-                        rs.Fields(5).Value.ToString(), 'quantidade
-                        rs.Fields(8).Value.ToString(), 'etiqueta
-                        Nothing, 'editar
+                        rs.Fields(0).Value.ToString(),
+                        rs.Fields(1).Value.ToString(),
+                        rs.Fields(2).Value.ToString(),
+                        rs.Fields(4).Value.ToString(),
+                        rs.Fields(5).Value.ToString(),
+                        rs.Fields(8).Value.ToString(),
+                        Nothing,
                         Nothing)
                     rs.MoveNext()
                 Loop
@@ -124,6 +124,7 @@
             End If
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Return False
         End Try
     End Function
 
@@ -135,8 +136,8 @@
                 .txt_matricula.Clear()
                 .txt_senha.Clear()
                 .txt_perguntaseg.Clear()
-                .cmb_tipo.SelectedIndex = 0
-                .cmb_status.SelectedIndex = 0
+                '.cmb_tipo.SelectedIndex = 0
+                '.cmb_status.SelectedIndex = 0
             End With
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -186,6 +187,62 @@
             frm_cadacervo.cmb_area.SelectedIndex = 0
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Sub Carregar_preferencias()
+        Try
+            With frm_cadclientes.cmb_preferencias.Items
+                .Add("Artes")
+                .Add("Biografias")
+                .Add("Ciências Exatas")
+                .Add("Ciências Humanas")
+                .Add("Ciências Naturais")
+                .Add("Contos e Crônicas")
+                .Add("Didáticos")
+                .Add("Esportes")
+                .Add("Fantasia")
+                .Add("Ficção Científica")
+                .Add("História")
+                .Add("Infantojuvenil")
+                .Add("Literatura Brasileira")
+                .Add("Literatura Estrangeira")
+                .Add("Mangás e Quadrinhos")
+                .Add("Religião e Espiritualidade")
+            End With
+            frm_cadclientes.cmb_preferencias.SelectedIndex = 0
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
+        End Try
+    End Sub
+
+    ' Busca cliente pelo ID no formulário de empréstimo
+    Sub Buscar_cliente(id As String)
+        Try
+            SQL = $"SELECT * FROM tb_clientes WHERE id_cliente = '{id}'"
+            rs = database.Execute(SQL)
+            If rs.EOF = False Then
+                frm_emprestimo.txt_nomecliente.Text = rs.Fields("nome").Value.ToString()
+
+                ' Verifica se tem empréstimo ativo
+                SQL = $"SELECT e.*, l.titulo, l.etiqueta, l.area, l.quantidade FROM tb_emprestimos e
+        INNER JOIN tb_livros l ON e.isbn = l.isbn
+        WHERE e.id_cliente = '{id}' AND e.devolvido = 0"
+                rs = database.Execute(SQL)
+                If rs.EOF = False Then
+                    frm_emprestimo.txt_titulo.Text = rs.Fields("titulo").Value.ToString()
+                    frm_emprestimo.txt_isbn.Text = rs.Fields("isbn").Value.ToString()
+                    frm_emprestimo.txt_etiqueta.Text = rs.Fields("etiqueta").Value.ToString()
+                    frm_emprestimo.cmb_area.Text = rs.Fields("area").Value.ToString()
+                    frm_emprestimo.txt_qtdestoque.Text = rs.Fields("quantidade").Value.ToString() ' ← adicione
+                    frm_emprestimo.dtp_emprestimo.Value = CDate(rs.Fields("data_emprestimo").Value)
+                    frm_emprestimo.dtp_devolucao.Value = CDate(rs.Fields("data_devolucao").Value)
+                End If
+            Else
+                MsgBox("Cliente não encontrado.", MsgBoxStyle.Exclamation, "ATENÇÃO")
+            End If
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
     End Sub
 End Module

@@ -42,10 +42,9 @@
                         frm_menu.Show()
                     End If
                 Else
-                    SQL = $"update tb_usuarios set senha='{txt_senha.Text}', pergunta_seg='{txt_perguntaseg.Text}', status_conta='{cmb_status.Text}', usuario='{txt_nome.Text}', tipo_usuario='{cmb_tipo.Text}' where matricula='{txt_matricula.Text}'"
-                    rs = database.Execute(UCase(SQL))
-                    MsgBox("Usuário atualizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                    MsgBox("Uuario já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
                     Limpar_campos()
+
                 End If
             End If
         Catch ex As Exception
@@ -62,7 +61,17 @@
             txt_csenha.PasswordChar = "•"c
         End If
     End Sub
-    Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
+    Private Sub btn_menu_Click(sender As Object, e As EventArgs)
+        frm_menu.Show()
+        Hide()
+    End Sub
+
+    Private Sub ts_geranciaruser_Click(sender As Object, e As EventArgs) Handles ts_geranciaruser.Click
+        frm_admin.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
         frm_menu.Show()
         Me.Hide()
     End Sub

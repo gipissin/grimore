@@ -25,9 +25,9 @@ Partial Class frm_menu
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu))
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
+        btn_logout = New Button()
         btn_admcontas = New Button()
         btn_senha = New Button()
-        btn_devolucao = New Button()
         btn_emprestimo = New Button()
         btn_cadclientes = New Button()
         Label3 = New Label()
@@ -42,7 +42,7 @@ Partial Class frm_menu
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.BackgroundImageLayout = ImageLayout.None
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(828, 564)
+        PictureBox1.Location = New Point(796, 452)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(94, 83)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -52,9 +52,9 @@ Partial Class frm_menu
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
+        Panel1.Controls.Add(btn_logout)
         Panel1.Controls.Add(btn_admcontas)
         Panel1.Controls.Add(btn_senha)
-        Panel1.Controls.Add(btn_devolucao)
         Panel1.Controls.Add(btn_emprestimo)
         Panel1.Controls.Add(btn_cadclientes)
         Panel1.Controls.Add(Label3)
@@ -62,8 +62,21 @@ Partial Class frm_menu
         Panel1.Controls.Add(btn_acervo)
         Panel1.Location = New Point(188, 40)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(539, 567)
+        Panel1.Size = New Size(539, 524)
         Panel1.TabIndex = 10
+        ' 
+        ' btn_logout
+        ' 
+        btn_logout.BackColor = Color.BlueViolet
+        btn_logout.FlatStyle = FlatStyle.Flat
+        btn_logout.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btn_logout.ForeColor = SystemColors.Window
+        btn_logout.Location = New Point(80, 465)
+        btn_logout.Name = "btn_logout"
+        btn_logout.Size = New Size(379, 39)
+        btn_logout.TabIndex = 12
+        btn_logout.Text = "LOGOUT"
+        btn_logout.UseVisualStyleBackColor = False
         ' 
         ' btn_admcontas
         ' 
@@ -71,7 +84,7 @@ Partial Class frm_menu
         btn_admcontas.FlatStyle = FlatStyle.Flat
         btn_admcontas.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_admcontas.ForeColor = SystemColors.Window
-        btn_admcontas.Location = New Point(80, 453)
+        btn_admcontas.Location = New Point(80, 390)
         btn_admcontas.Name = "btn_admcontas"
         btn_admcontas.Size = New Size(379, 39)
         btn_admcontas.TabIndex = 11
@@ -84,25 +97,12 @@ Partial Class frm_menu
         btn_senha.FlatStyle = FlatStyle.Flat
         btn_senha.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_senha.ForeColor = SystemColors.Window
-        btn_senha.Location = New Point(80, 383)
+        btn_senha.Location = New Point(80, 313)
         btn_senha.Name = "btn_senha"
         btn_senha.Size = New Size(379, 39)
         btn_senha.TabIndex = 10
         btn_senha.Text = "ALTERAR SENHA"
         btn_senha.UseVisualStyleBackColor = False
-        ' 
-        ' btn_devolucao
-        ' 
-        btn_devolucao.BackColor = Color.BlueViolet
-        btn_devolucao.FlatStyle = FlatStyle.Flat
-        btn_devolucao.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_devolucao.ForeColor = SystemColors.Window
-        btn_devolucao.Location = New Point(80, 311)
-        btn_devolucao.Name = "btn_devolucao"
-        btn_devolucao.Size = New Size(379, 39)
-        btn_devolucao.TabIndex = 9
-        btn_devolucao.Text = "DEVOLUÇÃO"
-        btn_devolucao.UseVisualStyleBackColor = False
         ' 
         ' btn_emprestimo
         ' 
@@ -164,17 +164,17 @@ Partial Class frm_menu
         btn_acervo.Text = "ACERVO"
         btn_acervo.UseVisualStyleBackColor = False
         ' 
-        ' Menu
+        ' frm_menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(945, 659)
+        ClientSize = New Size(945, 576)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        Name = "Menu"
+        Name = "frm_menu"
         Text = "Menu"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
@@ -196,9 +196,9 @@ Partial Class frm_menu
     Friend WithEvents btn_cadclientes As Button
     Friend WithEvents btn_admcontas As Button
     Friend WithEvents btn_senha As Button
-    Friend WithEvents btn_devolucao As Button
     Friend WithEvents btn_emprestimo As Button
     Friend WithEvents btn_resetsenha As LinkLabel
     Friend WithEvents txt_senha As TextBox
     Friend WithEvents txt_usuario As TextBox
+    Friend WithEvents btn_logout As Button
 End Class

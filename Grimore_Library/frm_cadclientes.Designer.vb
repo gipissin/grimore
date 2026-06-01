@@ -25,26 +25,29 @@ Partial Class frm_cadclientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_cadclientes))
         PictureBox2 = New PictureBox()
         Panel1 = New Panel()
-        MaskedTextBox2 = New MaskedTextBox()
-        MaskedTextBox1 = New MaskedTextBox()
-        PictureBox1 = New PictureBox()
-        TextBox5 = New TextBox()
+        btn_menu = New Button()
+        Label11 = New Label()
+        btn_salvar = New Button()
+        Label6 = New Label()
+        txt_telefone = New MaskedTextBox()
+        txt_cpf = New MaskedTextBox()
+        img_foto = New PictureBox()
+        txt_observacoes = New TextBox()
         Label5 = New Label()
-        ComboBox1 = New ComboBox()
+        cmb_preferencias = New ComboBox()
         Label4 = New Label()
         Label3 = New Label()
-        DateTimePicker1 = New DateTimePicker()
+        dtp_nascimento = New DateTimePicker()
         Label1 = New Label()
         Label8 = New Label()
         Label2 = New Label()
         nome = New Label()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        Label6 = New Label()
-        Button1 = New Button()
+        txt_email = New TextBox()
+        txt_nome = New TextBox()
+        OpenFileDialog1 = New OpenFileDialog()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(img_foto, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox2
@@ -52,7 +55,7 @@ Partial Class frm_cadclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(772, 519)
+        PictureBox2.Location = New Point(755, 504)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(94, 83)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -62,100 +65,145 @@ Partial Class frm_cadclientes
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
-        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(Label11)
+        Panel1.Controls.Add(btn_salvar)
         Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(MaskedTextBox2)
-        Panel1.Controls.Add(MaskedTextBox1)
-        Panel1.Controls.Add(PictureBox1)
-        Panel1.Controls.Add(TextBox5)
+        Panel1.Controls.Add(txt_telefone)
+        Panel1.Controls.Add(txt_cpf)
+        Panel1.Controls.Add(img_foto)
+        Panel1.Controls.Add(txt_observacoes)
         Panel1.Controls.Add(Label5)
-        Panel1.Controls.Add(ComboBox1)
+        Panel1.Controls.Add(cmb_preferencias)
         Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(DateTimePicker1)
+        Panel1.Controls.Add(dtp_nascimento)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(nome)
-        Panel1.Controls.Add(TextBox2)
-        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(txt_email)
+        Panel1.Controls.Add(txt_nome)
         Panel1.Font = New Font("Sylfaen", 12F)
-        Panel1.Location = New Point(55, 30)
+        Panel1.Location = New Point(24, 30)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(725, 557)
         Panel1.TabIndex = 23
         ' 
-        ' MaskedTextBox2
+        ' btn_menu
         ' 
-        MaskedTextBox2.BackColor = Color.Gainsboro
-        MaskedTextBox2.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        MaskedTextBox2.Location = New Point(294, 146)
-        MaskedTextBox2.Mask = "55+ (__) _____-_____"
-        MaskedTextBox2.Name = "MaskedTextBox2"
-        MaskedTextBox2.Size = New Size(172, 22)
-        MaskedTextBox2.TabIndex = 56
+        btn_menu.BackColor = Color.Transparent
+        btn_menu.Image = CType(resources.GetObject("btn_menu.Image"), Image)
+        btn_menu.Location = New Point(765, 30)
+        btn_menu.Name = "btn_menu"
+        btn_menu.Size = New Size(80, 75)
+        btn_menu.TabIndex = 25
+        btn_menu.Text = vbCrLf
+        btn_menu.UseVisualStyleBackColor = False
         ' 
-        ' MaskedTextBox1
+        ' Label11
         ' 
-        MaskedTextBox1.BackColor = Color.Gainsboro
-        MaskedTextBox1.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        MaskedTextBox1.Location = New Point(20, 217)
-        MaskedTextBox1.Mask = "999.999.999.-99"
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(132, 22)
-        MaskedTextBox1.TabIndex = 55
+        Label11.AutoSize = True
+        Label11.Font = New Font("Cooper Black", 15.75F)
+        Label11.Location = New Point(20, 20)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(292, 24)
+        Label11.TabIndex = 52
+        Label11.Text = "CADASTRO DE CLIENTES"
         ' 
-        ' PictureBox1
+        ' btn_salvar
         ' 
-        PictureBox1.BackColor = Color.Gainsboro
-        PictureBox1.BackgroundImageLayout = ImageLayout.Center
-        PictureBox1.BorderStyle = BorderStyle.FixedSingle
-        PictureBox1.Location = New Point(487, 77)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(184, 239)
-        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
-        PictureBox1.TabIndex = 54
-        PictureBox1.TabStop = False
+        btn_salvar.BackColor = Color.MediumPurple
+        btn_salvar.Font = New Font("Cooper Black", 12F)
+        btn_salvar.Location = New Point(529, 414)
+        btn_salvar.Name = "btn_salvar"
+        btn_salvar.Size = New Size(162, 63)
+        btn_salvar.TabIndex = 58
+        btn_salvar.Text = "Salvar"
+        btn_salvar.UseVisualStyleBackColor = False
         ' 
-        ' TextBox5
+        ' Label6
         ' 
-        TextBox5.BackColor = Color.Gainsboro
-        TextBox5.Location = New Point(20, 395)
-        TextBox5.Multiline = True
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(400, 141)
-        TextBox5.TabIndex = 53
+        Label6.AutoSize = True
+        Label6.BackColor = Color.MediumPurple
+        Label6.Font = New Font("Cooper Black", 12F)
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(562, 52)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(77, 19)
+        Label6.TabIndex = 57
+        Label6.Text = "Sua foto"
+        ' 
+        ' txt_telefone
+        ' 
+        txt_telefone.BackColor = Color.Gainsboro
+        txt_telefone.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
+        txt_telefone.Location = New Point(294, 146)
+        txt_telefone.Mask = "(00) 00000-0000"
+        txt_telefone.Name = "txt_telefone"
+        txt_telefone.Size = New Size(172, 22)
+        txt_telefone.TabIndex = 56
+        ' 
+        ' txt_cpf
+        ' 
+        txt_cpf.BackColor = Color.Gainsboro
+        txt_cpf.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
+        txt_cpf.Location = New Point(20, 217)
+        txt_cpf.Mask = "000.000.000-00"
+        txt_cpf.Name = "txt_cpf"
+        txt_cpf.Size = New Size(156, 22)
+        txt_cpf.TabIndex = 55
+        ' 
+        ' img_foto
+        ' 
+        img_foto.BackColor = Color.Gainsboro
+        img_foto.BackgroundImageLayout = ImageLayout.Center
+        img_foto.BorderStyle = BorderStyle.FixedSingle
+        img_foto.Location = New Point(507, 77)
+        img_foto.Name = "img_foto"
+        img_foto.Size = New Size(184, 239)
+        img_foto.SizeMode = PictureBoxSizeMode.CenterImage
+        img_foto.TabIndex = 54
+        img_foto.TabStop = False
+        ' 
+        ' txt_observacoes
+        ' 
+        txt_observacoes.BackColor = Color.Gainsboro
+        txt_observacoes.Location = New Point(20, 395)
+        txt_observacoes.Multiline = True
+        txt_observacoes.Name = "txt_observacoes"
+        txt_observacoes.Size = New Size(400, 141)
+        txt_observacoes.TabIndex = 53
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.MediumPurple
-        Label5.Font = New Font("Sylfaen", 12F)
-        Label5.ForeColor = Color.Black
+        Label5.Font = New Font("Cooper Black", 12F)
+        Label5.ForeColor = Color.White
         Label5.Location = New Point(20, 354)
         Label5.Name = "Label5"
-        Label5.Size = New Size(103, 22)
+        Label5.Size = New Size(116, 19)
         Label5.TabIndex = 52
         Label5.Text = "Diga-me mais"
         ' 
-        ' ComboBox1
+        ' cmb_preferencias
         ' 
-        ComboBox1.BackColor = Color.Gainsboro
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(20, 305)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(156, 30)
-        ComboBox1.TabIndex = 51
+        cmb_preferencias.BackColor = Color.Gainsboro
+        cmb_preferencias.FormattingEnabled = True
+        cmb_preferencias.Location = New Point(20, 305)
+        cmb_preferencias.Name = "cmb_preferencias"
+        cmb_preferencias.Size = New Size(268, 30)
+        cmb_preferencias.TabIndex = 51
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.MediumPurple
-        Label4.Font = New Font("Sylfaen", 12F)
-        Label4.ForeColor = Color.Black
+        Label4.Font = New Font("Cooper Black", 12F)
+        Label4.ForeColor = Color.White
         Label4.Location = New Point(20, 269)
         Label4.Name = "Label4"
-        Label4.Size = New Size(90, 22)
+        Label4.Size = New Size(111, 19)
         Label4.TabIndex = 50
         Label4.Text = "Preferências"
         ' 
@@ -163,35 +211,35 @@ Partial Class frm_cadclientes
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.MediumPurple
-        Label3.Font = New Font("Sylfaen", 12F)
-        Label3.ForeColor = Color.Black
-        Label3.Location = New Point(174, 188)
+        Label3.Font = New Font("Cooper Black", 12F)
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(294, 192)
         Label3.Name = "Label3"
-        Label3.Size = New Size(142, 22)
+        Label3.Size = New Size(168, 19)
         Label3.TabIndex = 49
         Label3.Text = "Data de Nascimento"
         ' 
-        ' DateTimePicker1
+        ' dtp_nascimento
         ' 
-        DateTimePicker1.CalendarFont = New Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.CalendarMonthBackground = Color.Gainsboro
-        DateTimePicker1.CalendarTrailingForeColor = Color.Black
-        DateTimePicker1.Font = New Font("Sylfaen", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.Format = DateTimePickerFormat.Short
-        DateTimePicker1.Location = New Point(174, 213)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(152, 25)
-        DateTimePicker1.TabIndex = 48
+        dtp_nascimento.CalendarFont = New Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        dtp_nascimento.CalendarMonthBackground = Color.Gainsboro
+        dtp_nascimento.CalendarTrailingForeColor = Color.Black
+        dtp_nascimento.Font = New Font("Cooper Black", 12F)
+        dtp_nascimento.Format = DateTimePickerFormat.Short
+        dtp_nascimento.Location = New Point(294, 217)
+        dtp_nascimento.Name = "dtp_nascimento"
+        dtp_nascimento.Size = New Size(152, 26)
+        dtp_nascimento.TabIndex = 48
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.MediumPurple
-        Label1.Font = New Font("Sylfaen", 12F)
-        Label1.ForeColor = Color.Black
+        Label1.Font = New Font("Cooper Black", 12F)
+        Label1.ForeColor = Color.White
         Label1.Location = New Point(20, 188)
         Label1.Name = "Label1"
-        Label1.Size = New Size(65, 22)
+        Label1.Size = New Size(76, 19)
         Label1.TabIndex = 47
         Label1.Text = "Seu CPF"
         ' 
@@ -199,11 +247,11 @@ Partial Class frm_cadclientes
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.MediumPurple
-        Label8.Font = New Font("Sylfaen", 12F)
-        Label8.ForeColor = Color.Black
+        Label8.Font = New Font("Cooper Black", 12F)
+        Label8.ForeColor = Color.White
         Label8.Location = New Point(294, 116)
         Label8.Name = "Label8"
-        Label8.Size = New Size(67, 22)
+        Label8.Size = New Size(78, 19)
         Label8.TabIndex = 46
         Label8.Text = "Telefone"
         ' 
@@ -211,11 +259,11 @@ Partial Class frm_cadclientes
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.MediumPurple
-        Label2.Font = New Font("Sylfaen", 12F)
-        Label2.ForeColor = Color.Black
+        Label2.Font = New Font("Cooper Black", 12F)
+        Label2.ForeColor = Color.White
         Label2.Location = New Point(20, 116)
         Label2.Name = "Label2"
-        Label2.Size = New Size(55, 22)
+        Label2.Size = New Size(61, 19)
         Label2.TabIndex = 45
         Label2.Text = "E-mail"
         ' 
@@ -223,53 +271,35 @@ Partial Class frm_cadclientes
         ' 
         nome.AutoSize = True
         nome.BackColor = Color.MediumPurple
-        nome.Font = New Font("Sylfaen", 12F)
-        nome.ForeColor = Color.Black
+        nome.Font = New Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        nome.ForeColor = Color.White
         nome.Location = New Point(20, 52)
         nome.Name = "nome"
-        nome.Size = New Size(50, 22)
+        nome.Size = New Size(55, 19)
         nome.TabIndex = 44
         nome.Text = "Nome"
         ' 
-        ' TextBox2
+        ' txt_email
         ' 
-        TextBox2.BackColor = Color.Gainsboro
-        TextBox2.Location = New Point(20, 141)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(268, 29)
-        TextBox2.TabIndex = 43
+        txt_email.BackColor = Color.Gainsboro
+        txt_email.Location = New Point(20, 141)
+        txt_email.Name = "txt_email"
+        txt_email.Size = New Size(268, 29)
+        txt_email.TabIndex = 43
         ' 
-        ' TextBox1
+        ' txt_nome
         ' 
-        TextBox1.BackColor = Color.Gainsboro
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        TextBox1.Location = New Point(20, 77)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(306, 22)
-        TextBox1.TabIndex = 42
+        txt_nome.BackColor = Color.Gainsboro
+        txt_nome.BorderStyle = BorderStyle.FixedSingle
+        txt_nome.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
+        txt_nome.Location = New Point(20, 77)
+        txt_nome.Name = "txt_nome"
+        txt_nome.Size = New Size(446, 22)
+        txt_nome.TabIndex = 42
         ' 
-        ' Label6
+        ' OpenFileDialog1
         ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.MediumPurple
-        Label6.Font = New Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(542, 52)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(63, 22)
-        Label6.TabIndex = 57
-        Label6.Text = "Sua foto"
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.MediumPurple
-        Button1.Font = New Font("Sylfaen", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(551, 481)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(140, 55)
-        Button1.TabIndex = 58
-        Button1.Text = "Salvar"
-        Button1.UseVisualStyleBackColor = False
+        OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
         ' frm_cadclientes
         ' 
@@ -278,6 +308,7 @@ Partial Class frm_cadclientes
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(857, 599)
+        Controls.Add(btn_menu)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
@@ -286,27 +317,30 @@ Partial Class frm_cadclientes
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(img_foto, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label6 As Label
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txt_telefone As MaskedTextBox
+    Friend WithEvents txt_cpf As MaskedTextBox
+    Friend WithEvents img_foto As PictureBox
+    Friend WithEvents txt_observacoes As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmb_preferencias As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtp_nascimento As DateTimePicker
     Friend WithEvents Label1 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents nome As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txt_email As TextBox
+    Friend WithEvents txt_nome As TextBox
+    Friend WithEvents btn_salvar As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents btn_menu As Button
 End Class

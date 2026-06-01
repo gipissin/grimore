@@ -45,9 +45,7 @@
                     MsgBox("Livro cadastrado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                     Limpar_campos()
                 Else
-                    SQL = $"UPDATE tb_livros SET autor='{txt_autor.Text}', titulo='{txt_titulo.Text}', pha='{txt_pha.Text}', area='{cmb_area.Text}', capa='{diretorio}', etiqueta='{txt_etiqueta.Text}', notacao='{txt_notacao.Text}' WHERE isbn='{txt_isbn.Text}'"
-                    rs = database.Execute(UCase(SQL))
-                    MsgBox("Livro atualizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                    MsgBox("Isbn já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
                     Limpar_campos()
                 End If
             End If
@@ -61,7 +59,34 @@
         txt_notacao.Text = notacao
     End Sub
 
-    Private Sub ACERVOCOMPLETOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ACERVOCOMPLETOToolStripMenuItem.Click
 
+    Private Sub btn_menu_Click(sender As Object, e As EventArgs)
+        frm_menu.Show()
+        Hide()
+    End Sub
+
+    Private Sub ts_acervo_Click(sender As Object, e As EventArgs) Handles ts_acervo.Click
+        frm_acervo.Show()
+        Hide()
+    End Sub
+
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
+        frm_menu.Show()
+        Hide()
+    End Sub
+
+    Private Sub txt_isbn_LostFocus(sender As Object, e As EventArgs) Handles txt_isbn.LostFocus
+        Try
+            SQL = $"SELECT * FROM tb_livros where isbn= '{txt_isbn}'"
+            rs = database.Execute(SQL)
+            If rs.EOF = False Then
+                If txt_isbn = rs.Fields(4).Value Then
+                    MsgBox("Erro: livro já cadastrado ", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+
+        End Try
     End Sub
 End Class

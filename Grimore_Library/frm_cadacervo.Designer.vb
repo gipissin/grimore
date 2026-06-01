@@ -48,13 +48,14 @@ Partial Class frm_cadacervo
         Label5 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        MenuStrip1 = New MenuStrip()
-        ACERVOCOMPLETOToolStripMenuItem = New ToolStripMenuItem()
         OpenFileDialog1 = New OpenFileDialog()
+        MenuStrip2 = New MenuStrip()
+        ts_menu = New ToolStripMenuItem()
+        ts_acervo = New ToolStripMenuItem()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(img_capa, ComponentModel.ISupportInitialize).BeginInit()
-        MenuStrip1.SuspendLayout()
+        MenuStrip2.SuspendLayout()
         SuspendLayout()
         ' 
         ' foto_livro
@@ -72,10 +73,9 @@ Partial Class frm_cadacervo
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(902, 727)
-        PictureBox2.Margin = New Padding(3, 4, 3, 4)
+        PictureBox2.Location = New Point(766, 333)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(107, 111)
+        PictureBox2.Size = New Size(94, 83)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 21
         PictureBox2.TabStop = False
@@ -106,18 +106,18 @@ Partial Class frm_cadacervo
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label4)
         Panel1.Font = New Font("Sylfaen", 12F)
-        Panel1.Location = New Point(75, 41)
-        Panel1.Margin = New Padding(3, 4, 3, 4)
+        Panel1.Location = New Point(66, 31)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(785, 723)
+        Panel1.Size = New Size(687, 542)
         Panel1.TabIndex = 22
         ' 
         ' img_capa
         ' 
         img_capa.BackColor = Color.Gray
-        img_capa.Location = New Point(502, 155)
+        img_capa.Location = New Point(439, 116)
+        img_capa.Margin = New Padding(3, 2, 3, 2)
         img_capa.Name = "img_capa"
-        img_capa.Size = New Size(241, 332)
+        img_capa.Size = New Size(211, 249)
         img_capa.TabIndex = 52
         img_capa.TabStop = False
         ' 
@@ -125,48 +125,47 @@ Partial Class frm_cadacervo
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Cooper Black", 15.75F)
-        Label11.Location = New Point(40, 43)
+        Label11.Location = New Point(35, 32)
         Label11.Name = "Label11"
-        Label11.Size = New Size(356, 31)
+        Label11.Size = New Size(275, 24)
         Label11.TabIndex = 51
         Label11.Text = "CADASTRO DE ACERVO"
         ' 
         ' txt_etiqueta
         ' 
         txt_etiqueta.BackColor = Color.Gainsboro
-        txt_etiqueta.Location = New Point(37, 553)
-        txt_etiqueta.Margin = New Padding(3, 4, 3, 4)
+        txt_etiqueta.Location = New Point(32, 415)
         txt_etiqueta.Multiline = True
         txt_etiqueta.Name = "txt_etiqueta"
-        txt_etiqueta.Size = New Size(134, 94)
+        txt_etiqueta.Size = New Size(118, 72)
         txt_etiqueta.TabIndex = 50
         ' 
         ' txt_isbn
         ' 
         txt_isbn.BackColor = Color.Gainsboro
-        txt_isbn.Location = New Point(287, 359)
+        txt_isbn.Location = New Point(251, 269)
+        txt_isbn.Margin = New Padding(3, 2, 3, 2)
         txt_isbn.Mask = "000-00-000-00-0"
         txt_isbn.Name = "txt_isbn"
-        txt_isbn.Size = New Size(171, 34)
+        txt_isbn.Size = New Size(150, 29)
         txt_isbn.TabIndex = 49
         ' 
         ' txt_quantidade
         ' 
         txt_quantidade.BackColor = Color.Gainsboro
-        txt_quantidade.Location = New Point(283, 437)
-        txt_quantidade.Margin = New Padding(3, 4, 3, 4)
+        txt_quantidade.Location = New Point(248, 328)
         txt_quantidade.Name = "txt_quantidade"
-        txt_quantidade.Size = New Size(121, 34)
+        txt_quantidade.Size = New Size(106, 29)
         txt_quantidade.TabIndex = 48
         ' 
         ' btn_salvar
         ' 
         btn_salvar.BackColor = Color.MediumPurple
         btn_salvar.Font = New Font("Sylfaen", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_salvar.Location = New Point(523, 532)
-        btn_salvar.Margin = New Padding(3, 4, 3, 4)
+        btn_salvar.ForeColor = Color.White
+        btn_salvar.Location = New Point(458, 399)
         btn_salvar.Name = "btn_salvar"
-        btn_salvar.Size = New Size(182, 67)
+        btn_salvar.Size = New Size(159, 50)
         btn_salvar.TabIndex = 47
         btn_salvar.Text = "Salvar"
         btn_salvar.UseVisualStyleBackColor = False
@@ -174,11 +173,10 @@ Partial Class frm_cadacervo
         ' txt_notacao
         ' 
         txt_notacao.BackColor = Color.Gainsboro
-        txt_notacao.Location = New Point(201, 554)
-        txt_notacao.Margin = New Padding(3, 4, 3, 4)
+        txt_notacao.Location = New Point(176, 416)
         txt_notacao.Multiline = True
         txt_notacao.Name = "txt_notacao"
-        txt_notacao.Size = New Size(154, 40)
+        txt_notacao.Size = New Size(135, 31)
         txt_notacao.TabIndex = 44
         ' 
         ' Label10
@@ -186,29 +184,28 @@ Partial Class frm_cadacervo
         Label10.AutoSize = True
         Label10.BackColor = Color.MediumPurple
         Label10.Font = New Font("Cooper Black", 12F)
-        Label10.Location = New Point(546, 108)
+        Label10.ForeColor = Color.White
+        Label10.Location = New Point(478, 81)
         Label10.Name = "Label10"
-        Label10.Size = New Size(144, 23)
+        Label10.Size = New Size(119, 19)
         Label10.TabIndex = 45
         Label10.Text = "Capa do livro"
         ' 
         ' txt_pha
         ' 
         txt_pha.BackColor = Color.Gainsboro
-        txt_pha.Location = New Point(40, 436)
-        txt_pha.Margin = New Padding(3, 4, 3, 4)
+        txt_pha.Location = New Point(35, 327)
         txt_pha.Name = "txt_pha"
-        txt_pha.Size = New Size(177, 34)
+        txt_pha.Size = New Size(155, 29)
         txt_pha.TabIndex = 43
         ' 
         ' txt_titulo
         ' 
         txt_titulo.BackColor = Color.Gainsboro
         txt_titulo.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_titulo.Location = New Point(40, 144)
-        txt_titulo.Margin = New Padding(3, 4, 3, 4)
+        txt_titulo.Location = New Point(35, 108)
         txt_titulo.Name = "txt_titulo"
-        txt_titulo.Size = New Size(306, 26)
+        txt_titulo.Size = New Size(268, 22)
         txt_titulo.TabIndex = 26
         ' 
         ' Label9
@@ -216,10 +213,10 @@ Partial Class frm_cadacervo
         Label9.AutoSize = True
         Label9.BackColor = Color.MediumPurple
         Label9.Font = New Font("Cooper Black", 12F)
-        Label9.ForeColor = Color.Black
-        Label9.Location = New Point(289, 325)
+        Label9.ForeColor = Color.White
+        Label9.Location = New Point(253, 244)
         Label9.Name = "Label9"
-        Label9.Size = New Size(62, 23)
+        Label9.Size = New Size(50, 19)
         Label9.TabIndex = 41
         Label9.Text = "ISBN"
         ' 
@@ -228,10 +225,10 @@ Partial Class frm_cadacervo
         Label6.AutoSize = True
         Label6.BackColor = Color.MediumPurple
         Label6.Font = New Font("Cooper Black", 12F)
-        Label6.ForeColor = Color.Black
-        Label6.Location = New Point(201, 508)
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(176, 381)
         Label6.Name = "Label6"
-        Label6.Size = New Size(185, 23)
+        Label6.Size = New Size(149, 19)
         Label6.TabIndex = 36
         Label6.Text = "Notação do autor"
         ' 
@@ -239,10 +236,9 @@ Partial Class frm_cadacervo
         ' 
         txt_autor.BackColor = Color.Gainsboro
         txt_autor.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_autor.Location = New Point(40, 211)
-        txt_autor.Margin = New Padding(3, 4, 3, 4)
+        txt_autor.Location = New Point(35, 158)
         txt_autor.Name = "txt_autor"
-        txt_autor.Size = New Size(306, 26)
+        txt_autor.Size = New Size(268, 22)
         txt_autor.TabIndex = 27
         ' 
         ' Label8
@@ -250,10 +246,10 @@ Partial Class frm_cadacervo
         Label8.AutoSize = True
         Label8.BackColor = Color.MediumPurple
         Label8.Font = New Font("Cooper Black", 12F)
-        Label8.ForeColor = Color.Black
-        Label8.Location = New Point(40, 247)
+        Label8.ForeColor = Color.White
+        Label8.Location = New Point(35, 185)
         Label8.Name = "Label8"
-        Label8.Size = New Size(87, 23)
+        Label8.Size = New Size(71, 19)
         Label8.TabIndex = 39
         Label8.Text = "Editora"
         ' 
@@ -262,20 +258,18 @@ Partial Class frm_cadacervo
         cmb_area.BackColor = Color.Gainsboro
         cmb_area.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
         cmb_area.FormattingEnabled = True
-        cmb_area.Location = New Point(40, 359)
-        cmb_area.Margin = New Padding(3, 4, 3, 4)
+        cmb_area.Location = New Point(35, 269)
         cmb_area.Name = "cmb_area"
-        cmb_area.Size = New Size(185, 26)
+        cmb_area.Size = New Size(162, 24)
         cmb_area.TabIndex = 28
         ' 
         ' txt_editora
         ' 
         txt_editora.BackColor = Color.Gainsboro
         txt_editora.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_editora.Location = New Point(40, 280)
-        txt_editora.Margin = New Padding(3, 4, 3, 4)
+        txt_editora.Location = New Point(35, 210)
         txt_editora.Name = "txt_editora"
-        txt_editora.Size = New Size(306, 26)
+        txt_editora.Size = New Size(268, 22)
         txt_editora.TabIndex = 38
         ' 
         ' Label7
@@ -283,10 +277,10 @@ Partial Class frm_cadacervo
         Label7.AutoSize = True
         Label7.BackColor = Color.MediumPurple
         Label7.Font = New Font("Cooper Black", 12F)
-        Label7.ForeColor = Color.Black
-        Label7.Location = New Point(40, 509)
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(35, 382)
         Label7.Name = "Label7"
-        Label7.Size = New Size(98, 23)
+        Label7.Size = New Size(78, 19)
         Label7.TabIndex = 37
         Label7.Text = "Etiqueta"
         ' 
@@ -295,10 +289,10 @@ Partial Class frm_cadacervo
         Label1.AutoSize = True
         Label1.BackColor = Color.MediumPurple
         Label1.Font = New Font("Cooper Black", 12F)
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(40, 111)
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(35, 83)
         Label1.Name = "Label1"
-        Label1.Size = New Size(73, 23)
+        Label1.Size = New Size(60, 19)
         Label1.TabIndex = 31
         Label1.Text = "Título"
         ' 
@@ -307,10 +301,10 @@ Partial Class frm_cadacervo
         Label2.AutoSize = True
         Label2.BackColor = Color.MediumPurple
         Label2.Font = New Font("Cooper Black", 12F)
-        Label2.ForeColor = Color.Black
-        Label2.Location = New Point(40, 177)
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(35, 133)
         Label2.Name = "Label2"
-        Label2.Size = New Size(73, 23)
+        Label2.Size = New Size(59, 19)
         Label2.TabIndex = 32
         Label2.Text = "Autor"
         ' 
@@ -319,10 +313,10 @@ Partial Class frm_cadacervo
         Label5.AutoSize = True
         Label5.BackColor = Color.MediumPurple
         Label5.Font = New Font("Cooper Black", 12F)
-        Label5.ForeColor = Color.Black
-        Label5.Location = New Point(43, 402)
+        Label5.ForeColor = Color.White
+        Label5.Location = New Point(38, 302)
         Label5.Name = "Label5"
-        Label5.Size = New Size(132, 23)
+        Label5.Size = New Size(107, 19)
         Label5.TabIndex = 35
         Label5.Text = "Código PHA"
         ' 
@@ -331,10 +325,10 @@ Partial Class frm_cadacervo
         Label3.AutoSize = True
         Label3.BackColor = Color.MediumPurple
         Label3.Font = New Font("Cooper Black", 12F)
-        Label3.ForeColor = Color.Black
-        Label3.Location = New Point(40, 325)
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(35, 244)
         Label3.Name = "Label3"
-        Label3.Size = New Size(238, 23)
+        Label3.Size = New Size(189, 19)
         Label3.TabIndex = 33
         Label3.Text = "Area do conhecimento"
         ' 
@@ -343,55 +337,65 @@ Partial Class frm_cadacervo
         Label4.AutoSize = True
         Label4.BackColor = Color.MediumPurple
         Label4.Font = New Font("Cooper Black", 12F)
-        Label4.ForeColor = Color.Black
-        Label4.Location = New Point(283, 402)
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(248, 302)
         Label4.Name = "Label4"
-        Label4.Size = New Size(128, 23)
+        Label4.Size = New Size(103, 19)
         Label4.TabIndex = 34
         Label4.Text = "Quantidade"
-        ' 
-        ' MenuStrip1
-        ' 
-        MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {ACERVOCOMPLETOToolStripMenuItem})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(997, 28)
-        MenuStrip1.TabIndex = 23
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' ACERVOCOMPLETOToolStripMenuItem
-        ' 
-        ACERVOCOMPLETOToolStripMenuItem.Name = "ACERVOCOMPLETOToolStripMenuItem"
-        ACERVOCOMPLETOToolStripMenuItem.Size = New Size(157, 24)
-        ACERVOCOMPLETOToolStripMenuItem.Text = "ACERVO COMPLETO"
         ' 
         ' OpenFileDialog1
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' MenuStrip2
+        ' 
+        MenuStrip2.BackColor = Color.MediumPurple
+        MenuStrip2.ImageScalingSize = New Size(20, 20)
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_acervo})
+        MenuStrip2.Location = New Point(0, 0)
+        MenuStrip2.Name = "MenuStrip2"
+        MenuStrip2.Padding = New Padding(5, 2, 0, 2)
+        MenuStrip2.Size = New Size(872, 24)
+        MenuStrip2.TabIndex = 30
+        MenuStrip2.Text = "MenuStrip2"
+        ' 
+        ' ts_menu
+        ' 
+        ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_menu.ForeColor = Color.White
+        ts_menu.Name = "ts_menu"
+        ts_menu.Size = New Size(58, 20)
+        ts_menu.Text = "MENU"
+        ' 
+        ' ts_acervo
+        ' 
+        ts_acervo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_acervo.ForeColor = Color.White
+        ts_acervo.Name = "ts_acervo"
+        ts_acervo.Size = New Size(155, 20)
+        ts_acervo.Text = "GERENCIAR ACERVO"
+        ' 
         ' frm_cadacervo
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(63), CByte(13), CByte(145))
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(997, 837)
+        ClientSize = New Size(872, 562)
+        Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
-        Controls.Add(MenuStrip1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        MainMenuStrip = MenuStrip1
-        Margin = New Padding(3, 4, 3, 4)
         Name = "frm_cadacervo"
         Text = "Cadastro de Acervo"
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(img_capa, ComponentModel.ISupportInitialize).EndInit()
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
+        MenuStrip2.ResumeLayout(False)
+        MenuStrip2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -419,8 +423,9 @@ Partial Class frm_cadacervo
     Friend WithEvents txt_isbn As MaskedTextBox
     Friend WithEvents txt_etiqueta As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ACERVOCOMPLETOToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents img_capa As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ts_menu As ToolStripMenuItem
+    Friend WithEvents ts_acervo As ToolStripMenuItem
 End Class

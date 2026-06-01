@@ -1,4 +1,6 @@
-﻿Public Class frm_admin
+﻿Imports System.Threading
+
+Public Class frm_admin
     Private Sub frm_admin_Load(sender As Object, e As EventArgs) Handles Me.Load
         Conectar_banco()
         Carregar_formadmin()
@@ -6,7 +8,7 @@
         dgv_admin.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2
         Panel1.Visible = False
         Panel2.Visible = False
-
+        
     End Sub
 
     Private Sub btn_buscar_Click(sender As Object, e As EventArgs) Handles btn_buscar.Click
@@ -47,7 +49,7 @@
                             If resposta_user = MsgBoxResult.Yes Then
                                 SQL = $"DELETE FROM tb_usuarios WHERE matricula = '{aux_matricula}'"
                                 rs = database.Execute(SQL)
-                                Panel2.Visible = False
+                                Panel2.Visible = True
                                 Carregar_formadmin()
                             End If
                         End If
@@ -92,4 +94,8 @@
             End Try
         End If
     End Sub
+
+
+
+
 End Class
