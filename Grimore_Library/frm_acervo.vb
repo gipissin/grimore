@@ -70,32 +70,42 @@
         Me.Hide()
     End Sub
 
-    Private Sub btn_buscaracervo_Click(sender As Object, e As EventArgs) Handles btn_buscaracervo.Click
+    Private Sub btn_buscaracervo_Click(sender As Object, e As EventArgs)
         Try
             SQL = $"SELECT * FROM tb_livros where titulo like '%{txt_livrobusc.Text}%' order by titulo asc"
             rs = database.Execute(SQL)
             With dgv_acervo
-                .Rows.Clear()
+                .Rows.Clear
                 Do While rs.EOF = False
                     .Rows.Add(
-                        rs.Fields(0).Value.ToString(),
-                        rs.Fields(1).Value.ToString(),
-                        rs.Fields(2).Value.ToString(),
+                        rs.Fields(0).Value.ToString,
+                        rs.Fields(1).Value.ToString,
+                        rs.Fields(2).Value.ToString,
                         Nothing,
-                        rs.Fields(4).Value.ToString(),
-                        rs.Fields(5).Value.ToString().ToUpper(),
+                        rs.Fields(4).Value.ToString,
+                        rs.Fields(5).Value.ToString.ToUpper,
                         Nothing,
                         Nothing,
-                        rs.Fields(8).Value.ToString(),
+                        rs.Fields(8).Value.ToString,
                         Nothing,
                         Nothing,
                         Nothing
                     )
-                    rs.MoveNext()
+                    rs.MoveNext
                 Loop
             End With
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
+    End Sub
+
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
+        frm_menu.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ts_cadastroacervo_Click(sender As Object, e As EventArgs) Handles ts_cadastroacervo.Click
+        frm_cadacervo.Show()
+        Me.Hide()
     End Sub
 End Class

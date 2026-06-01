@@ -175,7 +175,7 @@ Partial Class frm_menu
         Controls.Add(PictureBox1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frm_menu"
-        Text = "Menu"
+        Text = "MENU"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

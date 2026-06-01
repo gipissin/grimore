@@ -25,7 +25,6 @@ Partial Class frm_cadclientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_cadclientes))
         PictureBox2 = New PictureBox()
         Panel1 = New Panel()
-        btn_menu = New Button()
         Label11 = New Label()
         btn_salvar = New Button()
         Label6 = New Label()
@@ -45,9 +44,13 @@ Partial Class frm_cadclientes
         txt_email = New TextBox()
         txt_nome = New TextBox()
         OpenFileDialog1 = New OpenFileDialog()
+        MenuStrip2 = New MenuStrip()
+        ts_menu = New ToolStripMenuItem()
+        ts_gerenciarclientes = New ToolStripMenuItem()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(img_foto, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip2.SuspendLayout()
         SuspendLayout()
         ' 
         ' PictureBox2
@@ -88,17 +91,6 @@ Partial Class frm_cadclientes
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(725, 557)
         Panel1.TabIndex = 23
-        ' 
-        ' btn_menu
-        ' 
-        btn_menu.BackColor = Color.Transparent
-        btn_menu.Image = CType(resources.GetObject("btn_menu.Image"), Image)
-        btn_menu.Location = New Point(765, 30)
-        btn_menu.Name = "btn_menu"
-        btn_menu.Size = New Size(80, 75)
-        btn_menu.TabIndex = 25
-        btn_menu.Text = vbCrLf
-        btn_menu.UseVisualStyleBackColor = False
         ' 
         ' Label11
         ' 
@@ -301,6 +293,34 @@ Partial Class frm_cadclientes
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' MenuStrip2
+        ' 
+        MenuStrip2.BackColor = Color.MediumPurple
+        MenuStrip2.ImageScalingSize = New Size(20, 20)
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_gerenciarclientes})
+        MenuStrip2.Location = New Point(0, 0)
+        MenuStrip2.Name = "MenuStrip2"
+        MenuStrip2.Padding = New Padding(5, 2, 0, 2)
+        MenuStrip2.Size = New Size(857, 24)
+        MenuStrip2.TabIndex = 31
+        MenuStrip2.Text = "MenuStrip2"
+        ' 
+        ' ts_menu
+        ' 
+        ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_menu.ForeColor = Color.White
+        ts_menu.Name = "ts_menu"
+        ts_menu.Size = New Size(58, 20)
+        ts_menu.Text = "MENU"
+        ' 
+        ' ts_gerenciarclientes
+        ' 
+        ts_gerenciarclientes.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_gerenciarclientes.ForeColor = Color.White
+        ts_gerenciarclientes.Name = "ts_gerenciarclientes"
+        ts_gerenciarclientes.Size = New Size(164, 20)
+        ts_gerenciarclientes.Text = "GERENCIAR CLIENTES"
+        ' 
         ' frm_cadclientes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -308,17 +328,20 @@ Partial Class frm_cadclientes
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(857, 599)
-        Controls.Add(btn_menu)
+        Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frm_cadclientes"
-        Text = "Cadastro de Clientes"
+        Text = "CADASTRO DE CLIENTES"
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(img_foto, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip2.ResumeLayout(False)
+        MenuStrip2.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents PictureBox2 As PictureBox
@@ -342,5 +365,7 @@ Partial Class frm_cadclientes
     Friend WithEvents btn_salvar As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents btn_menu As Button
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ts_menu As ToolStripMenuItem
+    Friend WithEvents ts_gerenciarclientes As ToolStripMenuItem
 End Class

@@ -27,23 +27,23 @@ Public Class frm_cadclientes
                 Exit Sub
             End If
 
-            ' Verifica se CPF já existe
-            SQL = $"SELECT * FROM tb_clientes WHERE cpf = '{txt_cpf.Text}'"
-            rs = database.Execute(SQL)
-
             If rs.EOF = True Then
-                ' id gerado automatico
                 SQL = $"INSERT INTO tb_clientes (nome, email, telefone, cpf, data_nascimento, preferencias, observacoes, foto)
                         VALUES ('{txt_nome.Text}', '{txt_email.Text}', '{txt_telefone.Text}',
                                 '{txt_cpf.Text}', '{dtp_nascimento.Value.ToString("yyyy-MM-dd")}',
                                 '{cmb_preferencias.Text}', '{txt_observacoes.Text}', '{diretorio}')"
-                rs = database.Execute(SQL)
+                database.Execute(SQL)
                 MsgBox("Cliente cadastrado com sucesso!", MsgBoxStyle.Information, "AVISO")
-                Limpar_cadcliente()
             Else
                 MsgBox("CPF já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
-                Limpar_cadcliente()
+                Exit Sub
             End If
+
+            Limpar_cadcliente()
+            frm_gerenciarclientes.Carregar_Clientes("")
+            frm_gerenciarclientes.Show()
+            Me.Hide()
+
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
@@ -60,8 +60,14 @@ Public Class frm_cadclientes
         diretorio = ""
     End Sub
 
-    Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
+
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
         frm_menu.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ts_gerenciarclientes_Click(sender As Object, e As EventArgs) Handles ts_gerenciarclientes.Click
+        frm_gerenciarclientes.Show()
         Me.Hide()
     End Sub
 End Class

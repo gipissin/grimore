@@ -22,8 +22,8 @@ Partial Class frm_acervo
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_acervo))
         dgv_acervo = New DataGridView()
         Column1 = New DataGridViewTextBoxColumn()
@@ -37,6 +37,9 @@ Partial Class frm_acervo
         btn_menu = New Button()
         PictureBox2 = New PictureBox()
         Label2 = New Label()
+        MenuStrip2 = New MenuStrip()
+        ts_menu = New ToolStripMenuItem()
+        ts_cadastroacervo = New ToolStripMenuItem()
         ToolStrip1 = New ToolStrip()
         ToolStripLabel1 = New ToolStripLabel()
         ToolStripSeparator1 = New ToolStripSeparator()
@@ -44,6 +47,7 @@ Partial Class frm_acervo
         btn_buscaracervo = New ToolStripButton()
         CType(dgv_acervo, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip2.SuspendLayout()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -51,21 +55,21 @@ Partial Class frm_acervo
         ' 
         dgv_acervo.AllowUserToAddRows = False
         dgv_acervo.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(179), CByte(157), CByte(219))
-        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(26), CByte(0), CByte(80))
-        dgv_acervo.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(179), CByte(157), CByte(219))
+        DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(26), CByte(0), CByte(80))
+        dgv_acervo.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgv_acervo.BackgroundColor = Color.FromArgb(CByte(74), CByte(47), CByte(138))
         dgv_acervo.BorderStyle = BorderStyle.Fixed3D
         dgv_acervo.ColumnHeadersHeight = 40
         dgv_acervo.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column8, Column5, Column6, Column7})
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = SystemColors.Window
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 8F)
-        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
-        dgv_acervo.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Window
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 8F)
+        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
+        dgv_acervo.DefaultCellStyle = DataGridViewCellStyle2
         dgv_acervo.GridColor = Color.FromArgb(CByte(224), CByte(216), CByte(247))
         dgv_acervo.Location = New Point(0, 120)
         dgv_acervo.Margin = New Padding(3, 2, 3, 2)
@@ -171,21 +175,49 @@ Partial Class frm_acervo
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 21.75F)
         Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(12, 49)
+        Label2.Location = New Point(12, 67)
         Label2.Name = "Label2"
         Label2.Size = New Size(485, 34)
         Label2.TabIndex = 32
         Label2.Text = "GERENCIAMENTO DE ACERVO"
+        ' 
+        ' MenuStrip2
+        ' 
+        MenuStrip2.BackColor = Color.MediumPurple
+        MenuStrip2.ImageScalingSize = New Size(20, 20)
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_cadastroacervo})
+        MenuStrip2.Location = New Point(0, 0)
+        MenuStrip2.Name = "MenuStrip2"
+        MenuStrip2.Padding = New Padding(5, 2, 0, 2)
+        MenuStrip2.Size = New Size(1061, 24)
+        MenuStrip2.TabIndex = 34
+        MenuStrip2.Text = "MenuStrip2"
+        ' 
+        ' ts_menu
+        ' 
+        ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_menu.ForeColor = Color.White
+        ts_menu.Name = "ts_menu"
+        ts_menu.Size = New Size(58, 20)
+        ts_menu.Text = "MENU"
+        ' 
+        ' ts_cadastroacervo
+        ' 
+        ts_cadastroacervo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_cadastroacervo.ForeColor = Color.White
+        ts_cadastroacervo.Name = "ts_cadastroacervo"
+        ts_cadastroacervo.Size = New Size(150, 20)
+        ts_cadastroacervo.Text = "CADASTRO ACERVO"
         ' 
         ' ToolStrip1
         ' 
         ToolStrip1.BackColor = Color.MediumPurple
         ToolStrip1.ImageScalingSize = New Size(24, 24)
         ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_livrobusc, btn_buscaracervo})
-        ToolStrip1.Location = New Point(0, 0)
+        ToolStrip1.Location = New Point(0, 24)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(1061, 31)
-        ToolStrip1.TabIndex = 33
+        ToolStrip1.TabIndex = 35
         ToolStrip1.Text = "ToolStrip1"
         ' 
         ' ToolStripLabel1
@@ -222,6 +254,7 @@ Partial Class frm_acervo
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1061, 480)
         Controls.Add(ToolStrip1)
+        Controls.Add(MenuStrip2)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(btn_menu)
@@ -231,6 +264,8 @@ Partial Class frm_acervo
         Text = "frm_acervo"
         CType(dgv_acervo, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip2.ResumeLayout(False)
+        MenuStrip2.PerformLayout()
         ToolStrip1.ResumeLayout(False)
         ToolStrip1.PerformLayout()
         ResumeLayout(False)
@@ -249,6 +284,9 @@ Partial Class frm_acervo
     Friend WithEvents btn_menu As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ts_menu As ToolStripMenuItem
+    Friend WithEvents ts_cadastroacervo As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator

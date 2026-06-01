@@ -57,9 +57,9 @@ Partial Class frm_cadusuario
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.BackgroundImageLayout = ImageLayout.None
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(232, 128)
+        PictureBox1.Location = New Point(108, 149)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(94, 83)
+        PictureBox1.Size = New Size(149, 116)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 5
         PictureBox1.TabStop = False
@@ -85,9 +85,9 @@ Partial Class frm_cadusuario
         Panel1.Controls.Add(btn_cadastrar)
         Panel1.Controls.Add(txt_senha)
         Panel1.Controls.Add(txt_matricula)
-        Panel1.Location = New Point(384, 21)
+        Panel1.Location = New Point(384, 27)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(501, 562)
+        Panel1.Size = New Size(501, 556)
         Panel1.TabIndex = 6
         ' 
         ' Label1
@@ -320,13 +320,13 @@ Partial Class frm_cadusuario
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(898, 562)
+        ClientSize = New Size(898, 594)
         Controls.Add(MenuStrip1)
         Controls.Add(Label2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
         Name = "frm_cadusuario"
-        Text = "Cadastro de Usuário"
+        Text = "CADASTRO DE USUARIO"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

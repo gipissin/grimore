@@ -43,6 +43,7 @@
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
     Sub Carregar_formadmin()
         Try
             Dim col As DataGridViewComboBoxColumn = CType(frm_admin.dgv_admin.Columns("Column6"), DataGridViewComboBoxColumn)
@@ -215,34 +216,21 @@
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
     End Sub
-
-    ' Busca cliente pelo ID no formulário de empréstimo
-    Sub Buscar_cliente(id As String)
+    ' Busca os dados do cliente para empréstimo
+    Sub Buscar_cliente_Emprestimo(id As String)
         Try
             SQL = $"SELECT * FROM tb_clientes WHERE id_cliente = '{id}'"
             rs = database.Execute(SQL)
+
             If rs.EOF = False Then
                 frm_emprestimo.txt_nomecliente.Text = rs.Fields("nome").Value.ToString()
-
-                ' Verifica se tem empréstimo ativo
-                SQL = $"SELECT e.*, l.titulo, l.etiqueta, l.area, l.quantidade FROM tb_emprestimos e
-        INNER JOIN tb_livros l ON e.isbn = l.isbn
-        WHERE e.id_cliente = '{id}' AND e.devolvido = 0"
-                rs = database.Execute(SQL)
-                If rs.EOF = False Then
-                    frm_emprestimo.txt_titulo.Text = rs.Fields("titulo").Value.ToString()
-                    frm_emprestimo.txt_isbn.Text = rs.Fields("isbn").Value.ToString()
-                    frm_emprestimo.txt_etiqueta.Text = rs.Fields("etiqueta").Value.ToString()
-                    frm_emprestimo.cmb_area.Text = rs.Fields("area").Value.ToString()
-                    frm_emprestimo.txt_qtdestoque.Text = rs.Fields("quantidade").Value.ToString() ' ← adicione
-                    frm_emprestimo.dtp_emprestimo.Value = CDate(rs.Fields("data_emprestimo").Value)
-                    frm_emprestimo.dtp_devolucao.Value = CDate(rs.Fields("data_devolucao").Value)
-                End If
             Else
                 MsgBox("Cliente não encontrado.", MsgBoxStyle.Exclamation, "ATENÇÃO")
+                frm_emprestimo.txt_idcliente.Clear()
+                frm_emprestimo.txt_nomecliente.Clear()
             End If
         Catch ex As Exception
-            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
+            MsgBox("Erro ao buscar cliente: " & ex.Message, MsgBoxStyle.Critical, "ERRO")
         End Try
     End Sub
 End Module

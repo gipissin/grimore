@@ -188,7 +188,7 @@ Partial Class login_principal
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
         Name = "login_principal"
-        Text = "Login"
+        Text = "LOGIN"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
