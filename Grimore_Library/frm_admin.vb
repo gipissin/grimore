@@ -8,27 +8,27 @@ Public Class frm_admin
         dgv_admin.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2
         Panel1.Visible = False
         Panel2.Visible = False
-        
+
     End Sub
 
-    Private Sub btn_buscar_Click(sender As Object, e As EventArgs) Handles btn_buscar.Click
+    Private Sub btn_buscar_Click(sender As Object, e As EventArgs)
         Try
             SQL = $"SELECT * FROM tb_usuarios where matricula like '%{txt_matriculabusc.Text}%' order by usuario asc"
             rs = database.Execute(SQL)
             With dgv_admin
-                .Rows.Clear()
+                .Rows.Clear
                 Do While rs.EOF = False
                     .Rows.Add(
-                        rs.Fields(4).Value.ToString(),
-                        rs.Fields(0).Value.ToString(),
-                        rs.Fields(1).Value.ToString(),
-                        rs.Fields(2).Value.ToString(),
-                        rs.Fields(5).Value.ToString().ToUpper(),
-                        rs.Fields(3).Value.ToString(),
+                        rs.Fields(4).Value.ToString,
+                        rs.Fields(0).Value.ToString,
+                        rs.Fields(1).Value.ToString,
+                        rs.Fields(2).Value.ToString,
+                        rs.Fields(5).Value.ToString.ToUpper,
+                        rs.Fields(3).Value.ToString,
                         Nothing,
                         Nothing
                     )
-                    rs.MoveNext()
+                    rs.MoveNext
                 Loop
             End With
         Catch ex As Exception
@@ -95,7 +95,13 @@ Public Class frm_admin
         End If
     End Sub
 
+    Private Sub ts_caduser_Click(sender As Object, e As EventArgs) Handles ts_caduser.Click
+        frm_cadusuario.Show()
+        Me.Hide()
+    End Sub
 
-
-
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
+        frm_menu.Show()
+        Me.Hide()
+    End Sub
 End Class

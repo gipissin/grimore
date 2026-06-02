@@ -143,7 +143,6 @@ C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\bin\Debug\net8.
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\bin\Debug\net8.0-windows7.0\Grimore_Library.pdb
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Interop.ADODB.dll
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.vbproj.ResolveComReference.cache
-C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Creditos.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_admin.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_alterarsenha.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_cadacervo.resources
@@ -179,3 +178,11 @@ C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_pendentes.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_gerenciarclientes.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_situacaocliente.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.cad_usuario.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_devolucao.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_emprestimo.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_gerenciarclientes.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_historico.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_pendentes.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_situacaocliente.resources
+C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Sobre.resources

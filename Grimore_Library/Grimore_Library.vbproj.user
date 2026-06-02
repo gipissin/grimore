@@ -4,9 +4,6 @@
     <Compile Update="Cad_usuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Entrada.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frm_acervo.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -22,10 +19,10 @@
     <Compile Update="frm_cadusuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Creditos.vb">
+    <Compile Update="frm_admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm_admin.vb">
+    <Compile Update="frm_devolucao.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm_emprestimo.vb">

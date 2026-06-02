@@ -22,8 +22,8 @@ Partial Class frm_acervo
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_acervo))
         dgv_acervo = New DataGridView()
         Column1 = New DataGridViewTextBoxColumn()
@@ -34,7 +34,6 @@ Partial Class frm_acervo
         Column5 = New DataGridViewTextBoxColumn()
         Column6 = New DataGridViewImageColumn()
         Column7 = New DataGridViewImageColumn()
-        btn_menu = New Button()
         PictureBox2 = New PictureBox()
         Label2 = New Label()
         MenuStrip2 = New MenuStrip()
@@ -55,29 +54,28 @@ Partial Class frm_acervo
         ' 
         dgv_acervo.AllowUserToAddRows = False
         dgv_acervo.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(179), CByte(157), CByte(219))
-        DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(26), CByte(0), CByte(80))
-        dgv_acervo.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(179), CByte(157), CByte(219))
+        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(26), CByte(0), CByte(80))
+        dgv_acervo.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         dgv_acervo.BackgroundColor = Color.FromArgb(CByte(74), CByte(47), CByte(138))
         dgv_acervo.BorderStyle = BorderStyle.Fixed3D
         dgv_acervo.ColumnHeadersHeight = 40
         dgv_acervo.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column8, Column5, Column6, Column7})
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 8F)
-        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        dgv_acervo.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Window
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 8F)
+        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        dgv_acervo.DefaultCellStyle = DataGridViewCellStyle4
         dgv_acervo.GridColor = Color.FromArgb(CByte(224), CByte(216), CByte(247))
-        dgv_acervo.Location = New Point(0, 120)
-        dgv_acervo.Margin = New Padding(3, 2, 3, 2)
+        dgv_acervo.Location = New Point(0, 160)
         dgv_acervo.Name = "dgv_acervo"
         dgv_acervo.ReadOnly = True
         dgv_acervo.RowHeadersWidth = 51
         dgv_acervo.RowTemplate.Height = 36
-        dgv_acervo.Size = New Size(1077, 361)
+        dgv_acervo.Size = New Size(1231, 481)
         dgv_acervo.TabIndex = 0
         ' 
         ' Column1
@@ -146,25 +144,15 @@ Partial Class frm_acervo
         Column7.ReadOnly = True
         Column7.Width = 125
         ' 
-        ' btn_menu
-        ' 
-        btn_menu.BackColor = Color.Transparent
-        btn_menu.Image = CType(resources.GetObject("btn_menu.Image"), Image)
-        btn_menu.Location = New Point(969, 36)
-        btn_menu.Name = "btn_menu"
-        btn_menu.Size = New Size(80, 75)
-        btn_menu.TabIndex = 30
-        btn_menu.Text = vbCrLf
-        btn_menu.UseVisualStyleBackColor = False
-        ' 
         ' PictureBox2
         ' 
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(858, 34)
+        PictureBox2.Location = New Point(1106, 42)
+        PictureBox2.Margin = New Padding(3, 4, 3, 4)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(94, 83)
+        PictureBox2.Size = New Size(107, 111)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 31
         PictureBox2.TabStop = False
@@ -175,9 +163,9 @@ Partial Class frm_acervo
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 21.75F)
         Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(12, 67)
+        Label2.Location = New Point(14, 89)
         Label2.Name = "Label2"
-        Label2.Size = New Size(485, 34)
+        Label2.Size = New Size(623, 42)
         Label2.TabIndex = 32
         Label2.Text = "GERENCIAMENTO DE ACERVO"
         ' 
@@ -188,8 +176,8 @@ Partial Class frm_acervo
         MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_cadastroacervo})
         MenuStrip2.Location = New Point(0, 0)
         MenuStrip2.Name = "MenuStrip2"
-        MenuStrip2.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip2.Size = New Size(1061, 24)
+        MenuStrip2.Padding = New Padding(6, 3, 0, 3)
+        MenuStrip2.Size = New Size(1213, 27)
         MenuStrip2.TabIndex = 34
         MenuStrip2.Text = "MenuStrip2"
         ' 
@@ -198,7 +186,7 @@ Partial Class frm_acervo
         ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_menu.ForeColor = Color.White
         ts_menu.Name = "ts_menu"
-        ts_menu.Size = New Size(58, 20)
+        ts_menu.Size = New Size(69, 21)
         ts_menu.Text = "MENU"
         ' 
         ' ts_cadastroacervo
@@ -206,7 +194,7 @@ Partial Class frm_acervo
         ts_cadastroacervo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_cadastroacervo.ForeColor = Color.White
         ts_cadastroacervo.Name = "ts_cadastroacervo"
-        ts_cadastroacervo.Size = New Size(150, 20)
+        ts_cadastroacervo.Size = New Size(187, 21)
         ts_cadastroacervo.Text = "CADASTRO ACERVO"
         ' 
         ' ToolStrip1
@@ -214,9 +202,9 @@ Partial Class frm_acervo
         ToolStrip1.BackColor = Color.MediumPurple
         ToolStrip1.ImageScalingSize = New Size(24, 24)
         ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_livrobusc, btn_buscaracervo})
-        ToolStrip1.Location = New Point(0, 24)
+        ToolStrip1.Location = New Point(0, 27)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1061, 31)
+        ToolStrip1.Size = New Size(1213, 31)
         ToolStrip1.TabIndex = 35
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -225,7 +213,7 @@ Partial Class frm_acervo
         ToolStripLabel1.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ToolStripLabel1.ForeColor = Color.White
         ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(126, 28)
+        ToolStripLabel1.Size = New Size(158, 28)
         ToolStripLabel1.Text = "PESQUISAR LIVRO"
         ' 
         ' ToolStripSeparator1
@@ -236,7 +224,7 @@ Partial Class frm_acervo
         ' txt_livrobusc
         ' 
         txt_livrobusc.Name = "txt_livrobusc"
-        txt_livrobusc.Size = New Size(100, 31)
+        txt_livrobusc.Size = New Size(114, 31)
         ' 
         ' btn_buscaracervo
         ' 
@@ -244,22 +232,20 @@ Partial Class frm_acervo
         btn_buscaracervo.Image = CType(resources.GetObject("btn_buscaracervo.Image"), Image)
         btn_buscaracervo.ImageTransparentColor = Color.Magenta
         btn_buscaracervo.Name = "btn_buscaracervo"
-        btn_buscaracervo.Size = New Size(28, 28)
+        btn_buscaracervo.Size = New Size(29, 28)
         btn_buscaracervo.Text = "ToolStripButton1"
         ' 
         ' frm_acervo
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(1061, 480)
+        ClientSize = New Size(1213, 640)
         Controls.Add(ToolStrip1)
         Controls.Add(MenuStrip2)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
-        Controls.Add(btn_menu)
         Controls.Add(dgv_acervo)
-        Margin = New Padding(3, 2, 3, 2)
         Name = "frm_acervo"
         Text = "frm_acervo"
         CType(dgv_acervo, ComponentModel.ISupportInitialize).EndInit()
