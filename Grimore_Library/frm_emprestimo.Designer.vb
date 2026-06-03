@@ -51,6 +51,7 @@ Partial Class frm_emprestimo
         ts_menu = New ToolStripMenuItem()
         ts_acervo = New ToolStripMenuItem()
         ts_pendencias = New ToolStripMenuItem()
+        CLIENTESToolStripMenuItem = New ToolStripMenuItem()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         MenuStrip2.SuspendLayout()
@@ -83,9 +84,10 @@ Partial Class frm_emprestimo
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(30, 27)
+        Panel1.Location = New Point(34, 36)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(837, 589)
+        Panel1.Size = New Size(956, 785)
         Panel1.TabIndex = 1
         ' 
         ' Label11
@@ -94,27 +96,29 @@ Partial Class frm_emprestimo
         Label11.BackColor = Color.MediumPurple
         Label11.Font = New Font("Cooper Black", 14.25F)
         Label11.ForeColor = Color.White
-        Label11.Location = New Point(322, 374)
+        Label11.Location = New Point(368, 499)
         Label11.Name = "Label11"
-        Label11.Size = New Size(218, 21)
+        Label11.Size = New Size(277, 27)
         Label11.TabIndex = 39
         Label11.Text = "Quantidade escolhida"
         ' 
         ' txt_qtdemprestimo
         ' 
         txt_qtdemprestimo.BackColor = Color.Gainsboro
-        txt_qtdemprestimo.Location = New Point(354, 414)
+        txt_qtdemprestimo.Location = New Point(405, 552)
+        txt_qtdemprestimo.Margin = New Padding(3, 4, 3, 4)
         txt_qtdemprestimo.Name = "txt_qtdemprestimo"
-        txt_qtdemprestimo.Size = New Size(147, 23)
+        txt_qtdemprestimo.Size = New Size(167, 27)
         txt_qtdemprestimo.TabIndex = 38
         ' 
         ' txt_qtdestoque
         ' 
         txt_qtdestoque.BackColor = Color.Gainsboro
-        txt_qtdestoque.Location = New Point(610, 416)
+        txt_qtdestoque.Location = New Point(697, 555)
+        txt_qtdestoque.Margin = New Padding(3, 4, 3, 4)
         txt_qtdestoque.Name = "txt_qtdestoque"
         txt_qtdestoque.ReadOnly = True
-        txt_qtdestoque.Size = New Size(147, 23)
+        txt_qtdestoque.Size = New Size(167, 27)
         txt_qtdestoque.TabIndex = 37
         ' 
         ' Label10
@@ -123,9 +127,9 @@ Partial Class frm_emprestimo
         Label10.BackColor = Color.MediumPurple
         Label10.Font = New Font("Cooper Black", 14.25F)
         Label10.ForeColor = Color.White
-        Label10.Location = New Point(565, 374)
+        Label10.Location = New Point(646, 499)
         Label10.Name = "Label10"
-        Label10.Size = New Size(235, 21)
+        Label10.Size = New Size(298, 27)
         Label10.TabIndex = 36
         Label10.Text = "Quantidade em estoque"
         ' 
@@ -134,9 +138,10 @@ Partial Class frm_emprestimo
         cmb_area.BackColor = Color.Gainsboro
         cmb_area.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
         cmb_area.FormattingEnabled = True
-        cmb_area.Location = New Point(73, 408)
+        cmb_area.Location = New Point(83, 544)
+        cmb_area.Margin = New Padding(3, 4, 3, 4)
         cmb_area.Name = "cmb_area"
-        cmb_area.Size = New Size(162, 24)
+        cmb_area.Size = New Size(185, 26)
         cmb_area.TabIndex = 34
         ' 
         ' Label9
@@ -145,9 +150,9 @@ Partial Class frm_emprestimo
         Label9.BackColor = Color.MediumPurple
         Label9.Font = New Font("Cooper Black", 14.25F)
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(73, 374)
+        Label9.Location = New Point(83, 499)
         Label9.Name = "Label9"
-        Label9.Size = New Size(225, 21)
+        Label9.Size = New Size(285, 27)
         Label9.TabIndex = 35
         Label9.Text = "Area do conhecimento"
         ' 
@@ -156,9 +161,10 @@ Partial Class frm_emprestimo
         Panel2.BackColor = Color.MediumPurple
         Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(Label8)
-        Panel2.Location = New Point(163, 20)
+        Panel2.Location = New Point(186, 27)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(499, 44)
+        Panel2.Size = New Size(570, 58)
         Panel2.TabIndex = 16
         ' 
         ' Label8
@@ -166,61 +172,67 @@ Partial Class frm_emprestimo
         Label8.AutoSize = True
         Label8.Font = New Font("Cooper Black", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.White
-        Label8.Location = New Point(146, 3)
+        Label8.Location = New Point(167, 4)
         Label8.Name = "Label8"
-        Label8.Size = New Size(195, 34)
+        Label8.Size = New Size(250, 42)
         Label8.TabIndex = 17
         Label8.Text = "Empréstimo"
         ' 
         ' txt_nomecliente
         ' 
         txt_nomecliente.BackColor = Color.Gainsboro
-        txt_nomecliente.Location = New Point(73, 151)
+        txt_nomecliente.Location = New Point(368, 201)
+        txt_nomecliente.Margin = New Padding(3, 4, 3, 4)
         txt_nomecliente.Name = "txt_nomecliente"
-        txt_nomecliente.Size = New Size(256, 23)
+        txt_nomecliente.Size = New Size(292, 27)
         txt_nomecliente.TabIndex = 15
         ' 
         ' txt_idcliente
         ' 
         txt_idcliente.BackColor = Color.Gainsboro
-        txt_idcliente.Location = New Point(367, 151)
+        txt_idcliente.Location = New Point(83, 201)
+        txt_idcliente.Margin = New Padding(3, 4, 3, 4)
         txt_idcliente.Name = "txt_idcliente"
-        txt_idcliente.Size = New Size(147, 23)
+        txt_idcliente.Size = New Size(167, 27)
         txt_idcliente.TabIndex = 14
         ' 
         ' txt_etiqueta
         ' 
         txt_etiqueta.BackColor = Color.Gainsboro
-        txt_etiqueta.Location = New Point(382, 262)
+        txt_etiqueta.Location = New Point(437, 349)
+        txt_etiqueta.Margin = New Padding(3, 4, 3, 4)
         txt_etiqueta.Multiline = True
         txt_etiqueta.Name = "txt_etiqueta"
-        txt_etiqueta.Size = New Size(102, 85)
+        txt_etiqueta.Size = New Size(116, 112)
         txt_etiqueta.TabIndex = 13
         txt_etiqueta.TextAlign = HorizontalAlignment.Center
         ' 
         ' txt_titulo
         ' 
         txt_titulo.BackColor = Color.Gainsboro
-        txt_titulo.Location = New Point(73, 324)
+        txt_titulo.Location = New Point(83, 432)
+        txt_titulo.Margin = New Padding(3, 4, 3, 4)
         txt_titulo.Name = "txt_titulo"
-        txt_titulo.Size = New Size(256, 23)
+        txt_titulo.Size = New Size(292, 27)
         txt_titulo.TabIndex = 12
         ' 
         ' txt_isbn
         ' 
         txt_isbn.BackColor = Color.Gainsboro
-        txt_isbn.Location = New Point(73, 237)
+        txt_isbn.Location = New Point(83, 316)
+        txt_isbn.Margin = New Padding(3, 4, 3, 4)
         txt_isbn.Name = "txt_isbn"
-        txt_isbn.Size = New Size(256, 23)
+        txt_isbn.Size = New Size(292, 27)
         txt_isbn.TabIndex = 11
         ' 
         ' btn_emprestimo
         ' 
         btn_emprestimo.BackColor = Color.MediumPurple
         btn_emprestimo.Font = New Font("Cooper Black", 14.25F)
-        btn_emprestimo.Location = New Point(610, 476)
+        btn_emprestimo.Location = New Point(697, 635)
+        btn_emprestimo.Margin = New Padding(3, 4, 3, 4)
         btn_emprestimo.Name = "btn_emprestimo"
-        btn_emprestimo.Size = New Size(166, 68)
+        btn_emprestimo.Size = New Size(190, 91)
         btn_emprestimo.TabIndex = 9
         btn_emprestimo.Text = "Empréstimo"
         btn_emprestimo.UseVisualStyleBackColor = False
@@ -231,18 +243,20 @@ Partial Class frm_emprestimo
         dtp_emprestimo.CalendarMonthBackground = Color.White
         dtp_emprestimo.Font = New Font("Cooper Black", 14.25F)
         dtp_emprestimo.Format = DateTimePickerFormat.Short
-        dtp_emprestimo.Location = New Point(73, 507)
+        dtp_emprestimo.Location = New Point(83, 676)
+        dtp_emprestimo.Margin = New Padding(3, 4, 3, 4)
         dtp_emprestimo.Name = "dtp_emprestimo"
-        dtp_emprestimo.Size = New Size(166, 29)
+        dtp_emprestimo.Size = New Size(189, 35)
         dtp_emprestimo.TabIndex = 8
         ' 
         ' dtp_devolucao
         ' 
         dtp_devolucao.Font = New Font("Cooper Black", 14.25F)
         dtp_devolucao.Format = DateTimePickerFormat.Short
-        dtp_devolucao.Location = New Point(321, 507)
+        dtp_devolucao.Location = New Point(367, 676)
+        dtp_devolucao.Margin = New Padding(3, 4, 3, 4)
         dtp_devolucao.Name = "dtp_devolucao"
-        dtp_devolucao.Size = New Size(159, 29)
+        dtp_devolucao.Size = New Size(181, 35)
         dtp_devolucao.TabIndex = 7
         dtp_devolucao.Value = New Date(2026, 5, 30, 0, 0, 0, 0)
         ' 
@@ -252,9 +266,9 @@ Partial Class frm_emprestimo
         Label7.BackColor = Color.MediumPurple
         Label7.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(367, 115)
+        Label7.Location = New Point(83, 153)
         Label7.Name = "Label7"
-        Label7.Size = New Size(132, 21)
+        Label7.Size = New Size(166, 27)
         Label7.TabIndex = 6
         Label7.Text = "ID do cliente"
         ' 
@@ -264,9 +278,9 @@ Partial Class frm_emprestimo
         Label6.BackColor = Color.MediumPurple
         Label6.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(382, 224)
+        Label6.Location = New Point(437, 299)
         Label6.Name = "Label6"
-        Label6.Size = New Size(94, 21)
+        Label6.Size = New Size(119, 27)
         Label6.TabIndex = 5
         Label6.Text = "Etiqueta"
         ' 
@@ -276,9 +290,9 @@ Partial Class frm_emprestimo
         Label5.BackColor = Color.MediumPurple
         Label5.Font = New Font("Cooper Black", 14.25F)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(321, 467)
+        Label5.Location = New Point(367, 623)
         Label5.Name = "Label5"
-        Label5.Size = New Size(185, 21)
+        Label5.Size = New Size(235, 27)
         Label5.TabIndex = 4
         Label5.Text = "Data de devolução"
         ' 
@@ -288,9 +302,9 @@ Partial Class frm_emprestimo
         Label4.BackColor = Color.MediumPurple
         Label4.Font = New Font("Cooper Black", 14.25F)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(73, 467)
+        Label4.Location = New Point(83, 623)
         Label4.Name = "Label4"
-        Label4.Size = New Size(194, 21)
+        Label4.Size = New Size(246, 27)
         Label4.TabIndex = 3
         Label4.Text = "Data de emprétimo"
         ' 
@@ -300,9 +314,9 @@ Partial Class frm_emprestimo
         Label3.BackColor = Color.MediumPurple
         Label3.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(73, 115)
+        Label3.Location = New Point(368, 153)
         Label3.Name = "Label3"
-        Label3.Size = New Size(164, 21)
+        Label3.Size = New Size(208, 27)
         Label3.TabIndex = 2
         Label3.Text = "Nome do cliente"
         ' 
@@ -312,9 +326,9 @@ Partial Class frm_emprestimo
         Label2.BackColor = Color.MediumPurple
         Label2.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(73, 286)
+        Label2.Location = New Point(83, 381)
         Label2.Name = "Label2"
-        Label2.Size = New Size(70, 21)
+        Label2.Size = New Size(88, 27)
         Label2.TabIndex = 1
         Label2.Text = "Título"
         ' 
@@ -324,9 +338,9 @@ Partial Class frm_emprestimo
         Label1.BackColor = Color.MediumPurple
         Label1.Font = New Font("Cooper Black", 14.25F)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(73, 199)
+        Label1.Location = New Point(83, 265)
         Label1.Name = "Label1"
-        Label1.Size = New Size(60, 21)
+        Label1.Size = New Size(73, 27)
         Label1.TabIndex = 0
         Label1.Text = "ISBN"
         ' 
@@ -334,11 +348,11 @@ Partial Class frm_emprestimo
         ' 
         MenuStrip2.BackColor = Color.MediumPurple
         MenuStrip2.ImageScalingSize = New Size(20, 20)
-        MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_acervo, ts_pendencias})
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ts_menu, ts_acervo, ts_pendencias, CLIENTESToolStripMenuItem})
         MenuStrip2.Location = New Point(0, 0)
         MenuStrip2.Name = "MenuStrip2"
-        MenuStrip2.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip2.Size = New Size(895, 24)
+        MenuStrip2.Padding = New Padding(6, 3, 0, 3)
+        MenuStrip2.Size = New Size(1023, 27)
         MenuStrip2.TabIndex = 31
         MenuStrip2.Text = "MenuStrip2"
         ' 
@@ -347,7 +361,7 @@ Partial Class frm_emprestimo
         ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_menu.ForeColor = Color.White
         ts_menu.Name = "ts_menu"
-        ts_menu.Size = New Size(58, 20)
+        ts_menu.Size = New Size(69, 21)
         ts_menu.Text = "MENU"
         ' 
         ' ts_acervo
@@ -355,7 +369,7 @@ Partial Class frm_emprestimo
         ts_acervo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_acervo.ForeColor = Color.White
         ts_acervo.Name = "ts_acervo"
-        ts_acervo.Size = New Size(74, 20)
+        ts_acervo.Size = New Size(91, 21)
         ts_acervo.Text = "ACERVO"
         ' 
         ' ts_pendencias
@@ -363,18 +377,27 @@ Partial Class frm_emprestimo
         ts_pendencias.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_pendencias.ForeColor = Color.White
         ts_pendencias.Name = "ts_pendencias"
-        ts_pendencias.Size = New Size(105, 20)
+        ts_pendencias.Size = New Size(127, 21)
         ts_pendencias.Text = "PENDENCIAS"
+        ' 
+        ' CLIENTESToolStripMenuItem
+        ' 
+        CLIENTESToolStripMenuItem.Font = New Font("Cooper Black", 9F)
+        CLIENTESToolStripMenuItem.ForeColor = Color.White
+        CLIENTESToolStripMenuItem.Name = "CLIENTESToolStripMenuItem"
+        CLIENTESToolStripMenuItem.Size = New Size(102, 21)
+        CLIENTESToolStripMenuItem.Text = "CLIENTES"
         ' 
         ' frm_emprestimo
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(895, 626)
+        ClientSize = New Size(1023, 835)
         Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "frm_emprestimo"
         Text = "EMPRESTIMO"
         Panel1.ResumeLayout(False)
@@ -415,4 +438,5 @@ Partial Class frm_emprestimo
     Friend WithEvents ts_menu As ToolStripMenuItem
     Friend WithEvents ts_acervo As ToolStripMenuItem
     Friend WithEvents ts_pendencias As ToolStripMenuItem
+    Friend WithEvents CLIENTESToolStripMenuItem As ToolStripMenuItem
 End Class

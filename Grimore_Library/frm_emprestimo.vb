@@ -6,6 +6,10 @@
         ' devolução em 7 dias
         dtp_emprestimo.Value = DateTime.Now
         dtp_devolucao.Value = DateTime.Now.AddDays(7)
+        txt_qtdestoque.Enabled = False
+        txt_titulo.Enabled = False
+        txt_etiqueta.Enabled = False
+        cmb_area.Enabled = False
     End Sub
 
     Private Sub txt_idcliente_LostFocus(sender As Object, e As EventArgs) Handles txt_idcliente.LostFocus
@@ -95,6 +99,9 @@
 
     Private Sub ts_acervo_Click(sender As Object, e As EventArgs) Handles ts_acervo.Click
         frm_acervo.Show()
-        Hide()
+    End Sub
+
+    Private Sub CLIENTESToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CLIENTESToolStripMenuItem.Click
+        frm_gerenciarclientes.Show()
     End Sub
 End Class
