@@ -101,4 +101,9 @@
         frm_cadclientes.Show()
         Me.Hide()
     End Sub
+
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
+        frm_menu.Show()
+        Me.Hide()
+    End Sub
 End Class

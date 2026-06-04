@@ -25,13 +25,13 @@ Partial Class frm_situacaocliente
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_situacaocliente))
         MenuStrip2 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
+        ts_emprestimo = New ToolStripMenuItem()
         txt_nomecliente = New TextBox()
         txt_idcliente = New TextBox()
         Label7 = New Label()
         Label3 = New Label()
         btn_livrosemposse = New Button()
         btn_historico = New Button()
-        ts_emprestimo = New ToolStripMenuItem()
         MenuStrip2.SuspendLayout()
         SuspendLayout()
         ' 
@@ -55,10 +55,18 @@ Partial Class frm_situacaocliente
         ts_menu.Size = New Size(58, 20)
         ts_menu.Text = "MENU"
         ' 
+        ' ts_emprestimo
+        ' 
+        ts_emprestimo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ts_emprestimo.ForeColor = Color.White
+        ts_emprestimo.Name = "ts_emprestimo"
+        ts_emprestimo.Size = New Size(104, 20)
+        ts_emprestimo.Text = "EMPRESTIMO"
+        ' 
         ' txt_nomecliente
         ' 
         txt_nomecliente.BackColor = Color.Gainsboro
-        txt_nomecliente.Location = New Point(27, 78)
+        txt_nomecliente.Location = New Point(428, 86)
         txt_nomecliente.Name = "txt_nomecliente"
         txt_nomecliente.Size = New Size(256, 23)
         txt_nomecliente.TabIndex = 35
@@ -66,7 +74,7 @@ Partial Class frm_situacaocliente
         ' txt_idcliente
         ' 
         txt_idcliente.BackColor = Color.Gainsboro
-        txt_idcliente.Location = New Point(321, 78)
+        txt_idcliente.Location = New Point(27, 86)
         txt_idcliente.Name = "txt_idcliente"
         txt_idcliente.Size = New Size(147, 23)
         txt_idcliente.TabIndex = 34
@@ -77,7 +85,7 @@ Partial Class frm_situacaocliente
         Label7.BackColor = Color.MediumPurple
         Label7.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(321, 42)
+        Label7.Location = New Point(27, 50)
         Label7.Name = "Label7"
         Label7.Size = New Size(132, 21)
         Label7.TabIndex = 33
@@ -89,7 +97,7 @@ Partial Class frm_situacaocliente
         Label3.BackColor = Color.MediumPurple
         Label3.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(27, 42)
+        Label3.Location = New Point(428, 50)
         Label3.Name = "Label3"
         Label3.Size = New Size(164, 21)
         Label3.TabIndex = 32
@@ -119,14 +127,6 @@ Partial Class frm_situacaocliente
         btn_historico.Text = "HISTÓRICO DE EMPRÉSTIMOS ANTERIORES"
         btn_historico.UseVisualStyleBackColor = False
         ' 
-        ' ts_emprestimo
-        ' 
-        ts_emprestimo.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ts_emprestimo.ForeColor = Color.White
-        ts_emprestimo.Name = "ts_emprestimo"
-        ts_emprestimo.Size = New Size(104, 20)
-        ts_emprestimo.Text = "EMPRESTIMO"
-        ' 
         ' frm_situacaocliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -141,6 +141,7 @@ Partial Class frm_situacaocliente
         Controls.Add(Label7)
         Controls.Add(Label3)
         Controls.Add(MenuStrip2)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "frm_situacaocliente"
         Text = "SITUAÇÃO DO CLIENTE"
         MenuStrip2.ResumeLayout(False)

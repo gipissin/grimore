@@ -325,6 +325,7 @@ Partial Class frm_cadusuario
         Controls.Add(Label2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "frm_cadusuario"
         Text = "CADASTRO DE USUARIO"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

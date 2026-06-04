@@ -58,7 +58,7 @@ Partial Class frm_cadclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(755, 504)
+        PictureBox2.Location = New Point(755, 282)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(94, 83)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -87,7 +87,7 @@ Partial Class frm_cadclientes
         Panel1.Controls.Add(txt_email)
         Panel1.Controls.Add(txt_nome)
         Panel1.Font = New Font("Sylfaen", 12F)
-        Panel1.Location = New Point(24, 30)
+        Panel1.Location = New Point(24, 50)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(725, 557)
         Panel1.TabIndex = 23
@@ -153,7 +153,7 @@ Partial Class frm_cadclientes
         img_foto.Location = New Point(507, 77)
         img_foto.Name = "img_foto"
         img_foto.Size = New Size(184, 239)
-        img_foto.SizeMode = PictureBoxSizeMode.CenterImage
+        img_foto.SizeMode = PictureBoxSizeMode.StretchImage
         img_foto.TabIndex = 54
         img_foto.TabStop = False
         ' 
@@ -327,10 +327,11 @@ Partial Class frm_cadclientes
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(857, 599)
+        ClientSize = New Size(857, 619)
         Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frm_cadclientes"
         Text = "CADASTRO DE CLIENTES"

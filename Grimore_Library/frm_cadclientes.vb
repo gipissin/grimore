@@ -34,11 +34,19 @@ Public Class frm_cadclientes
                                 '{cmb_preferencias.Text}', '{txt_observacoes.Text}', '{diretorio}')"
                 database.Execute(SQL)
                 MsgBox("Cliente cadastrado com sucesso!", MsgBoxStyle.Information, "AVISO")
+                resposta_user = MsgBox("Deseja cadastrar outro cliente?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO")
+                If resposta_user = vbYes Then
+                    Limpar_cadcliente()
+                    Exit Sub
+                Else
+                    Limpar_cadcliente()
+                    frm_gerenciarclientes.Show()
+                    Me.Hide()
+                End If
             Else
                 MsgBox("CPF já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
                 Exit Sub
             End If
-
             Limpar_cadcliente()
             frm_gerenciarclientes.Carregar_Clientes("")
             frm_gerenciarclientes.Show()

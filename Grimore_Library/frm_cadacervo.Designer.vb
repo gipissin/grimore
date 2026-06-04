@@ -106,7 +106,7 @@ Partial Class frm_cadacervo
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label4)
         Panel1.Font = New Font("Sylfaen", 12F)
-        Panel1.Location = New Point(66, 31)
+        Panel1.Location = New Point(64, 44)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(687, 542)
         Panel1.TabIndex = 22
@@ -118,6 +118,7 @@ Partial Class frm_cadacervo
         img_capa.Margin = New Padding(3, 2, 3, 2)
         img_capa.Name = "img_capa"
         img_capa.Size = New Size(211, 249)
+        img_capa.SizeMode = PictureBoxSizeMode.StretchImage
         img_capa.TabIndex = 52
         img_capa.TabStop = False
         ' 
@@ -383,10 +384,11 @@ Partial Class frm_cadacervo
         BackColor = Color.FromArgb(CByte(63), CByte(13), CByte(145))
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(872, 562)
+        ClientSize = New Size(872, 598)
         Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox2)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frm_cadacervo"
         Text = "Cadastro de Acervo"

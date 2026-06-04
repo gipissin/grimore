@@ -31,7 +31,6 @@ Partial Class frm_historico
         Column5 = New DataGridViewTextBoxColumn()
         Column6 = New DataGridViewTextBoxColumn()
         Column7 = New DataGridViewTextBoxColumn()
-        btn_voltar = New Button()
         MenuStrip1 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
         ts_geranciaruser = New ToolStripMenuItem()
@@ -49,12 +48,11 @@ Partial Class frm_historico
         dgv_historico.BackgroundColor = Color.MediumPurple
         dgv_historico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_historico.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
-        dgv_historico.Location = New Point(0, 109)
-        dgv_historico.Margin = New Padding(3, 4, 3, 4)
+        dgv_historico.Location = New Point(6, 98)
         dgv_historico.Name = "dgv_historico"
         dgv_historico.ReadOnly = True
         dgv_historico.RowHeadersWidth = 51
-        dgv_historico.Size = New Size(981, 389)
+        dgv_historico.Size = New Size(858, 292)
         dgv_historico.TabIndex = 1
         ' 
         ' Column1
@@ -113,18 +111,6 @@ Partial Class frm_historico
         Column7.ReadOnly = True
         Column7.Width = 125
         ' 
-        ' btn_voltar
-        ' 
-        btn_voltar.BackColor = Color.MediumPurple
-        btn_voltar.Font = New Font("Cooper Black", 14.25F)
-        btn_voltar.Location = New Point(760, 518)
-        btn_voltar.Margin = New Padding(3, 4, 3, 4)
-        btn_voltar.Name = "btn_voltar"
-        btn_voltar.Size = New Size(187, 91)
-        btn_voltar.TabIndex = 11
-        btn_voltar.Text = "voltar"
-        btn_voltar.UseVisualStyleBackColor = False
-        ' 
         ' MenuStrip1
         ' 
         MenuStrip1.BackColor = Color.MediumPurple
@@ -132,8 +118,8 @@ Partial Class frm_historico
         MenuStrip1.Items.AddRange(New ToolStripItem() {ts_menu, ts_geranciaruser})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(6, 3, 0, 3)
-        MenuStrip1.Size = New Size(981, 27)
+        MenuStrip1.Padding = New Padding(5, 2, 0, 2)
+        MenuStrip1.Size = New Size(876, 24)
         MenuStrip1.TabIndex = 30
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -142,7 +128,7 @@ Partial Class frm_historico
         ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_menu.ForeColor = Color.White
         ts_menu.Name = "ts_menu"
-        ts_menu.Size = New Size(69, 21)
+        ts_menu.Size = New Size(58, 20)
         ts_menu.Text = "MENU"
         ' 
         ' ts_geranciaruser
@@ -150,7 +136,7 @@ Partial Class frm_historico
         ts_geranciaruser.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_geranciaruser.ForeColor = Color.White
         ts_geranciaruser.Name = "ts_geranciaruser"
-        ts_geranciaruser.Size = New Size(209, 21)
+        ts_geranciaruser.Size = New Size(169, 20)
         ts_geranciaruser.Text = "GERENCIAR USUARIOS"
         ' 
         ' PictureBox2
@@ -158,10 +144,9 @@ Partial Class frm_historico
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(878, 25)
-        PictureBox2.Margin = New Padding(3, 4, 3, 4)
+        PictureBox2.Location = New Point(768, 29)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(91, 84)
+        PictureBox2.Size = New Size(80, 63)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 33
         PictureBox2.TabStop = False
@@ -172,24 +157,23 @@ Partial Class frm_historico
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 21.75F)
         Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(12, 48)
+        Label2.Location = New Point(12, 45)
         Label2.Name = "Label2"
-        Label2.Size = New Size(242, 42)
+        Label2.Size = New Size(189, 34)
         Label2.TabIndex = 34
         Label2.Text = "HISTÓRICO"
         ' 
         ' frm_historico
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(981, 643)
+        ClientSize = New Size(876, 493)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(MenuStrip1)
-        Controls.Add(btn_voltar)
         Controls.Add(dgv_historico)
-        Margin = New Padding(3, 4, 3, 4)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "frm_historico"
         Text = "HISTORICO DO CLIENTE"
         CType(dgv_historico, ComponentModel.ISupportInitialize).EndInit()
@@ -201,7 +185,6 @@ Partial Class frm_historico
     End Sub
 
     Friend WithEvents dgv_historico As DataGridView
-    Friend WithEvents btn_voltar As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ts_menu As ToolStripMenuItem
     Friend WithEvents ts_geranciaruser As ToolStripMenuItem

@@ -22,9 +22,6 @@
     <Compile Update="frm_admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm_devolucao.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frm_emprestimo.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -35,9 +32,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm_menu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="frm_menuadmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm_pendentes.vb">

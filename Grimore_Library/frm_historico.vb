@@ -39,12 +39,12 @@
         End Try
     End Sub
 
-    Private Sub btn_voltar_Click(sender As Object, e As EventArgs) Handles btn_voltar.Click
-            frm_situacaocliente.Show()
-            Me.Hide()
-        End Sub
+    Private Sub btn_voltar_Click(sender As Object, e As EventArgs)
+        frm_situacaocliente.Show
+        Hide
+    End Sub
 
-        Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
+    Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
             frm_menu.Show()
             Me.Hide()
         End Sub

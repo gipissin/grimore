@@ -27,7 +27,6 @@ Partial Class frm_menu
         Panel1 = New Panel()
         btn_logout = New Button()
         btn_admcontas = New Button()
-        btn_senha = New Button()
         btn_emprestimo = New Button()
         btn_cadclientes = New Button()
         Label3 = New Label()
@@ -54,7 +53,6 @@ Partial Class frm_menu
         Panel1.BackColor = Color.White
         Panel1.Controls.Add(btn_logout)
         Panel1.Controls.Add(btn_admcontas)
-        Panel1.Controls.Add(btn_senha)
         Panel1.Controls.Add(btn_emprestimo)
         Panel1.Controls.Add(btn_cadclientes)
         Panel1.Controls.Add(Label3)
@@ -62,7 +60,7 @@ Partial Class frm_menu
         Panel1.Controls.Add(btn_acervo)
         Panel1.Location = New Point(188, 40)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(539, 524)
+        Panel1.Size = New Size(539, 477)
         Panel1.TabIndex = 10
         ' 
         ' btn_logout
@@ -71,7 +69,7 @@ Partial Class frm_menu
         btn_logout.FlatStyle = FlatStyle.Flat
         btn_logout.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_logout.ForeColor = SystemColors.Window
-        btn_logout.Location = New Point(80, 465)
+        btn_logout.Location = New Point(80, 374)
         btn_logout.Name = "btn_logout"
         btn_logout.Size = New Size(379, 39)
         btn_logout.TabIndex = 12
@@ -84,25 +82,12 @@ Partial Class frm_menu
         btn_admcontas.FlatStyle = FlatStyle.Flat
         btn_admcontas.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_admcontas.ForeColor = SystemColors.Window
-        btn_admcontas.Location = New Point(80, 390)
+        btn_admcontas.Location = New Point(80, 307)
         btn_admcontas.Name = "btn_admcontas"
         btn_admcontas.Size = New Size(379, 39)
         btn_admcontas.TabIndex = 11
         btn_admcontas.Text = "ADMINISTRATIVO"
         btn_admcontas.UseVisualStyleBackColor = False
-        ' 
-        ' btn_senha
-        ' 
-        btn_senha.BackColor = Color.BlueViolet
-        btn_senha.FlatStyle = FlatStyle.Flat
-        btn_senha.Font = New Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btn_senha.ForeColor = SystemColors.Window
-        btn_senha.Location = New Point(80, 313)
-        btn_senha.Name = "btn_senha"
-        btn_senha.Size = New Size(379, 39)
-        btn_senha.TabIndex = 10
-        btn_senha.Text = "ALTERAR SENHA"
-        btn_senha.UseVisualStyleBackColor = False
         ' 
         ' btn_emprestimo
         ' 
@@ -170,9 +155,10 @@ Partial Class frm_menu
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(945, 576)
+        ClientSize = New Size(945, 564)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frm_menu"
         Text = "MENU"
@@ -195,7 +181,6 @@ Partial Class frm_menu
     Friend WithEvents btn_acervo As Button
     Friend WithEvents btn_cadclientes As Button
     Friend WithEvents btn_admcontas As Button
-    Friend WithEvents btn_senha As Button
     Friend WithEvents btn_emprestimo As Button
     Friend WithEvents btn_resetsenha As LinkLabel
     Friend WithEvents txt_senha As TextBox

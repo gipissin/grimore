@@ -7,7 +7,41 @@
         dgv_acervo.ReadOnly = False
         dgv_acervo.EditMode = DataGridViewEditMode.EditOnEnter
     End Sub
+    Private Sub txt_livrobusc_TextChanged(sender As Object, e As EventArgs) Handles txt_livrobusc.TextChanged
+        Carregar_Acervo(txt_livrobusc.Text)
+    End Sub
 
+    Sub Carregar_Acervo(pesquisa As String)
+        Try
+            If pesquisa = "" Then
+                SQL = "SELECT titulo, autor, editora, isbn, quantidade, etiqueta FROM tb_livros ORDER BY titulo ASC"
+            Else
+                SQL = $"SELECT titulo, autor, editora, isbn, quantidade, etiqueta FROM tb_livros WHERE titulo LIKE '%{pesquisa}%' ORDER BY titulo ASC"
+            End If
+
+            rs = database.Execute(SQL)
+
+            With dgv_acervo
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(
+                        rs.Fields(0).Value.ToString(),
+                        rs.Fields(1).Value.ToString(),
+                        rs.Fields(2).Value.ToString(),
+                        rs.Fields(3).Value.ToString(),
+                        rs.Fields(4).Value.ToString(),
+                        rs.Fields(5).Value.ToString(),
+                        Nothing,
+                        Nothing
+                    )
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
+        End Try
+    End Sub
     Private Sub dgv_acervo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_acervo.CellContentClick
         If e.RowIndex < 0 Then Exit Sub
 

@@ -233,4 +233,23 @@
             MsgBox("Erro ao buscar cliente: " & ex.Message, MsgBoxStyle.Critical, "ERRO")
         End Try
     End Sub
+
+    Sub Limpar_acervo()
+        Try
+            With frm_cadacervo
+                .txt_autor.Clear()
+                .txt_editora.Clear()
+                .txt_isbn.Clear()
+                .txt_titulo.Clear()
+                .txt_etiqueta.Clear()
+                .txt_quantidade.Clear()
+                .txt_pha.Clear()
+                .img_capa.Image = Nothing
+                .txt_notacao.Clear()
+                .cmb_area.SelectedIndex = 0
+            End With
+        Catch ex As Exception
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
 End Module

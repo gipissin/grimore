@@ -55,12 +55,11 @@ Partial Class frm_gerenciarclientes
         dgv_clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_clientes.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
         dgv_clientes.GridColor = Color.MediumPurple
-        dgv_clientes.Location = New Point(0, 130)
-        dgv_clientes.Margin = New Padding(3, 4, 3, 4)
+        dgv_clientes.Location = New Point(16, 126)
         dgv_clientes.Name = "dgv_clientes"
         dgv_clientes.ReadOnly = True
         dgv_clientes.RowHeadersWidth = 51
-        dgv_clientes.Size = New Size(931, 457)
+        dgv_clientes.Size = New Size(938, 343)
         dgv_clientes.TabIndex = 0
         ' 
         ' Column1
@@ -126,8 +125,8 @@ Partial Class frm_gerenciarclientes
         MenuStrip1.Items.AddRange(New ToolStripItem() {ts_menu, btn_cadastrarcliente})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(6, 3, 0, 3)
-        MenuStrip1.Size = New Size(914, 27)
+        MenuStrip1.Padding = New Padding(5, 2, 0, 2)
+        MenuStrip1.Size = New Size(966, 24)
         MenuStrip1.TabIndex = 35
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -136,7 +135,7 @@ Partial Class frm_gerenciarclientes
         ts_menu.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ts_menu.ForeColor = Color.White
         ts_menu.Name = "ts_menu"
-        ts_menu.Size = New Size(69, 21)
+        ts_menu.Size = New Size(58, 20)
         ts_menu.Text = "MENU"
         ' 
         ' btn_cadastrarcliente
@@ -144,7 +143,7 @@ Partial Class frm_gerenciarclientes
         btn_cadastrarcliente.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btn_cadastrarcliente.ForeColor = Color.White
         btn_cadastrarcliente.Name = "btn_cadastrarcliente"
-        btn_cadastrarcliente.Size = New Size(200, 21)
+        btn_cadastrarcliente.Size = New Size(161, 20)
         btn_cadastrarcliente.Text = "CADASTRAR CLIENTE"
         ' 
         ' ToolStrip1
@@ -152,9 +151,9 @@ Partial Class frm_gerenciarclientes
         ToolStrip1.BackColor = Color.MediumPurple
         ToolStrip1.ImageScalingSize = New Size(24, 24)
         ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_clientebusc, btn_buscaracervo})
-        ToolStrip1.Location = New Point(0, 27)
+        ToolStrip1.Location = New Point(0, 24)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(914, 31)
+        ToolStrip1.Size = New Size(966, 31)
         ToolStrip1.TabIndex = 36
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -163,7 +162,7 @@ Partial Class frm_gerenciarclientes
         ToolStripLabel1.Font = New Font("Cooper Black", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ToolStripLabel1.ForeColor = Color.White
         ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(176, 28)
+        ToolStripLabel1.Size = New Size(141, 28)
         ToolStripLabel1.Text = "PESQUISAR CLIENTE"
         ' 
         ' ToolStripSeparator1
@@ -174,7 +173,7 @@ Partial Class frm_gerenciarclientes
         ' txt_clientebusc
         ' 
         txt_clientebusc.Name = "txt_clientebusc"
-        txt_clientebusc.Size = New Size(114, 31)
+        txt_clientebusc.Size = New Size(100, 31)
         ' 
         ' btn_buscaracervo
         ' 
@@ -182,7 +181,7 @@ Partial Class frm_gerenciarclientes
         btn_buscaracervo.Image = CType(resources.GetObject("btn_buscaracervo.Image"), Image)
         btn_buscaracervo.ImageTransparentColor = Color.Magenta
         btn_buscaracervo.Name = "btn_buscaracervo"
-        btn_buscaracervo.Size = New Size(29, 28)
+        btn_buscaracervo.Size = New Size(28, 28)
         btn_buscaracervo.Text = "ToolStripButton1"
         ' 
         ' Label2
@@ -191,9 +190,9 @@ Partial Class frm_gerenciarclientes
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 21.75F)
         Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(0, 79)
+        Label2.Location = New Point(0, 77)
         Label2.Name = "Label2"
-        Label2.Size = New Size(468, 42)
+        Label2.Size = New Size(364, 34)
         Label2.TabIndex = 37
         Label2.Text = "GERENCIAR CLIENTES"
         ' 
@@ -202,26 +201,25 @@ Partial Class frm_gerenciarclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(814, 62)
-        PictureBox2.Margin = New Padding(3, 4, 3, 4)
+        PictureBox2.Location = New Point(712, 68)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(78, 70)
+        PictureBox2.Size = New Size(68, 52)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 38
         PictureBox2.TabStop = False
         ' 
         ' frm_gerenciarclientes
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(914, 600)
+        ClientSize = New Size(966, 539)
         Controls.Add(PictureBox2)
         Controls.Add(Label2)
         Controls.Add(ToolStrip1)
         Controls.Add(MenuStrip1)
         Controls.Add(dgv_clientes)
-        Margin = New Padding(3, 4, 3, 4)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "frm_gerenciarclientes"
         Text = "GERENCIAR CLIENTES"
         CType(dgv_clientes, ComponentModel.ISupportInitialize).EndInit()

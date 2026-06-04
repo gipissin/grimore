@@ -43,10 +43,17 @@
                     SQL = $"INSERT INTO tb_livros (titulo, autor, editora, area, isbn, quantidade, cod_pha, notacao, etiqueta, foto) VALUES ('{txt_titulo.Text}', '{txt_autor.Text}', '{txt_editora.Text}', '{cmb_area.Text}', '{txt_isbn.Text}', '{txt_quantidade.Text}', '{txt_pha.Text}', '{txt_notacao.Text}', '{txt_etiqueta.Text}', '{diretorio}')"
                     rs = database.Execute(UCase(SQL))
                     MsgBox("Livro cadastrado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                    Limpar_campos()
+                    resposta_user = MsgBox("Deseja cadastrar outro livro?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO")
+                    If resposta_user = vbYes Then
+                        Limpar_acervo()
+                    Else
+                        Limpar_acervo()
+                        frm_acervo.Show()
+                        Me.Hide()
+                    End If
                 Else
                     MsgBox("Isbn já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
-                    Limpar_campos()
+                    Limpar_acervo()
                 End If
             End If
         Catch ex As Exception
@@ -58,7 +65,6 @@
         txt_etiqueta.Text = Montar_etiqueta(cmb_area.Text, txt_autor.Text, txt_titulo.Text, txt_pha.Text)
         txt_notacao.Text = notacao
     End Sub
-
 
     Private Sub btn_menu_Click(sender As Object, e As EventArgs)
         frm_menu.Show()

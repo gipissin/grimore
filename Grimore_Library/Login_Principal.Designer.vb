@@ -187,6 +187,7 @@ Partial Class login_principal
         Controls.Add(Label5)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "login_principal"
         Text = "LOGIN"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

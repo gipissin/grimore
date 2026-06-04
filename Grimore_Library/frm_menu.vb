@@ -7,8 +7,8 @@
         End If
     End Sub
     Private Sub btn_admcontas_Click(sender As Object, e As EventArgs) Handles btn_admcontas.Click
-        frm_menuadmin.Show
-        Hide
+        frm_cadusuario.Show()
+        Hide()
     End Sub
 
     Private Sub btn_acervo_Click(sender As Object, e As EventArgs) Handles btn_acervo.Click
@@ -21,9 +21,9 @@
         Me.Hide()
     End Sub
 
-    Private Sub btn_senha_Click(sender As Object, e As EventArgs) Handles btn_senha.Click
-        frm_alterarsenha.Show()
-        Me.Hide()
+    Private Sub btn_senha_Click(sender As Object, e As EventArgs)
+        frm_alterarsenha.Show
+        Hide
     End Sub
 
     Private Sub btn_emprestimo_Click(sender As Object, e As EventArgs) Handles btn_emprestimo.Click
