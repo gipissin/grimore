@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌙 GRIMOIRE 🐱
+# 🌙 GRIMORE 🐱
 
 *Plataforma de Gestão para Bibliotecas de Acervo Nacional*
 
