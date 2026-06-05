@@ -1,112 +1,121 @@
 <div align="center">
 
-# 🌙 GRIMORE 🐱
+```
+☽ ✧ · · · ✧ ☾
 
-*Plataforma de Gestão para Bibliotecas de Acervo Nacional*
+G R I M O R E
 
-![VB.Net](https://img.shields.io/badge/VB.Net-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=databricks&logoColor=white)
+☽ ✧ · · · ✧ ☾
+```
+
+**Sistema de Gerenciamento de Biblioteca**
+
+*"Todo grimório guarda segredos entre suas páginas.*
+*Este guarda livros, usuários e empréstimos —*
+*sob a guarda silenciosa de um gato bibliotecário que nunca dorme."*
+
+---
+
+![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white)
+![Windows Forms](https://img.shields.io/badge/WinForms-0078D4?style=flat-square&logo=windows&logoColor=white)
 
 </div>
 
 ---
 
-## 📖 Sobre o Projeto
+## ✦ Sobre o Grimore
 
-O **Grimoire** é uma plataforma de gestão desenvolvida para bibliotecas especializadas em acervo nacional. O sistema tem como foco principal o bibliotecário, oferecendo controle total sobre o ciclo de vida do livro — desde o cadastro até o empréstimo — além do gerenciamento completo da base de clientes.
+O **Grimore** é uma aplicação desktop para gerenciamento de acervo bibliotecário, desenvolvida em VB.NET com Windows Forms e SQL Server. Pensada para o controle completo de livros, usuários e empréstimos em uma interface limpa e funcional.
 
-O objetivo é reduzir perdas de acervo e otimizar o tempo de consulta de disponibilidade.
-
----
-
-## ✨ Funcionalidades
-
-- 📋 **Cadastro de Livros** — Registro completo do acervo nacional
-- 🔄 **Controle de Empréstimos** — Gestão do ciclo de vida de cada exemplar
-- 👥 **Gestão de Clientes** — Cadastro e histórico de usuários da biblioteca
-- 🔍 **Consulta de Disponibilidade** — Verificação rápida do status de cada obra
-- 📉 **Redução de Perdas** — Controle e rastreamento do acervo
+Desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ✦ Funcionalidades
 
-| Tecnologia | Uso |
-|------------|-----|
-| **VB.Net** | Desenvolvimento da aplicação desktop |
-| **SQL** | Banco de dados relacional |
-
----
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-
-- [Visual Studio](https://visualstudio.microsoft.com/) com suporte a VB.Net
-- [MySQL Server](https://dev.mysql.com/downloads/mysql/) instalado e rodando
-
-### Passos
-
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/seu-usuario/grimoire.git
-   cd grimoire
-   ```
-
-2. **Configure o banco de dados**
-   - Importe o arquivo `database/grimoire.sql` no seu MySQL
-   ```bash
-   mysql -u root -p < database/grimoire.sql
-   ```
-
-3. **Configure a conexão**
-   - Abra o arquivo de configuração e ajuste as credenciais do banco:
-   ```
-   Server=localhost
-   Database=grimoire
-   User=root
-   Password=sua_senha
-   ```
-
-4. **Execute o projeto**
-   - Abra a solução `.sln` no Visual Studio
-   - Pressione `F5` para compilar e executar
+| Módulo | Descrição |
+|---|---|
+| Acervo | Cadastro, busca e listagem de livros com filtros por categoria e disponibilidade |
+| Usuários | Gerenciamento de alunos e professores com controle de acesso por perfil |
+| Empréstimos | Registro de retiradas e devoluções com histórico e alertas de prazo |
+| Autenticação | Login com validação, troca de senha e sessões por nível de permissão |
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## ✦ Stack
 
 ```
-grimoire/
-├── database/
-│   └── grimoire.sql        # Script de criação do banco
+Linguagem   →  VB.NET (.NET Framework)
+Interface   →  Windows Forms (WinForms)
+Banco       →  Microsoft SQL Server
+Acesso      →  ADO.NET (SqlClient / ADODB)
+IDE         →  Visual Studio 2022
+Versionamento → Git + GitHub
+```
+
+---
+
+## ✦ Primeiros passos
+
+**Pré-requisitos:**
+- Visual Studio 2022 (com suporte a VB.NET)
+- SQL Server (local ou instância configurada)
+
+**Instalação:**
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/gipissin/grimore.git
+
+# 2. Abra Grimore_Library.sln no Visual Studio
+
+# 3. Configure a connection string em App.config
+# connectionString="Data Source=SEU_SERVIDOR;Initial Catalog=grimoire_db;..."
+
+# 4. Execute o script de criação do banco
+# /database/schema.sql
+
+# 5. Build & Run (F5)
+```
+
+---
+
+## ✦ Estrutura do projeto
+
+```
+Grimore_Library/
 ├── Forms/
-│   ├── frmLogin.vb         # Tela de autenticação
-│   ├── frmLivros.vb        # Gestão do acervo
-│   ├── frmClientes.vb      # Gestão de clientes
-│   └── frmEmprestimos.vb   # Controle de empréstimos
-├── Models/
-│   ├── Livro.vb
-│   ├── Cliente.vb
-│   └── Emprestimo.vb
-├── DAL/                    # Camada de acesso a dados
-└── README.md
+│   ├── frmLogin.vb          → tela de autenticação
+│   ├── frmAdmin.vb          → painel administrativo
+│   ├── frmAcervo.vb         → gerenciamento do acervo
+│   └── frmAlterarSenha.vb   → troca de senha
+├── Database/
+│   └── schema.sql           → script de criação das tabelas
+├── README.md
+└── CONTRIBUTING.md
 ```
 
 ---
 
-## 👥 Autoras
+## ✦ Guardiãs do Grimório
 
-Desenvolvido como projeto acadêmico no curso de **Análise e Desenvolvimento de Sistemas**.
+<div align="center">
 
-| Nome | GitHub |
-|------|--------|
-| Aline Michelle | [@minhas-estrelas](https://github.com/minhas-estrelas) |
-| Giovanna Vinturi | [@gipissin](https://github.com/gipissin) |
-| Julia Simões | [@Jublii](https://github.com/Jublii) |
+| | | |
+|:---:|:---:|:---:|
+| **Giovanna Vinturi** | **Aline Michelle** | **Julia Simões** |
+| [@gipissin](https://github.com/gipissin) | [@minhas-estrelas](https://github.com/minhas-estrelas) | [@Jublii](https://github.com/Jublii) |
+
+</div>
 
 ---
 
 <div align="center">
-  <sub>Feito com 🖤 e VB.Net</sub>
+
+*Projeto acadêmico — Análise e Desenvolvimento de Sistemas*
+
+`feito com código, café e um gato que nunca sai do teclado`
+
 </div>
