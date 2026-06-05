@@ -14,7 +14,7 @@
                 If txt_senha.Text = rs.Fields(1).Value Then
                     If Permissoes_acesso(status_user) = True Then
                         MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
-                        Funcionalidade_admin()
+                        Funcionalidade_admin(txt_usuario.Text)
                         Hide()
                         frm_menu.Show()
                     End If

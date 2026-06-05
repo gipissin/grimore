@@ -68,6 +68,7 @@
 
     Private Sub ts_geranciaruser_Click(sender As Object, e As EventArgs) Handles ts_geranciaruser.Click
         frm_admin.Show()
+        Carregar_formadmin()
         Me.Hide()
     End Sub
 

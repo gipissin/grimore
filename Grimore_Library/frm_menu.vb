@@ -43,10 +43,8 @@
 
         If resposta = MsgBoxResult.Yes Then
             Dim telaLogin As New login_principal()
-
-            telaLogin.Show()
-
             Me.Close()
+            login_principal.Show()
         End If
     End Sub
 End Class

@@ -26,7 +26,8 @@ Public Class frm_cadclientes
                 MsgBox("Preencha os campos obrigatórios.", MsgBoxStyle.Exclamation, "ATENÇÃO")
                 Exit Sub
             End If
-
+            SQL = $"SELECT * FROM tb_clientes WHERE cpf='{txt_cpf.Text}'"
+            rs = database.Execute(SQL)
             If rs.EOF = True Then
                 SQL = $"INSERT INTO tb_clientes (nome, email, telefone, cpf, data_nascimento, preferencias, observacoes, foto)
                         VALUES ('{txt_nome.Text}', '{txt_email.Text}', '{txt_telefone.Text}',

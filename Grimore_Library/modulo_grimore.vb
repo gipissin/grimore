@@ -98,10 +98,10 @@
         End Try
     End Sub
 
-    Sub Funcionalidade_admin()
+    Function Funcionalidade_admin(user)
         Try
             With login_principal
-                SQL = $"SELECT * FROM tb_usuarios WHERE usuario = '{ .txt_usuario.Text}'"
+                SQL = $"SELECT * FROM tb_usuarios WHERE usuario = '{user}'"
                 rs = database.Execute(SQL)
 
                 If rs.EOF = False Then
@@ -111,7 +111,7 @@
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
-    End Sub
+    End Function
     Function Permissoes_acesso(status As String) As Boolean
         Try
             If status = "INATIVO" Then
@@ -250,6 +250,16 @@
             End With
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+    Sub Limpar_login()
+        Try
+            With login_principal
+                .txt_senha.Clear()
+                .txt_usuario.Clear()
+            End With
+        Catch ex As Exception
+
         End Try
     End Sub
 End Module
