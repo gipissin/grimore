@@ -52,7 +52,7 @@ Partial Class frm_historico
         dgv_historico.Name = "dgv_historico"
         dgv_historico.ReadOnly = True
         dgv_historico.RowHeadersWidth = 51
-        dgv_historico.Size = New Size(858, 292)
+        dgv_historico.Size = New Size(945, 292)
         dgv_historico.TabIndex = 1
         ' 
         ' Column1
@@ -119,7 +119,7 @@ Partial Class frm_historico
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip1.Size = New Size(876, 24)
+        MenuStrip1.Size = New Size(985, 24)
         MenuStrip1.TabIndex = 30
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -168,7 +168,7 @@ Partial Class frm_historico
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(876, 493)
+        ClientSize = New Size(985, 493)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(MenuStrip1)

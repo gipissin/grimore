@@ -90,7 +90,6 @@ C:\Users\User\source\repos\grimore1\Grimore_Library\bin\Debug\net8.0-windows7.0\
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Interop.ADODB.dll
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.vbproj.ResolveComReference.cache
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.cad_usuario.resources
-C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Creditos.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.entrada.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_admin.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.login_principal.resources
@@ -171,7 +170,6 @@ C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_cadusuario.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_menu.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_menuadmin.resources
-C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.UcAcervo.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_emprestimo.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_historico.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_pendentes.resources

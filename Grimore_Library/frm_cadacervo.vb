@@ -34,6 +34,11 @@
             ElseIf Not IsNumeric(txt_pha.Text) Then
                 MsgBox("O campo PHA deve conter apenas números.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
                 Exit Sub
+
+            ElseIf Not IsNumeric(txt_quantidade.Text) Or CInt(txt_quantidade.Text) <= 0 Then
+                MsgBox("A quantidade deve ser um número maior que zero.", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                Exit Sub
+
             Else
                 SQL = $"SELECT * FROM tb_livros where isbn='{txt_isbn.Text}'"
                 rs = database.Execute(SQL)
@@ -48,6 +53,7 @@
                         Limpar_acervo()
                     Else
                         Limpar_acervo()
+                        Carregar_formacervo()
                         frm_acervo.Show()
                         Me.Hide()
                     End If

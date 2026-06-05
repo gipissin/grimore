@@ -58,11 +58,11 @@ Partial Class frm_pendentes
         dgv_pendentes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_pendentes.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
         dgv_pendentes.GridColor = Color.Black
-        dgv_pendentes.Location = New Point(10, 87)
+        dgv_pendentes.Location = New Point(12, 92)
         dgv_pendentes.Name = "dgv_pendentes"
         dgv_pendentes.ReadOnly = True
         dgv_pendentes.RowHeadersWidth = 51
-        dgv_pendentes.Size = New Size(776, 304)
+        dgv_pendentes.Size = New Size(931, 304)
         dgv_pendentes.TabIndex = 0
         ' 
         ' Column1
@@ -133,7 +133,7 @@ Partial Class frm_pendentes
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip1.Size = New Size(800, 24)
+        MenuStrip1.Size = New Size(972, 24)
         MenuStrip1.TabIndex = 30
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -182,7 +182,7 @@ Partial Class frm_pendentes
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(800, 478)
+        ClientSize = New Size(972, 454)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(MenuStrip1)

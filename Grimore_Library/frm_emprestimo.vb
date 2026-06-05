@@ -43,6 +43,11 @@
                 Exit Sub
             End If
 
+            If Not IsNumeric(txt_qtdemprestimo.Text) Or CInt(txt_qtdemprestimo.Text) <= 0 Then
+                MsgBox("A quantidade deve ser um número maior que zero.", MsgBoxStyle.Exclamation, "ATENÇÃO")
+                Exit Sub
+            End If
+
             Dim qtd_solicitada As Integer = CInt(txt_qtdemprestimo.Text)
             Dim estoque As Integer = CInt(txt_qtdestoque.Text)
 

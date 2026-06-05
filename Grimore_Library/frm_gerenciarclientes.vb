@@ -1,7 +1,8 @@
 ﻿Public Class frm_gerenciarclientes
     Private Sub frm_gerenciarclientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conectar_banco()
-        dgv_clientes.EditMode = DataGridViewEditMode.EditProgrammatically
+        dgv_clientes.ReadOnly = False
+        dgv_clientes.EditMode = DataGridViewEditMode.EditOnEnter
         Carregar_Clientes("")
     End Sub
 
@@ -37,35 +38,55 @@
         End Try
     End Sub
 
-    Private Sub dgv_clientes_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_clientes.CellClick
+    Private Sub dgv_clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_clientes.CellContentClick
         If e.RowIndex < 0 Then Exit Sub
+
         Try
-            Dim id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
-            Dim nome As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
+            ' BOTÃO EDITAR
+            If dgv_clientes.Columns(e.ColumnIndex).Name = "Column6" Then
 
-            ' BOTÃO EDITAR — Column6
-            If e.ColumnIndex = dgv_clientes.Columns("Column6").Index Then
-                dgv_clientes.Rows(e.RowIndex).Cells("Column2").ReadOnly = False ' nome
-                dgv_clientes.Rows(e.RowIndex).Cells("Column3").ReadOnly = False ' email
-                dgv_clientes.Rows(e.RowIndex).Cells("Column4").ReadOnly = False ' telefone
-                dgv_clientes.Rows(e.RowIndex).Cells("Column5").ReadOnly = False ' cpf
+                dgv_clientes.EndEdit()
 
-                dgv_clientes.CurrentCell = dgv_clientes.Rows(e.RowIndex).Cells("Column2")
+                Dim auxiliar_id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
+                Dim novo_nome As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
+                Dim novo_email As String = dgv_clientes.Rows(e.RowIndex).Cells("Column3").Value.ToString()
+                Dim nova_telefone As String = dgv_clientes.Rows(e.RowIndex).Cells("Column4").Value.ToString()
+                Dim novo_cpf As String = dgv_clientes.Rows(e.RowIndex).Cells("Column5").Value.ToString()
 
-                dgv_clientes.BeginEdit(True)
-            End If
+                Dim resposta As MsgBoxResult = MsgBox("Deseja salvar as alterações feitas no cliente: " & novo_nome & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "CONFIRMAÇÃO")
 
-            ' BOTÃO EXCLUIR — Column7
-            If e.ColumnIndex = dgv_clientes.Columns("Column7").Index Then
-                If MsgBox($"Deseja excluir o cliente '{nome}'?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENÇÃO") = MsgBoxResult.Yes Then
-                    SQL = $"DELETE FROM tb_clientes WHERE id_cliente = '{id}'"
+                If resposta = MsgBoxResult.Yes Then
+                    SQL = $"UPDATE tb_clientes SET " &
+                      $"nome = '{novo_nome}', " &
+                      $"email = '{novo_email}', " &
+                      $"telefone = '{nova_telefone}', " &
+                      $"cpf = '{novo_cpf}' " &
+                      $"WHERE id_cliente = '{auxiliar_id}'"
+
                     database.Execute(SQL)
-                    MsgBox("Cliente excluído com sucesso!", MsgBoxStyle.Information, "AVISO")
+                    MsgBox("Cliente atualizado com sucesso!", MsgBoxStyle.Information, "SUCESSO")
                     Carregar_Clientes("")
                 End If
+
+                ' BOTÃO EXCLUIR
+            ElseIf dgv_clientes.Columns(e.ColumnIndex).Name = "Column7" Then
+
+                Dim auxiliar_id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
+                Dim nome_cliente As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
+
+                Dim resposta_user As MsgBoxResult = MsgBox("Gostaria de excluir definitivamente o cliente: " & nome_cliente & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+
+                If resposta_user = MsgBoxResult.Yes Then
+                    SQL = $"DELETE FROM tb_clientes WHERE id_cliente = '{auxiliar_id}'"
+                    database.Execute(SQL)
+                    MsgBox("Cliente excluído com sucesso!", MsgBoxStyle.Information, "SUCESSO")
+                    Carregar_Clientes("")
+                End If
+
             End If
+
         Catch ex As Exception
-            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
+            MsgBox("Erro na operação: " & ex.Message, MsgBoxStyle.Critical, "ERRO")
         End Try
     End Sub
 
@@ -106,4 +127,6 @@
         frm_menu.Show()
         Me.Hide()
     End Sub
+
+
 End Class

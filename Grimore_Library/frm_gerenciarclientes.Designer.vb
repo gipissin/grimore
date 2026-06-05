@@ -29,8 +29,8 @@ Partial Class frm_gerenciarclientes
         Column3 = New DataGridViewTextBoxColumn()
         Column4 = New DataGridViewTextBoxColumn()
         Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewButtonColumn()
-        Column7 = New DataGridViewButtonColumn()
+        Column6 = New DataGridViewImageColumn()
+        Column7 = New DataGridViewImageColumn()
         MenuStrip1 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
         btn_cadastrarcliente = New ToolStripMenuItem()
@@ -55,9 +55,8 @@ Partial Class frm_gerenciarclientes
         dgv_clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_clientes.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
         dgv_clientes.GridColor = Color.MediumPurple
-        dgv_clientes.Location = New Point(16, 126)
+        dgv_clientes.Location = New Point(35, 126)
         dgv_clientes.Name = "dgv_clientes"
-        dgv_clientes.ReadOnly = True
         dgv_clientes.RowHeadersWidth = 51
         dgv_clientes.Size = New Size(938, 343)
         dgv_clientes.TabIndex = 0
@@ -67,7 +66,6 @@ Partial Class frm_gerenciarclientes
         Column1.HeaderText = "ID"
         Column1.MinimumWidth = 6
         Column1.Name = "Column1"
-        Column1.ReadOnly = True
         Column1.Width = 125
         ' 
         ' Column2
@@ -75,7 +73,6 @@ Partial Class frm_gerenciarclientes
         Column2.HeaderText = "Nome"
         Column2.MinimumWidth = 6
         Column2.Name = "Column2"
-        Column2.ReadOnly = True
         Column2.Width = 125
         ' 
         ' Column3
@@ -83,7 +80,6 @@ Partial Class frm_gerenciarclientes
         Column3.HeaderText = "Email"
         Column3.MinimumWidth = 6
         Column3.Name = "Column3"
-        Column3.ReadOnly = True
         Column3.Width = 125
         ' 
         ' Column4
@@ -91,7 +87,6 @@ Partial Class frm_gerenciarclientes
         Column4.HeaderText = "Telefone"
         Column4.MinimumWidth = 6
         Column4.Name = "Column4"
-        Column4.ReadOnly = True
         Column4.Width = 125
         ' 
         ' Column5
@@ -99,15 +94,15 @@ Partial Class frm_gerenciarclientes
         Column5.HeaderText = "CPF"
         Column5.MinimumWidth = 6
         Column5.Name = "Column5"
-        Column5.ReadOnly = True
         Column5.Width = 125
         ' 
         ' Column6
         ' 
         Column6.HeaderText = "Editar"
+        Column6.Image = CType(resources.GetObject("Column6.Image"), Image)
         Column6.MinimumWidth = 6
         Column6.Name = "Column6"
-        Column6.ReadOnly = True
+        Column6.Resizable = DataGridViewTriState.True
         Column6.Width = 125
         ' 
         ' Column7
@@ -115,7 +110,7 @@ Partial Class frm_gerenciarclientes
         Column7.HeaderText = "Excluir"
         Column7.MinimumWidth = 6
         Column7.Name = "Column7"
-        Column7.ReadOnly = True
+        Column7.Resizable = DataGridViewTriState.True
         Column7.Width = 125
         ' 
         ' MenuStrip1
@@ -126,7 +121,7 @@ Partial Class frm_gerenciarclientes
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip1.Size = New Size(966, 24)
+        MenuStrip1.Size = New Size(1057, 24)
         MenuStrip1.TabIndex = 35
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -153,7 +148,7 @@ Partial Class frm_gerenciarclientes
         ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_clientebusc, btn_buscaracervo})
         ToolStrip1.Location = New Point(0, 24)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(966, 31)
+        ToolStrip1.Size = New Size(1057, 31)
         ToolStrip1.TabIndex = 36
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -201,7 +196,7 @@ Partial Class frm_gerenciarclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(712, 68)
+        PictureBox2.Location = New Point(890, 68)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(68, 52)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -213,7 +208,7 @@ Partial Class frm_gerenciarclientes
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(966, 539)
+        ClientSize = New Size(1057, 487)
         Controls.Add(PictureBox2)
         Controls.Add(Label2)
         Controls.Add(ToolStrip1)
@@ -233,13 +228,6 @@ Partial Class frm_gerenciarclientes
     End Sub
 
     Friend WithEvents dgv_clientes As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewButtonColumn
-    Friend WithEvents Column7 As DataGridViewButtonColumn
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ts_menu As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
@@ -250,4 +238,11 @@ Partial Class frm_gerenciarclientes
     Friend WithEvents btn_cadastrarcliente As ToolStripMenuItem
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewImageColumn
+    Friend WithEvents Column7 As DataGridViewImageColumn
 End Class
