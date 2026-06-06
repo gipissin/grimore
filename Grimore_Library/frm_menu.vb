@@ -1,5 +1,6 @@
 ﻿Public Class frm_menu
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         If tipo_conta = "ADMIN" Then
             btn_admcontas.Visible = True
         Else
@@ -44,6 +45,7 @@
         If resposta = MsgBoxResult.Yes Then
             Dim telaLogin As New login_principal()
             Me.Close()
+            Limpar_login()
             login_principal.Show()
         End If
     End Sub

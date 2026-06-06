@@ -22,7 +22,7 @@ Partial Class frm_pendentes
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_pendentes))
         dgv_pendentes = New DataGridView()
         Column1 = New DataGridViewTextBoxColumn()
@@ -47,14 +47,14 @@ Partial Class frm_pendentes
         dgv_pendentes.AllowUserToAddRows = False
         dgv_pendentes.AllowUserToDeleteRows = False
         dgv_pendentes.BackgroundColor = Color.MediumPurple
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Cooper Black", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle1.ForeColor = Color.Black
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = Color.White
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dgv_pendentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Cooper Black", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgv_pendentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgv_pendentes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgv_pendentes.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
         dgv_pendentes.GridColor = Color.Black
@@ -133,7 +133,7 @@ Partial Class frm_pendentes
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip1.Size = New Size(972, 24)
+        MenuStrip1.Size = New Size(973, 24)
         MenuStrip1.TabIndex = 30
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -158,7 +158,7 @@ Partial Class frm_pendentes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(693, 23)
+        PictureBox2.Location = New Point(863, 23)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(80, 63)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -182,12 +182,13 @@ Partial Class frm_pendentes
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(972, 454)
+        ClientSize = New Size(973, 442)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(MenuStrip1)
         Controls.Add(dgv_pendentes)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "frm_pendentes"
         Text = "PENDENCIAS CLIENTES"
         CType(dgv_pendentes, ComponentModel.ISupportInitialize).EndInit()

@@ -13,7 +13,7 @@
                 status_user = rs.Fields(3).Value
                 If txt_senha.Text = rs.Fields(1).Value Then
                     If Permissoes_acesso(status_user) = True Then
-                        MessageBox.Show("BEM VINDO " + rs.Fields(4).Value)
+                        MsgBox("Bem Vindo, " & txt_usuario.Text & "!", MsgBoxStyle.Information, "Sucesso")
                         Funcionalidade_admin(txt_usuario.Text)
                         Hide()
                         frm_menu.Show()

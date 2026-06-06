@@ -1,5 +1,6 @@
 ﻿Public Class frm_gerenciarclientes
     Private Sub frm_gerenciarclientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         dgv_clientes.ReadOnly = False
         dgv_clientes.EditMode = DataGridViewEditMode.EditOnEnter

@@ -1,5 +1,6 @@
 ﻿Public Class frm_cadusuario
     Private Sub cad_usuario_load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         Carregar_tipo()
         Carregar_status()

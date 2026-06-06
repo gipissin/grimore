@@ -25,7 +25,6 @@ Partial Class frm_cadclientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_cadclientes))
         PictureBox2 = New PictureBox()
         Panel1 = New Panel()
-        Label11 = New Label()
         btn_salvar = New Button()
         Label6 = New Label()
         txt_telefone = New MaskedTextBox()
@@ -47,10 +46,13 @@ Partial Class frm_cadclientes
         MenuStrip2 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
         ts_gerenciarclientes = New ToolStripMenuItem()
+        Panel2 = New Panel()
+        Label7 = New Label()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(img_foto, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip2.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' PictureBox2
@@ -58,7 +60,7 @@ Partial Class frm_cadclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(755, 282)
+        PictureBox2.Location = New Point(751, 524)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(94, 83)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -68,7 +70,7 @@ Partial Class frm_cadclientes
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
-        Panel1.Controls.Add(Label11)
+        Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(btn_salvar)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(txt_telefone)
@@ -87,26 +89,16 @@ Partial Class frm_cadclientes
         Panel1.Controls.Add(txt_email)
         Panel1.Controls.Add(txt_nome)
         Panel1.Font = New Font("Sylfaen", 12F)
-        Panel1.Location = New Point(24, 50)
+        Panel1.Location = New Point(24, 44)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(725, 557)
+        Panel1.Size = New Size(725, 563)
         Panel1.TabIndex = 23
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Cooper Black", 15.75F)
-        Label11.Location = New Point(20, 20)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(292, 24)
-        Label11.TabIndex = 52
-        Label11.Text = "CADASTRO DE CLIENTES"
         ' 
         ' btn_salvar
         ' 
         btn_salvar.BackColor = Color.MediumPurple
         btn_salvar.Font = New Font("Cooper Black", 12F)
-        btn_salvar.Location = New Point(529, 414)
+        btn_salvar.Location = New Point(529, 429)
         btn_salvar.Name = "btn_salvar"
         btn_salvar.Size = New Size(162, 63)
         btn_salvar.TabIndex = 58
@@ -119,7 +111,7 @@ Partial Class frm_cadclientes
         Label6.BackColor = Color.MediumPurple
         Label6.Font = New Font("Cooper Black", 12F)
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(562, 52)
+        Label6.Location = New Point(562, 67)
         Label6.Name = "Label6"
         Label6.Size = New Size(77, 19)
         Label6.TabIndex = 57
@@ -129,7 +121,7 @@ Partial Class frm_cadclientes
         ' 
         txt_telefone.BackColor = Color.Gainsboro
         txt_telefone.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_telefone.Location = New Point(294, 146)
+        txt_telefone.Location = New Point(294, 161)
         txt_telefone.Mask = "(00) 00000-0000"
         txt_telefone.Name = "txt_telefone"
         txt_telefone.Size = New Size(172, 22)
@@ -139,7 +131,7 @@ Partial Class frm_cadclientes
         ' 
         txt_cpf.BackColor = Color.Gainsboro
         txt_cpf.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_cpf.Location = New Point(20, 217)
+        txt_cpf.Location = New Point(20, 232)
         txt_cpf.Mask = "000.000.000-00"
         txt_cpf.Name = "txt_cpf"
         txt_cpf.Size = New Size(156, 22)
@@ -150,7 +142,7 @@ Partial Class frm_cadclientes
         img_foto.BackColor = Color.Gainsboro
         img_foto.BackgroundImageLayout = ImageLayout.Center
         img_foto.BorderStyle = BorderStyle.FixedSingle
-        img_foto.Location = New Point(507, 77)
+        img_foto.Location = New Point(507, 92)
         img_foto.Name = "img_foto"
         img_foto.Size = New Size(184, 239)
         img_foto.SizeMode = PictureBoxSizeMode.StretchImage
@@ -160,7 +152,7 @@ Partial Class frm_cadclientes
         ' txt_observacoes
         ' 
         txt_observacoes.BackColor = Color.Gainsboro
-        txt_observacoes.Location = New Point(20, 395)
+        txt_observacoes.Location = New Point(20, 410)
         txt_observacoes.Multiline = True
         txt_observacoes.Name = "txt_observacoes"
         txt_observacoes.Size = New Size(400, 141)
@@ -172,7 +164,7 @@ Partial Class frm_cadclientes
         Label5.BackColor = Color.MediumPurple
         Label5.Font = New Font("Cooper Black", 12F)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(20, 354)
+        Label5.Location = New Point(20, 369)
         Label5.Name = "Label5"
         Label5.Size = New Size(116, 19)
         Label5.TabIndex = 52
@@ -182,7 +174,7 @@ Partial Class frm_cadclientes
         ' 
         cmb_preferencias.BackColor = Color.Gainsboro
         cmb_preferencias.FormattingEnabled = True
-        cmb_preferencias.Location = New Point(20, 305)
+        cmb_preferencias.Location = New Point(20, 320)
         cmb_preferencias.Name = "cmb_preferencias"
         cmb_preferencias.Size = New Size(268, 30)
         cmb_preferencias.TabIndex = 51
@@ -193,7 +185,7 @@ Partial Class frm_cadclientes
         Label4.BackColor = Color.MediumPurple
         Label4.Font = New Font("Cooper Black", 12F)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(20, 269)
+        Label4.Location = New Point(20, 284)
         Label4.Name = "Label4"
         Label4.Size = New Size(111, 19)
         Label4.TabIndex = 50
@@ -205,7 +197,7 @@ Partial Class frm_cadclientes
         Label3.BackColor = Color.MediumPurple
         Label3.Font = New Font("Cooper Black", 12F)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(294, 192)
+        Label3.Location = New Point(294, 207)
         Label3.Name = "Label3"
         Label3.Size = New Size(168, 19)
         Label3.TabIndex = 49
@@ -218,7 +210,7 @@ Partial Class frm_cadclientes
         dtp_nascimento.CalendarTrailingForeColor = Color.Black
         dtp_nascimento.Font = New Font("Cooper Black", 12F)
         dtp_nascimento.Format = DateTimePickerFormat.Short
-        dtp_nascimento.Location = New Point(294, 217)
+        dtp_nascimento.Location = New Point(294, 232)
         dtp_nascimento.Name = "dtp_nascimento"
         dtp_nascimento.Size = New Size(152, 26)
         dtp_nascimento.TabIndex = 48
@@ -229,7 +221,7 @@ Partial Class frm_cadclientes
         Label1.BackColor = Color.MediumPurple
         Label1.Font = New Font("Cooper Black", 12F)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(20, 188)
+        Label1.Location = New Point(20, 203)
         Label1.Name = "Label1"
         Label1.Size = New Size(76, 19)
         Label1.TabIndex = 47
@@ -241,7 +233,7 @@ Partial Class frm_cadclientes
         Label8.BackColor = Color.MediumPurple
         Label8.Font = New Font("Cooper Black", 12F)
         Label8.ForeColor = Color.White
-        Label8.Location = New Point(294, 116)
+        Label8.Location = New Point(294, 131)
         Label8.Name = "Label8"
         Label8.Size = New Size(78, 19)
         Label8.TabIndex = 46
@@ -253,7 +245,7 @@ Partial Class frm_cadclientes
         Label2.BackColor = Color.MediumPurple
         Label2.Font = New Font("Cooper Black", 12F)
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(20, 116)
+        Label2.Location = New Point(20, 131)
         Label2.Name = "Label2"
         Label2.Size = New Size(61, 19)
         Label2.TabIndex = 45
@@ -265,7 +257,7 @@ Partial Class frm_cadclientes
         nome.BackColor = Color.MediumPurple
         nome.Font = New Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         nome.ForeColor = Color.White
-        nome.Location = New Point(20, 52)
+        nome.Location = New Point(20, 67)
         nome.Name = "nome"
         nome.Size = New Size(55, 19)
         nome.TabIndex = 44
@@ -274,7 +266,7 @@ Partial Class frm_cadclientes
         ' txt_email
         ' 
         txt_email.BackColor = Color.Gainsboro
-        txt_email.Location = New Point(20, 141)
+        txt_email.Location = New Point(20, 156)
         txt_email.Name = "txt_email"
         txt_email.Size = New Size(268, 29)
         txt_email.TabIndex = 43
@@ -284,7 +276,7 @@ Partial Class frm_cadclientes
         txt_nome.BackColor = Color.Gainsboro
         txt_nome.BorderStyle = BorderStyle.FixedSingle
         txt_nome.Font = New Font("Courier New", 9.75F, FontStyle.Bold)
-        txt_nome.Location = New Point(20, 77)
+        txt_nome.Location = New Point(20, 92)
         txt_nome.Name = "txt_nome"
         txt_nome.Size = New Size(446, 22)
         txt_nome.TabIndex = 42
@@ -321,6 +313,27 @@ Partial Class frm_cadclientes
         ts_gerenciarclientes.Size = New Size(164, 20)
         ts_gerenciarclientes.Text = "GERENCIAR CLIENTES"
         ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.MediumPurple
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Label7)
+        Panel2.Location = New Point(81, 14)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(499, 44)
+        Panel2.TabIndex = 59
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Cooper Black", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(112, 4)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(292, 34)
+        Label7.TabIndex = 17
+        Label7.Text = "Cadastro de cliente"
+        ' 
         ' frm_cadclientes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -341,6 +354,8 @@ Partial Class frm_cadclientes
         CType(img_foto, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip2.ResumeLayout(False)
         MenuStrip2.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -364,9 +379,10 @@ Partial Class frm_cadclientes
     Friend WithEvents txt_email As TextBox
     Friend WithEvents txt_nome As TextBox
     Friend WithEvents btn_salvar As Button
-    Friend WithEvents Label11 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents ts_menu As ToolStripMenuItem
     Friend WithEvents ts_gerenciarclientes As ToolStripMenuItem
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label7 As Label
 End Class

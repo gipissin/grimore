@@ -1,5 +1,6 @@
 ﻿Public Class frm_alterarsenha
     Private Sub Alterar_Senha_load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         txt_senha.Enabled = False
         txt_senha.BackColor = Color.LightGray

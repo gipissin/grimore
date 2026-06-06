@@ -1,5 +1,6 @@
 ﻿Public Class frm_historico
     Private Sub frm_historico_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Carregar_Historico(frm_situacaocliente.txt_idcliente.Text)
     End Sub
 

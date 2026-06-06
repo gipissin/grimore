@@ -1,6 +1,7 @@
 ﻿Public Class frm_emprestimo
     Private ofd As New OpenFileDialog()
     Private Sub frm_emprestimo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Carregar_generos()
         Conectar_banco()
         ' devolução em 7 dias

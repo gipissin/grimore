@@ -4,9 +4,6 @@
     <Compile Update="Cad_usuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Entrada.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frm_acervo.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -37,9 +34,6 @@
     <Compile Update="frm_menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm_menuadmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frm_pendentes.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -47,9 +41,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="login_principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Sobre.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

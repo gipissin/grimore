@@ -1,5 +1,6 @@
 ﻿Public Class frm_cadacervo
     Private Sub frm_cadacervo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         Carregar_generos()
         txt_notacao.Enabled = False

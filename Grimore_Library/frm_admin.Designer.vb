@@ -39,7 +39,7 @@ Partial Class frm_admin
         ToolStrip1 = New ToolStrip()
         ToolStripLabel1 = New ToolStripLabel()
         ToolStripSeparator1 = New ToolStripSeparator()
-        txt_matriculabusc = New ToolStripTextBox()
+        txt_userbusc = New ToolStripTextBox()
         btn_buscar = New ToolStripButton()
         PictureBox2 = New PictureBox()
         CType(dgv_admin, ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +57,7 @@ Partial Class frm_admin
         dgv_admin.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
         dgv_admin.GridColor = Color.Black
         dgv_admin.Location = New Point(11, 147)
-        dgv_admin.Margin = New Padding(2, 2, 2, 2)
+        dgv_admin.Margin = New Padding(2)
         dgv_admin.Name = "dgv_admin"
         dgv_admin.ReadOnly = True
         dgv_admin.RowHeadersWidth = 62
@@ -181,7 +181,7 @@ Partial Class frm_admin
         ' 
         ToolStrip1.BackColor = Color.MediumPurple
         ToolStrip1.ImageScalingSize = New Size(24, 24)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_matriculabusc, btn_buscar})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripLabel1, ToolStripSeparator1, txt_userbusc, btn_buscar})
         ToolStrip1.Location = New Point(0, 24)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(1265, 31)
@@ -191,18 +191,18 @@ Partial Class frm_admin
         ' ToolStripLabel1
         ' 
         ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(135, 28)
-        ToolStripLabel1.Text = "PESQUISAR MATRICULA"
+        ToolStripLabel1.Size = New Size(119, 28)
+        ToolStripLabel1.Text = "PESQUISAR USUARIO"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
         ToolStripSeparator1.Size = New Size(6, 31)
         ' 
-        ' txt_matriculabusc
+        ' txt_userbusc
         ' 
-        txt_matriculabusc.Name = "txt_matriculabusc"
-        txt_matriculabusc.Size = New Size(100, 31)
+        txt_userbusc.Name = "txt_userbusc"
+        txt_userbusc.Size = New Size(100, 31)
         ' 
         ' btn_buscar
         ' 
@@ -218,9 +218,9 @@ Partial Class frm_admin
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(1160, 78)
+        PictureBox2.Location = New Point(1114, 58)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(68, 52)
+        PictureBox2.Size = New Size(116, 87)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 41
         PictureBox2.TabStop = False
@@ -238,7 +238,7 @@ Partial Class frm_admin
         Controls.Add(Label1)
         Controls.Add(dgv_admin)
         FormBorderStyle = FormBorderStyle.FixedSingle
-        Margin = New Padding(2, 2, 2, 2)
+        Margin = New Padding(2)
         Name = "frm_admin"
         Text = "administrador"
         CType(dgv_admin, ComponentModel.ISupportInitialize).EndInit()
@@ -267,7 +267,7 @@ Partial Class frm_admin
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents txt_matriculabusc As ToolStripTextBox
+    Friend WithEvents txt_userbusc As ToolStripTextBox
     Friend WithEvents btn_buscar As ToolStripButton
     Friend WithEvents PictureBox2 As PictureBox
 End Class

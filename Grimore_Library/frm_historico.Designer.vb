@@ -144,9 +144,9 @@ Partial Class frm_historico
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(768, 29)
+        PictureBox2.Location = New Point(878, 29)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(80, 63)
+        PictureBox2.Size = New Size(85, 63)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 33
         PictureBox2.TabStop = False
@@ -174,6 +174,7 @@ Partial Class frm_historico
         Controls.Add(MenuStrip1)
         Controls.Add(dgv_historico)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "frm_historico"
         Text = "HISTORICO DO CLIENTE"
         CType(dgv_historico, ComponentModel.ISupportInitialize).EndInit()

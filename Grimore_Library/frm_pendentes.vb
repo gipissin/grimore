@@ -1,5 +1,6 @@
 ﻿Public Class frm_pendentes
     Private Sub frm_pendentes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Carregar_Pendentes(frm_situacaocliente.txt_idcliente.Text)
     End Sub
 

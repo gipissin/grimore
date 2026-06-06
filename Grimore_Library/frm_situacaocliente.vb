@@ -1,5 +1,6 @@
 ﻿Public Class frm_situacaocliente
     Private Sub frm_devolucao_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         ' Preenche com o cliente do frm_emprestimo se existir
         If frm_emprestimo.txt_idcliente.Text <> "" Then

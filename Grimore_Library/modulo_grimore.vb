@@ -7,7 +7,7 @@
             database = CreateObject("ADODB.Connection")
             'database.Open("Provider=SQLOLEDB;Data Source=ALUNO42\SQLEXPRESS;Initial Catalog=projeto_grimore;Trusted_Connection=yes;")
             database.Open("Provider=MSOLEDBSQL;Data Source=localhost;Initial Catalog=projeto_grimore;Trusted_Connection=yes;")
-            MsgBox("Conexão OK", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+            'MsgBox("Conexão OK", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
@@ -216,7 +216,6 @@
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
     End Sub
-    ' Busca os dados do cliente para empréstimo
     Sub Buscar_cliente_Emprestimo(id As String)
         Try
             SQL = $"SELECT * FROM tb_clientes WHERE id_cliente = '{id}'"
@@ -259,7 +258,7 @@
                 .txt_usuario.Clear()
             End With
         Catch ex As Exception
-
+            MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
 End Module

@@ -1,9 +1,9 @@
 ﻿Public Class frm_acervo
 
     Private Sub frm_acervo_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         Carregar_formacervo()
-
         dgv_acervo.ReadOnly = False
         dgv_acervo.EditMode = DataGridViewEditMode.EditOnEnter
     End Sub

@@ -248,7 +248,7 @@ Partial Class frm_acervo
         FormBorderStyle = FormBorderStyle.FixedSingle
         Margin = New Padding(3, 2, 3, 2)
         Name = "frm_acervo"
-        Text = "frm_acervo"
+        Text = "GERENCIAR ACERVO"
         CType(dgv_acervo, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip2.ResumeLayout(False)

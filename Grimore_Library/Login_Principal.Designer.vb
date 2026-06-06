@@ -188,6 +188,8 @@ Partial Class login_principal
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
         Name = "login_principal"
         Text = "LOGIN"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

@@ -2,6 +2,7 @@
 
 Public Class frm_cadclientes
     Private Sub frm_cadcliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Icon = login_principal.Icon
         Conectar_banco()
         Carregar_preferencias()
     End Sub

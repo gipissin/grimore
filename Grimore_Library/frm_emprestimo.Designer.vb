@@ -52,9 +52,11 @@ Partial Class frm_emprestimo
         ts_acervo = New ToolStripMenuItem()
         ts_pendencias = New ToolStripMenuItem()
         CLIENTESToolStripMenuItem = New ToolStripMenuItem()
+        PictureBox2 = New PictureBox()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         MenuStrip2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -339,7 +341,7 @@ Partial Class frm_emprestimo
         MenuStrip2.Location = New Point(0, 0)
         MenuStrip2.Name = "MenuStrip2"
         MenuStrip2.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip2.Size = New Size(895, 24)
+        MenuStrip2.Size = New Size(993, 24)
         MenuStrip2.TabIndex = 31
         MenuStrip2.Text = "MenuStrip2"
         ' 
@@ -375,16 +377,30 @@ Partial Class frm_emprestimo
         CLIENTESToolStripMenuItem.Size = New Size(83, 20)
         CLIENTESToolStripMenuItem.Text = "CLIENTES"
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackColor = Color.Transparent
+        PictureBox2.BackgroundImageLayout = ImageLayout.None
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(887, 576)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(94, 83)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 32
+        PictureBox2.TabStop = False
+        ' 
         ' frm_emprestimo
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(895, 692)
+        ClientSize = New Size(993, 685)
+        Controls.Add(PictureBox2)
         Controls.Add(MenuStrip2)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
         Name = "frm_emprestimo"
         Text = "EMPRESTIMO"
         Panel1.ResumeLayout(False)
@@ -393,6 +409,7 @@ Partial Class frm_emprestimo
         Panel2.PerformLayout()
         MenuStrip2.ResumeLayout(False)
         MenuStrip2.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -426,4 +443,5 @@ Partial Class frm_emprestimo
     Friend WithEvents ts_acervo As ToolStripMenuItem
     Friend WithEvents ts_pendencias As ToolStripMenuItem
     Friend WithEvents CLIENTESToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

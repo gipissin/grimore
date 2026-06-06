@@ -32,7 +32,9 @@ Partial Class frm_situacaocliente
         Label3 = New Label()
         btn_livrosemposse = New Button()
         btn_historico = New Button()
+        PictureBox2 = New PictureBox()
         MenuStrip2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MenuStrip2
@@ -66,7 +68,7 @@ Partial Class frm_situacaocliente
         ' txt_nomecliente
         ' 
         txt_nomecliente.BackColor = Color.Gainsboro
-        txt_nomecliente.Location = New Point(428, 86)
+        txt_nomecliente.Location = New Point(422, 209)
         txt_nomecliente.Name = "txt_nomecliente"
         txt_nomecliente.Size = New Size(256, 23)
         txt_nomecliente.TabIndex = 35
@@ -74,7 +76,7 @@ Partial Class frm_situacaocliente
         ' txt_idcliente
         ' 
         txt_idcliente.BackColor = Color.Gainsboro
-        txt_idcliente.Location = New Point(27, 86)
+        txt_idcliente.Location = New Point(21, 209)
         txt_idcliente.Name = "txt_idcliente"
         txt_idcliente.Size = New Size(147, 23)
         txt_idcliente.TabIndex = 34
@@ -85,7 +87,7 @@ Partial Class frm_situacaocliente
         Label7.BackColor = Color.MediumPurple
         Label7.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(27, 50)
+        Label7.Location = New Point(21, 173)
         Label7.Name = "Label7"
         Label7.Size = New Size(132, 21)
         Label7.TabIndex = 33
@@ -97,7 +99,7 @@ Partial Class frm_situacaocliente
         Label3.BackColor = Color.MediumPurple
         Label3.Font = New Font("Cooper Black", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(428, 50)
+        Label3.Location = New Point(422, 173)
         Label3.Name = "Label3"
         Label3.Size = New Size(164, 21)
         Label3.TabIndex = 32
@@ -108,7 +110,7 @@ Partial Class frm_situacaocliente
         btn_livrosemposse.BackColor = Color.MediumPurple
         btn_livrosemposse.Font = New Font("Cooper Black", 14.25F)
         btn_livrosemposse.ForeColor = Color.White
-        btn_livrosemposse.Location = New Point(27, 138)
+        btn_livrosemposse.Location = New Point(21, 261)
         btn_livrosemposse.Name = "btn_livrosemposse"
         btn_livrosemposse.Size = New Size(345, 68)
         btn_livrosemposse.TabIndex = 36
@@ -120,12 +122,24 @@ Partial Class frm_situacaocliente
         btn_historico.BackColor = Color.MediumPurple
         btn_historico.Font = New Font("Cooper Black", 14.25F)
         btn_historico.ForeColor = Color.White
-        btn_historico.Location = New Point(428, 138)
+        btn_historico.Location = New Point(422, 261)
         btn_historico.Name = "btn_historico"
         btn_historico.Size = New Size(345, 68)
         btn_historico.TabIndex = 37
         btn_historico.Text = "HISTÓRICO DE EMPRÉSTIMOS ANTERIORES"
         btn_historico.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackColor = Color.Transparent
+        PictureBox2.BackgroundImageLayout = ImageLayout.None
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(771, 411)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(94, 83)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 38
+        PictureBox2.TabStop = False
         ' 
         ' frm_situacaocliente
         ' 
@@ -134,6 +148,7 @@ Partial Class frm_situacaocliente
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(877, 506)
+        Controls.Add(PictureBox2)
         Controls.Add(btn_historico)
         Controls.Add(btn_livrosemposse)
         Controls.Add(txt_nomecliente)
@@ -142,10 +157,12 @@ Partial Class frm_situacaocliente
         Controls.Add(Label3)
         Controls.Add(MenuStrip2)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "frm_situacaocliente"
         Text = "SITUAÇÃO DO CLIENTE"
         MenuStrip2.ResumeLayout(False)
         MenuStrip2.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -158,4 +175,5 @@ Partial Class frm_situacaocliente
     Friend WithEvents btn_livrosemposse As Button
     Friend WithEvents btn_historico As Button
     Friend WithEvents ts_emprestimo As ToolStripMenuItem
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

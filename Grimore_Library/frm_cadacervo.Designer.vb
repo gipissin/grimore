@@ -27,7 +27,6 @@ Partial Class frm_cadacervo
         PictureBox2 = New PictureBox()
         Panel1 = New Panel()
         img_capa = New PictureBox()
-        Label11 = New Label()
         txt_etiqueta = New TextBox()
         txt_isbn = New MaskedTextBox()
         txt_quantidade = New TextBox()
@@ -52,10 +51,13 @@ Partial Class frm_cadacervo
         MenuStrip2 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
         ts_acervo = New ToolStripMenuItem()
+        Panel2 = New Panel()
+        Label11 = New Label()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(img_capa, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip2.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' foto_livro
@@ -73,7 +75,7 @@ Partial Class frm_cadacervo
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(766, 333)
+        PictureBox2.Location = New Point(766, 503)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(94, 83)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -83,8 +85,8 @@ Partial Class frm_cadacervo
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
+        Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(img_capa)
-        Panel1.Controls.Add(Label11)
         Panel1.Controls.Add(txt_etiqueta)
         Panel1.Controls.Add(txt_isbn)
         Panel1.Controls.Add(txt_quantidade)
@@ -121,16 +123,6 @@ Partial Class frm_cadacervo
         img_capa.SizeMode = PictureBoxSizeMode.StretchImage
         img_capa.TabIndex = 52
         img_capa.TabStop = False
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Cooper Black", 15.75F)
-        Label11.Location = New Point(35, 32)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(275, 24)
-        Label11.TabIndex = 51
-        Label11.Text = "CADASTRO DE ACERVO"
         ' 
         ' txt_etiqueta
         ' 
@@ -377,6 +369,27 @@ Partial Class frm_cadacervo
         ts_acervo.Size = New Size(155, 20)
         ts_acervo.Text = "GERENCIAR ACERVO"
         ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.MediumPurple
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Label11)
+        Panel2.Location = New Point(98, 24)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(499, 44)
+        Panel2.TabIndex = 53
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Cooper Black", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.White
+        Label11.Location = New Point(96, 5)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(300, 34)
+        Label11.TabIndex = 17
+        Label11.Text = "Cadastro de Acervo"
+        ' 
         ' frm_cadacervo
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -390,6 +403,7 @@ Partial Class frm_cadacervo
         Controls.Add(PictureBox2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
         Name = "frm_cadacervo"
         Text = "Cadastro de Acervo"
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
@@ -398,6 +412,8 @@ Partial Class frm_cadacervo
         CType(img_capa, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip2.ResumeLayout(False)
         MenuStrip2.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -424,10 +440,11 @@ Partial Class frm_cadacervo
     Friend WithEvents txt_quantidade As TextBox
     Friend WithEvents txt_isbn As MaskedTextBox
     Friend WithEvents txt_etiqueta As TextBox
-    Friend WithEvents Label11 As Label
     Friend WithEvents img_capa As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents ts_menu As ToolStripMenuItem
     Friend WithEvents ts_acervo As ToolStripMenuItem
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label11 As Label
 End Class

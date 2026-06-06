@@ -161,7 +161,6 @@ C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.genruntimeconfig.cache
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\ref\Grimore_Library.dll
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_cadusuario.resources
-C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.UcAcervo.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_acervo.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_acervo.resources
 C:\Users\User\source\repos\grimore1\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_alterarsenha.resources
@@ -181,4 +180,3 @@ C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_historico.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_pendentes.resources
 C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.frm_situacaocliente.resources
-C:\Users\gigip\OneDrive\Documents\GitHub\grimore\Grimore_Library\obj\Debug\net8.0-windows7.0\Grimore_Library.Sobre.resources

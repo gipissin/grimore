@@ -325,6 +325,7 @@ Partial Class cad_usuario
         Controls.Add(Label2)
         Controls.Add(Panel1)
         Controls.Add(PictureBox1)
+        MaximizeBox = False
         Name = "cad_usuario"
         Text = "Cadastro de Usuário"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

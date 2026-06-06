@@ -24,13 +24,6 @@ Partial Class frm_gerenciarclientes
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_gerenciarclientes))
         dgv_clientes = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewImageColumn()
-        Column7 = New DataGridViewImageColumn()
         MenuStrip1 = New MenuStrip()
         ts_menu = New ToolStripMenuItem()
         btn_cadastrarcliente = New ToolStripMenuItem()
@@ -41,6 +34,13 @@ Partial Class frm_gerenciarclientes
         btn_buscaracervo = New ToolStripButton()
         Label2 = New Label()
         PictureBox2 = New PictureBox()
+        Column1 = New DataGridViewTextBoxColumn()
+        Column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
+        Column4 = New DataGridViewTextBoxColumn()
+        Column5 = New DataGridViewTextBoxColumn()
+        Column6 = New DataGridViewImageColumn()
+        Column7 = New DataGridViewImageColumn()
         CType(dgv_clientes, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         ToolStrip1.SuspendLayout()
@@ -60,58 +60,6 @@ Partial Class frm_gerenciarclientes
         dgv_clientes.RowHeadersWidth = 51
         dgv_clientes.Size = New Size(938, 343)
         dgv_clientes.TabIndex = 0
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "ID"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.Width = 125
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "Nome"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.Width = 125
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "Email"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
-        ' 
-        ' Column4
-        ' 
-        Column4.HeaderText = "Telefone"
-        Column4.MinimumWidth = 6
-        Column4.Name = "Column4"
-        Column4.Width = 125
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "CPF"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.Width = 125
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "Editar"
-        Column6.Image = CType(resources.GetObject("Column6.Image"), Image)
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.Resizable = DataGridViewTriState.True
-        Column6.Width = 125
-        ' 
-        ' Column7
-        ' 
-        Column7.HeaderText = "Excluir"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.Resizable = DataGridViewTriState.True
-        Column7.Width = 125
         ' 
         ' MenuStrip1
         ' 
@@ -185,7 +133,7 @@ Partial Class frm_gerenciarclientes
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Cooper Black", 21.75F)
         Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(0, 77)
+        Label2.Location = New Point(35, 79)
         Label2.Name = "Label2"
         Label2.Size = New Size(364, 34)
         Label2.TabIndex = 37
@@ -196,12 +144,65 @@ Partial Class frm_gerenciarclientes
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(890, 68)
+        PictureBox2.Location = New Point(953, 58)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(68, 52)
+        PictureBox2.Size = New Size(104, 80)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 38
         PictureBox2.TabStop = False
+        ' 
+        ' Column1
+        ' 
+        Column1.HeaderText = "ID"
+        Column1.MinimumWidth = 6
+        Column1.Name = "Column1"
+        Column1.Width = 125
+        ' 
+        ' Column2
+        ' 
+        Column2.HeaderText = "Nome"
+        Column2.MinimumWidth = 6
+        Column2.Name = "Column2"
+        Column2.Width = 125
+        ' 
+        ' Column3
+        ' 
+        Column3.HeaderText = "Email"
+        Column3.MinimumWidth = 6
+        Column3.Name = "Column3"
+        Column3.Width = 125
+        ' 
+        ' Column4
+        ' 
+        Column4.HeaderText = "Telefone"
+        Column4.MinimumWidth = 6
+        Column4.Name = "Column4"
+        Column4.Width = 125
+        ' 
+        ' Column5
+        ' 
+        Column5.HeaderText = "CPF"
+        Column5.MinimumWidth = 6
+        Column5.Name = "Column5"
+        Column5.Width = 125
+        ' 
+        ' Column6
+        ' 
+        Column6.HeaderText = "Editar"
+        Column6.Image = CType(resources.GetObject("Column6.Image"), Image)
+        Column6.MinimumWidth = 6
+        Column6.Name = "Column6"
+        Column6.Resizable = DataGridViewTriState.True
+        Column6.Width = 125
+        ' 
+        ' Column7
+        ' 
+        Column7.HeaderText = "Excluir"
+        Column7.Image = CType(resources.GetObject("Column7.Image"), Image)
+        Column7.MinimumWidth = 6
+        Column7.Name = "Column7"
+        Column7.Resizable = DataGridViewTriState.True
+        Column7.Width = 125
         ' 
         ' frm_gerenciarclientes
         ' 
@@ -209,12 +210,13 @@ Partial Class frm_gerenciarclientes
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1057, 487)
+        Controls.Add(dgv_clientes)
         Controls.Add(PictureBox2)
         Controls.Add(Label2)
         Controls.Add(ToolStrip1)
         Controls.Add(MenuStrip1)
-        Controls.Add(dgv_clientes)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "frm_gerenciarclientes"
         Text = "GERENCIAR CLIENTES"
         CType(dgv_clientes, ComponentModel.ISupportInitialize).EndInit()

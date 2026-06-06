@@ -160,6 +160,7 @@ Partial Class frm_menu
         Controls.Add(PictureBox1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
         Name = "frm_menu"
         Text = "MENU"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
