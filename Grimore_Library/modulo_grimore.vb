@@ -1,5 +1,5 @@
 ﻿Module moduloGrimore
-    Public diretorio, SQL, resposta_user, status, tipo_conta, aux_matricula, status_user, notacao, etiqueta As String
+    Public diretorio, SQL, resposta_user, status, tipo_conta, aux_matricula, status_user, notacao, etiqueta, status_cliente As String
     Public database As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Sub Conectar_banco()
@@ -12,6 +12,7 @@
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
     Sub Carregar_tipo()
         Try
             With frm_cadusuario.cmb_tipo.Items
@@ -137,8 +138,6 @@
                 .txt_matricula.Clear()
                 .txt_senha.Clear()
                 .txt_perguntaseg.Clear()
-                '.cmb_tipo.SelectedIndex = 0
-                '.cmb_status.SelectedIndex = 0
             End With
         Catch ex As Exception
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")

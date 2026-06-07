@@ -13,10 +13,15 @@
 
     Sub Carregar_Clientes(pesquisa As String)
         Try
+            Dim col As DataGridViewComboBoxColumn = CType(Me.dgv_clientes.Columns("Column7"), DataGridViewComboBoxColumn)
+            If col.Items.Count = 0 Then
+                col.Items.AddRange("ATIVO", "INATIVO")
+            End If
+
             If pesquisa = "" Then
-                SQL = "SELECT id_cliente, nome, email, telefone, cpf FROM tb_clientes ORDER BY nome ASC"
+                SQL = "SELECT id_cliente, nome, email, telefone, cpf, status_cliente FROM tb_clientes ORDER BY nome ASC"
             Else
-                SQL = $"SELECT id_cliente, nome, email, telefone, cpf FROM tb_clientes WHERE nome LIKE '%{pesquisa}%' ORDER BY nome ASC"
+                SQL = $"SELECT id_cliente, nome, email, telefone, cpf, status_cliente FROM tb_clientes WHERE nome LIKE '%{pesquisa}%' ORDER BY nome ASC"
             End If
 
             rs = database.Execute(SQL)
@@ -29,7 +34,9 @@
                         rs.Fields("nome").Value.ToString(),
                         rs.Fields("email").Value.ToString(),
                         rs.Fields("telefone").Value.ToString(),
-                        rs.Fields("cpf").Value.ToString()
+                        rs.Fields("cpf").Value.ToString(),
+                        rs.Fields("status_cliente").Value.ToString(),
+                        Nothing
                     )
                     rs.MoveNext()
                 Loop
@@ -41,27 +48,38 @@
 
     Private Sub dgv_clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_clientes.CellContentClick
         If e.RowIndex < 0 Then Exit Sub
-
         Try
-            ' BOTÃO EDITAR
+            Dim auxiliar_id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
+            Dim nome_cliente As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
+
             If dgv_clientes.Columns(e.ColumnIndex).Name = "Column6" Then
 
                 dgv_clientes.EndEdit()
 
-                Dim auxiliar_id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
-                Dim novo_nome As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
                 Dim novo_email As String = dgv_clientes.Rows(e.RowIndex).Cells("Column3").Value.ToString()
                 Dim nova_telefone As String = dgv_clientes.Rows(e.RowIndex).Cells("Column4").Value.ToString()
                 Dim novo_cpf As String = dgv_clientes.Rows(e.RowIndex).Cells("Column5").Value.ToString()
+                Dim novo_status As String = dgv_clientes.Rows(e.RowIndex).Cells("Column7").Value.ToString()
 
-                Dim resposta As MsgBoxResult = MsgBox("Deseja salvar as alterações feitas no cliente: " & novo_nome & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "CONFIRMAÇÃO")
+                If novo_status = "INATIVO" Then
+                    SQL = $"SELECT * FROM tb_emprestimos WHERE id_cliente = '{auxiliar_id}' AND devolvido = 0 AND isbn IS NOT NULL AND isbn <> ''"
+                    rs = database.Execute(SQL)
+                    If rs.EOF = False Then
+                        MsgBox("Não é possível inativar o cliente, pois ele possui empréstimos em aberto!", MsgBoxStyle.Exclamation, "AVISO")
+                        Carregar_Clientes("")
+                        Exit Sub
+                    End If
+                End If
+
+                Dim resposta As MsgBoxResult = MsgBox("Deseja salvar as alterações feitas no cliente: " & nome_cliente & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "CONFIRMAÇÃO")
 
                 If resposta = MsgBoxResult.Yes Then
                     SQL = $"UPDATE tb_clientes SET " &
-                      $"nome = '{novo_nome}', " &
+                      $"nome = '{nome_cliente}', " &
                       $"email = '{novo_email}', " &
                       $"telefone = '{nova_telefone}', " &
-                      $"cpf = '{novo_cpf}' " &
+                      $"cpf = '{novo_cpf}', " &
+                      $"status_cliente = '{novo_status}' " &
                       $"WHERE id_cliente = '{auxiliar_id}'"
 
                     database.Execute(SQL)
@@ -69,21 +87,31 @@
                     Carregar_Clientes("")
                 End If
 
-                ' BOTÃO EXCLUIR
             ElseIf dgv_clientes.Columns(e.ColumnIndex).Name = "Column7" Then
 
-                Dim auxiliar_id As String = dgv_clientes.Rows(e.RowIndex).Cells("Column1").Value.ToString()
-                Dim nome_cliente As String = dgv_clientes.Rows(e.RowIndex).Cells("Column2").Value.ToString()
-
-                Dim resposta_user As MsgBoxResult = MsgBox("Gostaria de excluir definitivamente o cliente: " & nome_cliente & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                Dim status_atual As String = dgv_clientes.Rows(e.RowIndex).Cells("Column7").Value.ToString()
+                Dim resposta_user = MsgBox("Gostaria de alterar o status do cliente: " & nome_cliente & " para " & status_atual & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
 
                 If resposta_user = MsgBoxResult.Yes Then
-                    SQL = $"DELETE FROM tb_clientes WHERE id_cliente = '{auxiliar_id}'"
+
+                    ' TRAVA DE SEGURANÇA AO MUDAR O STATUS!
+                    If status_atual = "INATIVO" Then
+                        SQL = $"SELECT * FROM tb_emprestimos WHERE id_cliente = '{auxiliar_id}' AND isbn IS NOT NULL AND isbn <> ''"
+                        rs = database.Execute(SQL)
+                        If rs.EOF = False Then
+                            MsgBox("Não é possível inativar o cliente, pois ele possui empréstimos em aberto!", MsgBoxStyle.Exclamation, "AVISO")
+                            Carregar_Clientes("")
+                            Exit Sub
+                        End If
+                    End If
+
+                    SQL = $"UPDATE tb_clientes SET status_cliente = '{status_atual}' WHERE id_cliente = '{auxiliar_id}'"
                     database.Execute(SQL)
-                    MsgBox("Cliente excluído com sucesso!", MsgBoxStyle.Information, "SUCESSO")
+                    MsgBox("Status do cliente atualizado com sucesso!", MsgBoxStyle.Information, "SUCESSO")
+                    Carregar_Clientes("")
+                Else
                     Carregar_Clientes("")
                 End If
-
             End If
 
         Catch ex As Exception

@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_gerenciarclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_gerenciarclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_cadclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_cadclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_emprestimo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_emprestimo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:modulo_grimore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_emprestimo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_emprestimo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\frm_gerenciarclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:frm_gerenciarclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|c:\\users\\gigip\\onedrive\\documents\\github\\grimore\\grimore_library\\grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{D9785E59-391D-6682-33E1-CB7F81BD0344}|Grimore_Library.vbproj|solutionrelative:grimore_library.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
@@ -14,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Grimore_Library",
               "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\Grimore_Library.vbproj",
               "RelativeDocumentMoniker": "Grimore_Library.vbproj",
@@ -26,6 +54,19 @@
               "RelativeToolTip": "Grimore_Library.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
               "WhenOpened": "2026-05-29T19:28:51.413Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "modulo_grimore.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\modulo_grimore.vb",
+              "RelativeDocumentMoniker": "modulo_grimore.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\modulo_grimore.vb",
+              "RelativeToolTip": "modulo_grimore.vb",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAuwIsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T13:28:27.981Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -40,6 +81,82 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_emprestimo.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_emprestimo.vb",
+              "RelativeDocumentMoniker": "frm_emprestimo.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_emprestimo.vb",
+              "RelativeToolTip": "frm_emprestimo.vb",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv0MAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T15:12:25.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_admin.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_admin.vb",
+              "RelativeDocumentMoniker": "frm_admin.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_admin.vb",
+              "RelativeToolTip": "frm_admin.vb",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAmwAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T14:20:17.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_cadclientes.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_cadclientes.vb",
+              "RelativeDocumentMoniker": "frm_cadclientes.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_cadclientes.vb",
+              "RelativeToolTip": "frm_cadclientes.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T14:02:09.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_gerenciarclientes.vb",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_gerenciarclientes.vb",
+              "RelativeDocumentMoniker": "frm_gerenciarclientes.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_gerenciarclientes.vb",
+              "RelativeToolTip": "frm_gerenciarclientes.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T13:40:45.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_emprestimo.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_emprestimo.vb",
+              "RelativeDocumentMoniker": "frm_emprestimo.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_emprestimo.vb [Projeto]",
+              "RelativeToolTip": "frm_emprestimo.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T15:12:16.356Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_gerenciarclientes.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_gerenciarclientes.vb",
+              "RelativeDocumentMoniker": "frm_gerenciarclientes.vb",
+              "ToolTip": "C:\\Users\\gigip\\OneDrive\\Documents\\GitHub\\grimore\\Grimore_Library\\frm_gerenciarclientes.vb [Projeto]",
+              "RelativeToolTip": "frm_gerenciarclientes.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-07T13:35:21.212Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

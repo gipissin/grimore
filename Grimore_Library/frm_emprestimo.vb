@@ -49,6 +49,24 @@
                 Exit Sub
             End If
 
+            Dim status_real_do_cliente As String = ""
+
+            SQL = $"SELECT status_cliente FROM tb_clientes WHERE id_cliente = '{txt_idcliente.Text}'"
+            rs = database.Execute(SQL)
+
+            If rs.EOF = False Then
+                status_real_do_cliente = rs.Fields("status_cliente").Value.ToString()
+            Else
+                MsgBox("Cliente não encontrado no banco de dados!", MsgBoxStyle.Exclamation, "ATENÇÃO")
+                Exit Sub
+            End If
+
+            If status_real_do_cliente = "INATIVO" Then
+                MsgBox("Cliente inativo! Regularize a situação para realizar empréstimos.", MsgBoxStyle.Exclamation, "ATENÇÃO")
+                Exit Sub
+                Limpar_tudo()
+            End If
+
             Dim qtd_solicitada As Integer = CInt(txt_qtdemprestimo.Text)
             Dim estoque As Integer = CInt(txt_qtdestoque.Text)
 

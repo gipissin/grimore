@@ -27,26 +27,27 @@ Public Class frm_cadclientes
                 MsgBox("Preencha os campos obrigatórios.", MsgBoxStyle.Exclamation, "ATENÇÃO")
                 Exit Sub
             End If
+            status_cliente = "ATIVO"
             SQL = $"SELECT * FROM tb_clientes WHERE cpf='{txt_cpf.Text}'"
             rs = database.Execute(SQL)
             If rs.EOF = True Then
-                SQL = $"INSERT INTO tb_clientes (nome, email, telefone, cpf, data_nascimento, preferencias, observacoes, foto)
+                SQL = $"INSERT INTO tb_clientes (nome, email, telefone, cpf, data_nascimento, preferencias, observacoes, foto, status_cliente)
                         VALUES ('{txt_nome.Text}', '{txt_email.Text}', '{txt_telefone.Text}',
                                 '{txt_cpf.Text}', '{dtp_nascimento.Value.ToString("yyyy-MM-dd")}',
-                                '{cmb_preferencias.Text}', '{txt_observacoes.Text}', '{diretorio}')"
+                                '{cmb_preferencias.Text}', '{txt_observacoes.Text}', '{diretorio}', '{status_cliente}')"
                 database.Execute(SQL)
-                    MsgBox("Cliente cadastrado com sucesso!", MsgBoxStyle.Information, "AVISO")
-                    resposta_user = MsgBox("Deseja cadastrar outro cliente?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO")
-                    If resposta_user = vbYes Then
-                        Limpar_cadcliente()
-                        Exit Sub
-                    Else
-                        Limpar_cadcliente()
+                MsgBox("Cliente cadastrado com sucesso!", MsgBoxStyle.Information, "AVISO")
+                resposta_user = MsgBox("Deseja cadastrar outro cliente?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO")
+                If resposta_user = vbYes Then
+                    Limpar_cadcliente()
+                    Exit Sub
+                Else
+                    Limpar_cadcliente()
                     frm_gerenciarclientes.Show()
                     Me.Hide()
                 End If
-                Else
-                    MsgBox("CPF já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
+            Else
+                MsgBox("CPF já cadastrado!", MsgBoxStyle.Exclamation, "ATENÇÃO")
                 Exit Sub
             End If
             Limpar_cadcliente()
@@ -58,7 +59,6 @@ Public Class frm_cadclientes
             MsgBox("Erro: " & ex.Message, MsgBoxStyle.Critical, "ATENÇÃO")
         End Try
     End Sub
-
     Sub Limpar_cadcliente()
         txt_nome.Clear()
         txt_email.Clear()
@@ -69,8 +69,6 @@ Public Class frm_cadclientes
         img_foto.Image = Nothing
         diretorio = ""
     End Sub
-
-
     Private Sub ts_menu_Click(sender As Object, e As EventArgs) Handles ts_menu.Click
         frm_menu.Show()
         Me.Hide()
