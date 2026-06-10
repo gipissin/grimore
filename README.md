@@ -2,9 +2,7 @@
 
 ```
 ☽ ✧ · · · ✧ ☾
-
 G R I M O R E
-
 ☽ ✧ · · · ✧ ☾
 ```
 
@@ -29,7 +27,7 @@ G R I M O R E
 
 O **Grimore** é uma aplicação desktop para gerenciamento de acervo bibliotecário, desenvolvida em VB.NET com Windows Forms e SQL Server. Pensada para o controle completo de livros, usuários e empréstimos em uma interface limpa e funcional.
 
-Desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
+Desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas da FATEC São Caetano do Sul.
 
 ---
 
@@ -47,12 +45,12 @@ Desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de S
 ## ✦ Stack
 
 ```
-Linguagem   →  VB.NET (.NET Framework)
-Interface   →  Windows Forms (WinForms)
-Banco       →  Microsoft SQL Server
-Acesso      →  ADO.NET (SqlClient / ADODB)
-IDE         →  Visual Studio 2022
-Versionamento → Git + GitHub
+Linguagem     →  VB.NET (.NET Framework)
+Interface     →  Windows Forms (WinForms)
+Banco         →  Microsoft SQL Server
+Acesso        →  ADO.NET (SqlClient / ADODB)
+IDE           →  Visual Studio 2022
+Versionamento →  Git + GitHub
 ```
 
 ---
@@ -75,7 +73,7 @@ git clone https://github.com/gipissin/grimore.git
 # connectionString="Data Source=SEU_SERVIDOR;Initial Catalog=grimoire_db;..."
 
 # 4. Execute o script de criação do banco
-# /database/schema.sql
+# /Database/schema.sql
 
 # 5. Build & Run (F5)
 ```
@@ -86,15 +84,17 @@ git clone https://github.com/gipissin/grimore.git
 
 ```
 Grimore_Library/
-├── Forms/
-│   ├── frmLogin.vb          → tela de autenticação
-│   ├── frmAdmin.vb          → painel administrativo
-│   ├── frmAcervo.vb         → gerenciamento do acervo
-│   └── frmAlterarSenha.vb   → troca de senha
 ├── Database/
-│   └── schema.sql           → script de criação das tabelas
-├── README.md
-└── CONTRIBUTING.md
+│   └── schema.sql              → script consolidado de criação das tabelas
+├── frm_acervo.vb               → gerenciamento do acervo de livros
+├── frm_admin.vb                → painel administrativo do sistema
+├── frm_cadclientes.vb          → cadastro de clientes/leitores
+├── frm_cadusuario.vb           → cadastro de usuários do sistema
+├── frm_emprestimo.vb           → registro e controle de retiradas
+├── frm_menu.vb                 → menu principal da aplicação
+├── login_principal.vb          → tela de autenticação
+├── modulo_grimore.vb           → módulo de variáveis e conexões globais
+└── README.md
 ```
 
 ---
@@ -114,7 +114,7 @@ Grimore_Library/
 
 <div align="center">
 
-*Projeto acadêmico — Análise e Desenvolvimento de Sistemas*
+*Projeto acadêmico — Análise e Desenvolvimento de Sistemas (FATEC-SCS)*
 
 `feito com código, café e um gato que nunca sai do teclado`
 
